@@ -1,21 +1,46 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.svg';
-import '../css/App.css';
+import {
+    Navbar,
+    Container,
+    Row,
+    Col,
+    Jumbotron,
+    Button
+} from 'reactstrap';
+import Header from "./Header";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          Tdit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+
+    render() {
+        return (
+            <div>
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <a className="navbar-brand" href="#">Navbar</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Features</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        );
+    }
 }
 
 export default App;
