@@ -1,5 +1,5 @@
 .navbar{
-    background:#F97300;
+    background:#F97300 !important;
 }
 .nav-link , .navbar-brand{
     color: #f4f4f4;
@@ -17,4 +17,7 @@
 }
 .navbar-toggler{
     background:#fff !important;
+}
+.btn, btn-success {
+    background-color: white;
 }
