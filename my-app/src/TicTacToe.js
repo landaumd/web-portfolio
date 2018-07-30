@@ -41,7 +41,7 @@ class Board extends Component {
     }
 }
 
-class Grid extends Component {
+class TicTacToe extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -142,4 +142,4 @@ function calculateWinner(squares) {
 }
 
 
-export default Grid;
+export default TicTacToe;
