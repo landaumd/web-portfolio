@@ -6,6 +6,7 @@ import MyJumbo from './MyJumbo.js';
 import Collapsible from './Collapsible.js';
 import StackGrid, { transitions } from "react-stack-grid";
 import MyCarousel from './MyCarousel.js';
+import sizeMe from 'react-sizeme';
 
 const { scaleDown } = transitions;
 
@@ -50,15 +51,24 @@ class Grid extends Component {
     //     console.log("grrrr");
     // };
 
+
     render() {
+
+        const {
+            size: {
+                width
+            }
+        } = this.props;
+
         return (
-            <div className="Grid-top">
+            <div className="container-fluid Grid-top">
                 <StackGrid
                     gridRef={grid => this.grid = grid}
                     // style={{'background-color': 'red'}}
                     // style={{'padding-top': '20rem}}
-                    columnWidth={300}
+                    // columnWidth={300}
                     gutterWidth={15}
+                    columnWidth={width <= 768 ? '90%' : '33.33%'}
                     gutterHeight={15}
                     enter={scaleDown.enter}
                     monitorImagesLoaded={true}
@@ -91,10 +101,12 @@ class Grid extends Component {
                         < MyCard />
                         < MyJumbo />
                         < MyJumbo />
+                        < MyCarousel/>
                         < MyCard />
                         {/*< Collapsible key={1} onClick={() => this.changeItemSize(0)}/>*/}
                         < MyCard />
                         < MyCard />
+                        < MyCarousel/>
 
                     {/*<div>*/
                     /*<div key="key1">Item 1</div>*/
@@ -108,4 +120,4 @@ class Grid extends Component {
     }
 }
 
-export default Grid;
+export default sizeMe()(Grid);

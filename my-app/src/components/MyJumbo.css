@@ -1,3 +1,6 @@
-.MyJumbo-no-bottom-padding {
-    padding-bottom: 0 !important;
+.jumbotron {
+    margin-bottom: 0px !important;
+    padding: 15px !important;
+    border-radius: calc(.25rem - 1px);
+    overflow: hidden;
 }
