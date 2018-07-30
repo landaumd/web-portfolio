@@ -68,7 +68,7 @@ class Grid extends Component {
                     // style={{'padding-top': '20rem}}
                     // columnWidth={300}
                     gutterWidth={15}
-                    columnWidth={width <= 768 ? '90%' : '33.33%'}
+                    columnWidth={width <= 400 ? '100%' : '25%'}
                     gutterHeight={15}
                     enter={scaleDown.enter}
                     monitorImagesLoaded={true}

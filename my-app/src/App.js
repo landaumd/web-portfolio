@@ -12,13 +12,11 @@ class App extends Component {
     return (
         <div>
             <Navigation/>
-            <div className="row">
-                <div className="col-md-3 float-lg-left">
+            <div>
+                <div>
                     <Grid />
                 </div>
-                <div className="col-md-9 float-lg-right">
-                    {/*<MyView />*/}
-                </div>
+
             {/*<div className="App">*/}
                     {/*<header className="App-header">*/}
                       {/*<img src={logo} className="App-logo" alt="logo" />*/}
