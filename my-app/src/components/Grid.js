@@ -61,19 +61,20 @@ class Grid extends Component {
         } = this.props;
 
         return (
-            <div className="container-fluid Grid-top">
+            <div className="Grid-container">
                 <StackGrid
                     gridRef={grid => this.grid = grid}
                     // style={{'background-color': 'red'}}
                     // style={{'padding-top': '20rem}}
                     // columnWidth={300}
                     gutterWidth={15}
-                    columnWidth={width <= 400 ? '100%' : '25%'}
+                    columnWidth={(width <= 400 ? '100%' : (width <= 650 ? '33%' : '25%'))}
                     gutterHeight={15}
                     enter={scaleDown.enter}
                     monitorImagesLoaded={true}
                     // horizontal={true}
                     // rtl={true}
+
                 >
 
                     {/*{this.state.items.map(({ id, active, height }) => (*/}

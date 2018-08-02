@@ -1,5 +1,6 @@
 import React from 'react';
-// import './Navigation.css';
+import './Navigation.css';
+
 import {
     Collapse,
     Navbar,
@@ -29,12 +30,12 @@ class Navigation extends React.Component {
     }
     render() {
         return (
-            <div>
-                <Navbar color="light" light expand="md">
+
+                <Navbar color="light" light fixed='top' expand="sm">
                     <NavbarBrand href="/">reactstrap</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
+                        <Nav className="ml-auto" fixed='top' navbar>
                             <NavItem>
                                 <NavLink href="/components/">Components</NavLink>
                             </NavItem>
@@ -61,7 +62,7 @@ class Navigation extends React.Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
-            </div>
+
         );
     }
 }
