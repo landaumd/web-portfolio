@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967d8b10-51cd-44a6-8bf2-24cb05c709ee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/MyView.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs-portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cs-portfolio/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs-portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cs-portfolio/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs-portfolio/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cs-portfolio/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs-portfolio/src/resources/public/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/cs-portfolio/src/resources/public/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs-portfolio/src/resources/public/css/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/cs-portfolio/src/resources/public/css/Card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs-portfolio/src/resources/public/js/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/cs-portfolio/src/resources/public/js/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs-portfolio/src/resources/public/js/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/cs-portfolio/src/resources/public/js/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Grid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/MyCarousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/MyCarousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/MyView.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/MyView.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/MyView.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/MyView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/my-app/src/components/MyView.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -59,8 +45,8 @@
       <file leaf-file-name="MyView.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/components/MyView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+            <state relative-caret-position="362">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -80,11 +66,20 @@
       <file leaf-file-name="Grid.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/components/Grid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-412">
-              <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+            <state relative-caret-position="839">
+              <caret line="70" column="51" lean-forward="true" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
               <folding>
                 <element signature="e#87#107#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Navigation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/components/Navigation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-378">
+              <caret line="3" selection-start-line="3" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -93,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/my-app/src/components/Grid.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -119,8 +114,8 @@
       <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-start-column="2" selection-end-line="7" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -190,9 +185,9 @@
         <option value="$PROJECT_DIR$/my-app/src/components/MyJumbo.css" />
         <option value="$PROJECT_DIR$/my-app/src/index.css" />
         <option value="$PROJECT_DIR$/my-app/src/App.js" />
-        <option value="$PROJECT_DIR$/my-app/src/components/Grid.css" />
-        <option value="$PROJECT_DIR$/my-app/src/components/MyView.css" />
         <option value="$PROJECT_DIR$/my-app/src/App.css" />
+        <option value="$PROJECT_DIR$/my-app/src/components/MyView.css" />
+        <option value="$PROJECT_DIR$/my-app/src/components/Grid.css" />
         <option value="$PROJECT_DIR$/my-app/src/components/Grid.js" />
         <option value="$PROJECT_DIR$/my-app/src/components/MyView.js" />
       </list>
@@ -314,12 +309,12 @@
       <option name="presentableId" value="Default" />
       <updated>1532742808602</updated>
       <workItem from="1532742811042" duration="11680000" />
-      <workItem from="1532903563419" duration="32301000" />
+      <workItem from="1532903563419" duration="35220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43981000" />
+    <option name="totallyTimeSpent" value="46900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -557,16 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/components/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/components/MyJumbo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -628,6 +613,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-start-column="2" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/MyView.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/Grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -638,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -652,31 +658,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/components/MyView.css">
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/Navigation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/components/Grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="-378">
+          <caret line="3" selection-start-line="3" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/components/Grid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412">
-          <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+        <state relative-caret-position="839">
+          <caret line="70" column="51" lean-forward="true" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
           <folding>
             <element signature="e#87#107#0" expanded="true" />
           </folding>
@@ -685,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/components/MyView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+        <state relative-caret-position="362">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
