@@ -2,6 +2,7 @@ import React from 'react';
 import './Navigation.css';
 
 import {
+    Button,
     Collapse,
     Navbar,
     NavbarToggler,
@@ -19,25 +20,39 @@ class Navigation extends React.Component {
         super(props);
 
         this.toggle = this.toggle.bind(this);
+
         this.state = {
-            isOpen: false
+            isOpen: false,
+            rightIsOpen: false,
         };
     }
+
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
         });
     }
+
+    // toggleRight() {
+    //     this.setState({
+    //         rightIsOpen: !this.state.rightIsOpen
+    //     });
+    // }
+
+    toggleRight = () => {
+        this.state.rightIsOpen = !this.state.rightIsOpen;
+        this.props.onOpenRight(this.state.rightIsOpen);
+    }
+
     render() {
         return (
-
                 <Navbar color="light" light fixed='top' expand="sm">
                     <NavbarBrand href="/">reactstrap</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" fixed='top' navbar>
                             <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
+                                <Button onClick={this.toggleRight}>Toggle Right</Button>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
