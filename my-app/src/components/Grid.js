@@ -64,7 +64,7 @@ class Grid extends Component {
             <div className="Grid-container">
                 <StackGrid
                     gridRef={grid => this.grid = grid}
-                    style={{'background-color': 'red'}}
+                    //style={{'background-color': 'red'}}
                     // style={{'padding-top': '20rem}}
                     // columnWidth={300}
                     gutterWidth={15}
