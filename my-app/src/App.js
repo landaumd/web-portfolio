@@ -26,6 +26,7 @@ class App extends Component {
     handleOpenRight = (openBool) => {
         this.setState({rightIsOpen: openBool});
         this.openRightSide(openBool);
+
     }
 
     openRightSide = (openBool) => {
@@ -46,7 +47,7 @@ class App extends Component {
                     {/*<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> kjdlkajsd*/}
                     {/*<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> kjdlkajsd*/}
 
-                        <MyView rightIsOpen={this.state.rightIsOpen} viewOpenRightSide={this.openRightSide} />
+                    <MyView rightIsOpen={this.state.rightIsOpen} viewOpenRightSide={this.openRightSide} />
                     {/*<div className="App">*/}
                             {/*<header className="App-header">*/}
                               {/*<img src={logo} className="App-logo" alt="logo" />*/}
