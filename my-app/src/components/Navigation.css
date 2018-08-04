@@ -2,6 +2,11 @@
     background:#F97300 !important;
 
 }
+
+.btn-toggle {
+    width: 100px;
+}
+
 /*.nav-link , .navbar-brand{*/
     /*color: #f4f4f4;*/
     /*cursor: pointer;*/

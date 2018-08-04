@@ -15,22 +15,22 @@ class App extends Component {
             rightIsOpen: false,
             listDataFromChild: null
         };
-        //
-        // console.log(this.state);
+
     }
 
-    // myCallback = (dataFromChild) => {
-    //     this.setState({ listDataFromChild: dataFromChild });
-    // }
-
     handleOpenRight = (openBool) => {
+        // console.log("handle open right");
         this.setState({rightIsOpen: openBool});
         this.openRightSide(openBool);
 
     }
 
     openRightSide = (openBool) => {
-        console.log(openBool);
+        // console.log("open right side");
+        // console.log("open bool? = " + openBool);
+        this.state.rightIsOpen = openBool;
+        let mapPoint = this.getMapPoint(this.state.rightIsOpen);
+        console.log("Right is open? = " + mapPoint);
     }
 
     render() {
@@ -46,8 +46,13 @@ class App extends Component {
                     {/*<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> kjdlkajsd*/}
                     {/*<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> kjdlkajsd*/}
                     {/*<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> kjdlkajsd*/}
+                    <div>
+                        <MyView
+                            // rightIsOpen={this.state.rightIsOpen}
+                            getCurrentPoint={getMapPoint => {this.getMapPoint = getMapPoint}}
+                         />
+                    </div>
 
-                    <MyView rightIsOpen={this.state.rightIsOpen} viewOpenRightSide={this.openRightSide} />
                     {/*<div className="App">*/}
                             {/*<header className="App-header">*/}
                               {/*<img src={logo} className="App-logo" alt="logo" />*/}
