@@ -30,12 +30,17 @@ class MyView extends  Component {
         this.state.rightIsOpen = bool;
         // console.log("2 - " + this.state.rightIsOpen)
         // console.log("get map point")
+
         if (this.state.rightIsOpen){
             this.state.display = "table-column";
 
         } else {
             this.state.display = "none";
         }
+        console.log(this.state.display);
+
+
+
         return this.state.rightIsOpen;
     }
 
@@ -73,7 +78,7 @@ class MyView extends  Component {
                 {/*<div className="col text-center w-50" style={{backgroundColor:'pink',}}>*/}
                     {/*Some text here*/}
                 {/*</div>*/}
-                <RightFocus/>
+                <RightFocus style={{display: `${this.state.display}`}}/>
 
             </div>
         );
