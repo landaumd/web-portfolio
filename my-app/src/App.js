@@ -52,6 +52,7 @@ class App extends Component {
                             getCurrentPoint={getMapPoint => {this.getMapPoint = getMapPoint}}
                          />
                     </div>
+
                     {/*<div className="App">*/}
                             {/*<header className="App-header">*/}
                               {/*<img src={logo} className="App-logo" alt="logo" />*/}

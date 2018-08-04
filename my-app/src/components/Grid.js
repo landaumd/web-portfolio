@@ -7,7 +7,7 @@ import Collapsible from './Collapsible.js';
 import StackGrid, { transitions } from "react-stack-grid";
 import MyCarousel from './MyCarousel.js';
 import sizeMe from 'react-sizeme';
-
+import RightFocus from './RightFocus.js';
 const { scaleDown } = transitions;
 
 // const items = [];
@@ -64,7 +64,7 @@ class Grid extends Component {
             <div className="Grid-container">
                 <StackGrid
                     gridRef={grid => this.grid = grid}
-                    // style={{'background-color': 'red'}}
+                    //style={{'background-color': 'red'}}
                     // style={{'padding-top': '20rem}}
                     // columnWidth={300}
                     gutterWidth={15}
@@ -109,6 +109,7 @@ class Grid extends Component {
                         < MyCard />
                         < MyCarousel/>
 
+
                     {/*<div>*/
                     /*<div key="key1">Item 1</div>*/
                     /*<div key="key2">Item 2</div>*/
@@ -116,6 +117,7 @@ class Grid extends Component {
                     /*</div>*/}
 
                 </StackGrid>
+
             </div>
         );
     }

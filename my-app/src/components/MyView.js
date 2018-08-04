@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Grid from "./Grid.js";
 import { Rnd, size, position } from 'react-rnd';
 import './MyView.css';
+import RightFocus from "./RightFocus";
+import './RightFocus.css';
 
 // https://github.com/bokuweb/react-rnd
 
@@ -34,15 +36,14 @@ class MyView extends  Component {
         } else {
             this.state.display = "none";
         }
-
         return this.state.rightIsOpen;
     }
 
 
     render() {
         return (
-            <div className="MyView-container row">
-                <div className="col float-left">
+            <div className="row MyView-container">
+                <div className="col">
                 <Rnd
                     default={{
                         x: 0,
@@ -69,7 +70,10 @@ class MyView extends  Component {
                 </Rnd>
             </div>
 
-          {/*<RightFocus style={display=this.state.display}/>*/}
+                {/*<div className="col text-center w-50" style={{backgroundColor:'pink',}}>*/}
+                    {/*Some text here*/}
+                {/*</div>*/}
+                <RightFocus/>
 
             </div>
         );
