@@ -4,6 +4,8 @@ import { Rnd, size, position } from 'react-rnd';
 import './MyView.css';
 import RightFocus from "./RightFocus";
 import './RightFocus.css';
+import ReactDOM from 'react-dom';
+
 
 // https://github.com/bokuweb/react-rnd
 
@@ -22,14 +24,17 @@ class MyView extends  Component {
         if (props.getCurrentPoint){
             props.getCurrentPoint(this.getMapPoint.bind(this));
         }
+
+        this.rf = React.createRef();
+    }
+
+    componentDidMount(){
+        let styleString = "width: calc(100%-300px); display: " + this.state.display;
+        ReactDOM.findDOMNode(this.rf.current).style.cssText = styleString;
     }
 
     getMapPoint(bool){
-        // console.log("bool = " + bool)
-        // console.log("props - " + this.props.rightIsOpen)
         this.state.rightIsOpen = bool;
-        // console.log("2 - " + this.state.rightIsOpen)
-        // console.log("get map point")
 
         if (this.state.rightIsOpen){
             this.state.display = "table-column";
@@ -37,9 +42,11 @@ class MyView extends  Component {
         } else {
             this.state.display = "none";
         }
-        console.log(this.state.display);
 
+        // console.log(this.rf);
 
+        let styleString = "width: calc(100%-300px); display: " + this.state.display;
+        ReactDOM.findDOMNode(this.rf.current).style.cssText = styleString;
 
         return this.state.rightIsOpen;
     }
@@ -78,7 +85,9 @@ class MyView extends  Component {
                 {/*<div className="col text-center w-50" style={{backgroundColor:'pink',}}>*/}
                     {/*Some text here*/}
                 {/*</div>*/}
-                <RightFocus style={{display: `${this.state.display}`}}/>
+                <RightFocus
+                    ref={this.rf}
+                    />
 
             </div>
         );

@@ -8,6 +8,7 @@ import StackGrid, { transitions } from "react-stack-grid";
 import MyCarousel from './MyCarousel.js';
 import sizeMe from 'react-sizeme';
 import RightFocus from './RightFocus.js';
+import ReactDOM from "react-dom";
 const { scaleDown } = transitions;
 
 // const items = [];
@@ -34,7 +35,15 @@ let items = [{title:'hello'}, {title:'world'}];
 // https://github.com/tsuyoshiwada/react-stack-grid#live-demo
 
 class Grid extends Component {
-    state = { items };
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            items
+        };
+
+        // this.grid = React.createRef();
+    }
 
     // changeItemSize = (id) => {
     //     this.setState({
@@ -51,6 +60,9 @@ class Grid extends Component {
     //     console.log("grrrr");
     // };
 
+    componentDidUpdate = () => {
+        this.grid.updateLayout();
+    }
 
     render() {
 
@@ -63,6 +75,7 @@ class Grid extends Component {
         return (
             <div className="Grid-container">
                 <StackGrid
+                    // ref={this.grid}
                     gridRef={grid => this.grid = grid}
                     //style={{'background-color': 'red'}}
                     // style={{'padding-top': '20rem}}
