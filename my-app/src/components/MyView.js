@@ -6,7 +6,6 @@ import RightFocus from "./RightFocus";
 import './RightFocus.css';
 import ReactDOM from 'react-dom';
 
-
 // https://github.com/bokuweb/react-rnd
 
 class MyView extends  Component {
