@@ -11,26 +11,38 @@ class MyView extends  Component {
 
         // this.onRightOpen = props.viewOpenRightSide(props.rightIsOpen).bind(this);
         this.state = {
-            rightIsOpen: props.rightIsOpen,
+            rightIsOpen: null,
             leftWidth: '100%',
+            display: 'none',
         };
         // console.log(this.state);
+
+        if (props.getCurrentPoint){
+            props.getCurrentPoint(this.getMapPoint.bind(this));
+        }
     }
 
-    // someFn = () => {
-    //     // [...somewhere in here I define a variable listInfo which    I think will be useful as data in my ToDoList component...]
-    //     // this.props.callbackFromParent(listInfo);
-    // }
+    getMapPoint(bool){
+        // console.log("bool = " + bool)
+        // console.log("props - " + this.props.rightIsOpen)
+        this.state.rightIsOpen = bool;
+        // console.log("2 - " + this.state.rightIsOpen)
+        // console.log("get map point")
+        if (this.state.rightIsOpen){
+            this.state.display = "table-column";
 
-    update() {
-        console.log("updating");
-        this.rnd.updatePosition({ x: 200, y: 300 });
+        } else {
+            this.state.display = "none";
+        }
+
+        return this.state.rightIsOpen;
     }
+
 
     render() {
         return (
-            <div className="MyView-container">
-                <div>
+            <div className="MyView-container row">
+                <div className="col float-left">
                 <Rnd
                     default={{
                         x: 0,
@@ -45,7 +57,6 @@ class MyView extends  Component {
                             height: ref.offsetHeight,
                             ...position,
                         });
-                        console.log(this.state.rightIsOpen);
                     }}
                     maxWidth={'calc(100%)'}
                     minWidth={300}
@@ -58,9 +69,7 @@ class MyView extends  Component {
                 </Rnd>
             </div>
 
-                <div className="float-right text-center w-50" style={{backgroundColor:'pink',}}>
-                    Some text here
-                </div>
+          {/*<RightFocus style={display=this.state.display}/>*/}
 
             </div>
         );

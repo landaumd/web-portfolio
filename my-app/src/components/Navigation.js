@@ -33,12 +33,6 @@ class Navigation extends React.Component {
         });
     }
 
-    // toggleRight() {
-    //     this.setState({
-    //         rightIsOpen: !this.state.rightIsOpen
-    //     });
-    // }
-
     toggleRight = () => {
         this.state.rightIsOpen = !this.state.rightIsOpen;
         this.props.onOpenRight(this.state.rightIsOpen);
@@ -52,7 +46,7 @@ class Navigation extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" fixed='top' navbar>
                             <NavItem>
-                                <Button onClick={this.toggleRight}>Toggle Right</Button>
+                                <Button className="btn-toggle" onClick={this.toggleRight}>{(this.state.rightIsOpen) ? "Open" : "Closed"}</Button>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
