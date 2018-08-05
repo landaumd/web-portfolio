@@ -15,16 +15,6 @@ class Grid extends Component {
     constructor(props) {
         super(props);
 
-        // this.state = {
-        //
-        // };
-        this.elem = test;
-
-        this.arr = [];
-        Object.keys(this.elem).forEach(function(key) {
-            this.arr.push(test[key]);
-        });
-
     }
 
     componentDidUpdate = () => {
@@ -86,25 +76,18 @@ class Grid extends Component {
                         {/*/>*/}
                     {/*))}*/}
 
-                    <ul>{this.arr.map(item => <MyCard key={item.label} label={item.label} value={item.value} />)}</ul>;
-
-                    {/*{Object.keys(this.elem).map((v, i) => <li key={i}> {v} {test[v]} </li> )}*/}
-
-                    {/*{ this.elem.map((item, index) => { return <MyCard {... item}/> }) }*/}
-
-
-                    {/*< MyCard/>*/}
-                        {/*< MyCard />*/}
-                        {/*< MyCarousel/>*/}
-                        {/*< MyCard />*/}
-                        {/*< MyJumbo />*/}
-                        {/*< MyJumbo />*/}
-                        {/*< MyCarousel/>*/}
-                        {/*< MyCard />*/}
-                        {/*/!*< Collapsible key={1} onClick={() => this.changeItemSize(0)}/>*!/*/}
-                        {/*< MyCard />*/}
-                        {/*< MyCard />*/}
-                        {/*< MyCarousel/>*/}
+                    < MyCard/>
+                        < MyCard />
+                        < MyCarousel/>
+                        < MyCard />
+                        < MyJumbo />
+                        < MyJumbo />
+                        < MyCarousel/>
+                        < MyCard />
+                        {/*< Collapsible key={1} onClick={() => this.changeItemSize(0)}/>*/}
+                        < MyCard />
+                        < MyCard />
+                        < MyCarousel/>
                     {/*<ul>*/}
                         {/*{Object.keys(this.elem).map((v, i) => <li key={i}> {v} {this.elem[v]} </li> )}*/}
                     {/*</ul>*/}
