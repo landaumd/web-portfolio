@@ -46,31 +46,10 @@ class App extends Component {
                  }
                 </pre>
 
-                {/*<div>*/}
-                    {/*<MyView*/}
-                        {/*// rightIsOpen={this.state.rightIsOpen}*/}
-                        {/*getCurrentPoint={getMapPoint => {this.getMapPoint = getMapPoint}}*/}
-                    {/*/>*/}
-                {/*</div>*/}
+                <div>
+                    <MyView />
+                </div>
             </div>
-
-            //
-            // <div className="App">
-            //     <header className="App-header">
-            //         <img src={logo} className="App-logo" alt="logo" />
-            //         <h1 className="App-title">Welcome to React</h1>
-            //     </header>
-            //     <p className="App-intro">
-            //         To get started, edit <code>src/App.js</code> and save to reload
-            //     </p>
-            //
-            //     <button onClick={this.simpleAction}>Test redux action</button>
-            //     <pre>
-            //      {
-            //          JSON.stringify(this.props)
-            //      }
-            //     </pre>
-            // </div>
         );
     }
 }
@@ -93,3 +72,21 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+
+// <div className="App">
+//     <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <h1 className="App-title">Welcome to React</h1>
+//     </header>
+//     <p className="App-intro">
+//         To get started, edit <code>src/App.js</code> and save to reload
+//     </p>
+//
+//     <button onClick={this.simpleAction}>Test redux action</button>
+//     <pre>
+//      {
+//          JSON.stringify(this.props)
+//      }
+//     </pre>
+// </div>
