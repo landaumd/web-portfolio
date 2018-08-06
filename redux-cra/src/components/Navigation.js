@@ -1,6 +1,6 @@
-import React from 'react';
 import './Navigation.css';
-
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import {
     Button,
     Collapse,
@@ -15,15 +15,16 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 
-class Navigation extends React.Component {
+
+class Navigation extends Component {
     constructor(props) {
         super(props);
 
         this.toggle = this.toggle.bind(this);
+        this.toggleRight = this.toggleRight.bind(this);
 
         this.state = {
             isOpen: false,
-            rightIsOpen: false,
         };
     }
 
@@ -34,19 +35,32 @@ class Navigation extends React.Component {
     }
 
     toggleRight = () => {
-        this.state.rightIsOpen = !this.state.rightIsOpen;
-        this.props.onOpenRight(this.state.rightIsOpen);
+        // var { rightIsOpen } = this.props;
+
+
+        let newAmount = 5;
+        this.props.dispatch({type:"CHANGE_ORIGIN_AMOUNT", data:{newAmount: newAmount} });
+        this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{newAmount: newAmount} });
+        // console.log(this.props);
+
+        // this.setState({
+        //     rightIsOpen: rightIsOpen,
+        // })
     }
 
     render() {
         return (
                 <Navbar color="light" light fixed='top' expand="sm">
                     <NavbarBrand href="/">reactstrap</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
+                    <NavbarToggler
+                        onClick={this.toggle}
+                    />
+                    <Collapse
+                        isOpen={this.state.isOpen}
+                        navbar>
                         <Nav className="ml-auto" fixed='top' navbar>
                             <NavItem>
-                                <Button className="btn-toggle" onClick={this.toggleRight}>{(this.state.rightIsOpen) ? "Open" : "Closed"}</Button>
+                                <Button className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "Open" : "Closed"}</Button>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
@@ -76,4 +90,11 @@ class Navigation extends React.Component {
     }
 }
 
-export default Navigation;
+export default connect((state, props) => {
+    return {
+        originAmount: state.originAmount,
+        rightIsOpen: state.rightIsOpen,
+        displayRight: state.displayRight
+    }
+
+})(Navigation);
