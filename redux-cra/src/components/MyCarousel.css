@@ -1,0 +1,13 @@
+.MyCarousel-carousel-image {
+    width: 100% !important;
+    /*height: 400px;*/
+}
+
+.carousel {
+    border-radius: calc(.25rem - 1px) !important;
+    overflow: hidden;
+}
+
+.div.MyCarousel-carousel-item {
+
+}
