@@ -22,10 +22,16 @@ import {
 
 // Redux source: https://medium.com/backticks-tildes/setting-up-a-redux-project-with-create-react-app-e363ab2329b8
 
+
 class App extends Component {
+
+    constructor(props) {
+        super(props);
+    }
 
     simpleAction = (event) => {
         console.log(this.props);
+        console.log(this.props.getState)
         this.props.simpleAction();
     }
 
@@ -56,7 +62,6 @@ class App extends Component {
 
 // The mapStateToProps parameter of connect allows the React component to subscribe to redux state updates.
 const mapStateToProps = state => ({
-    rightIsOpen: false,
     ...state,
 });
 
