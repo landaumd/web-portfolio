@@ -1,6 +1,7 @@
 .MyView-container {
-    margin-top: 56px;
+    margin-top: 55px;
     /*background-color: aqua;*/
     /*width: 50%;*/
     padding-left: 15px;
+    padding-right: 15px;
 }

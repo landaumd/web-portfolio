@@ -24,34 +24,24 @@ import {
 
 
 class App extends Component {
-
     constructor(props) {
         super(props);
+
+        // this.simpleAction = this.simpleAction.bind(this);
+
     }
 
-    simpleAction = (event) => {
-        console.log(this.props);
-        console.log(this.props.getState)
-        this.props.simpleAction();
-    }
+    // simpleAction = (event) => {
+    //     // console.log(this.props);
+    //     let newAmount = 5666;
+    //     this.props.dispatch({type:"CHANGE_ORIGIN_AMOUNT", data:{newAmount: newAmount} });
+    // }
 
     render() {
         return (
 
             <div className="App">
                 <Navigation />
-                {/*<div className='container-fluid'>*/}
-                <br/>
-                <br/>
-                <br/>
-
-                <Button onClick={this.simpleAction}>Test redux action</Button>
-                <pre>
-                 {
-                     JSON.stringify(this.props)
-                 }
-                </pre>
-
                 <div>
                     <MyView />
                 </div>
@@ -61,9 +51,9 @@ class App extends Component {
 }
 
 // The mapStateToProps parameter of connect allows the React component to subscribe to redux state updates.
-const mapStateToProps = state => ({
-    ...state,
-});
+// const mapStateToProps = state => ({
+//     ...state,
+// });
 
 // The mapDispatchToProps parameter of connect can either be:
 //
@@ -72,26 +62,15 @@ const mapStateToProps = state => ({
 //     that uses dispatch to bind action creators. Alternatively, you can use the
 //     bindActionCreators() helper from redux
 
-const mapDispatchToProps = dispatch => ({
-    simpleAction: () => dispatch(simpleAction())
-});
+// const mapDispatchToProps = dispatch => ({
+//     simpleAction: () => dispatch(simpleAction())
+// });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect((state, props) => {
+    return {
+        originAmount: state.originAmount,
+        rightIsOpen: state.rightIsOpen,
+        displayRight: state.displayRight
+    }
 
-
-// <div className="App">
-//     <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <h1 className="App-title">Welcome to React</h1>
-//     </header>
-//     <p className="App-intro">
-//         To get started, edit <code>src/App.js</code> and save to reload
-//     </p>
-//
-//     <button onClick={this.simpleAction}>Test redux action</button>
-//     <pre>
-//      {
-//          JSON.stringify(this.props)
-//      }
-//     </pre>
-// </div>
+})(App);
