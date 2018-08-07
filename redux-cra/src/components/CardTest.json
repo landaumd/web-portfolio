@@ -1,0 +1,40 @@
+{
+
+
+    "01": {
+      "component": "MyCard",
+      "myJSONid": "01",
+      "title": "This is the title of my Card 1",
+      "subtitle": "here is some other small info",
+      "bodyText": "Here is a whole bunch of test body text",
+      "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg"
+    },
+    "02": {
+      "component": "MyCard",
+      "myJSONid": "02",
+      "title": "This is the title of my Card 2",
+      "subtitle": "here is some other small info",
+      "bodyText": "Here is a whole bunch of test body text",
+      "imageSource": "https://cdn.hpm.io/wp-content/uploads/2017/07/18184928/Manny-The-Frenchy.jpg"
+    },
+    "03": {
+      "component": "MyCard",
+      "myJSONid": "03",
+      "title": "This is the title of my Card 3",
+      "subtitle": "here is some other small info",
+      "bodyText": "Here is a whole bunch of test body text",
+      "imageSource": "https://i.pinimg.com/originals/a7/60/f8/a760f88d296fa0c89c1cef1c2159cb21.jpg"
+    },
+    "04": {
+      "component": "MyJumbo",
+      "myJSONid": "04",
+      "title": "This is the title of my Jumbo 1",
+      "subtitle": "here is some other small info",
+      "bodyText": "Here is a whole bunch of test body text",
+      "imageSource": "https://i.pinimg.com/originals/a7/60/f8/a760f88d296fa0c89c1cef1c2159cb21.jpg"
+    }
+
+  }
+
+
+

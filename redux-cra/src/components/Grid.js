@@ -1,6 +1,7 @@
 import test from './data.json';
 import React, { Component } from "react";
 import './Grid.css';
+import cardTest from './CardTest.json';
 import MyCard from './MyCard.js';
 import MyJumbo from './MyJumbo.js';
 import StackGrid, { transitions } from "react-stack-grid";
@@ -11,33 +12,87 @@ const { scaleDown } = transitions;
 // https://tsuyoshiwada.github.io/react-stack-grid/#/
 // https://github.com/tsuyoshiwada/react-stack-grid#live-demo
 
+
+
+
 class Grid extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            data : cardTest,
+            type : "MyCard",
+            title: "This is the title of my Card 1",
+            subtitle: "here is some other small info",
+            bodyText: "Here is a whole bunch of test body text",
+            imageSource : "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg"
 
+
+
+        }
     }
+
+
 
     componentDidUpdate = () => {
         this.grid.updateLayout();
     }
 
-    // getNumbers() {
-    //     if (this.elem) {
-    //         return Object.keys(this.elem).map( (key) => {
-    //             return <p>{key} => {this.elem[key]}</p>;
-    //         });
-    //     } else {
-    //         return <p>data is not available</p>;
-    //     }
-    // }
+
+   //
+   // parseJson(){
+   //
+   //     console.log(Object.entries(this.state.data));
+
+
+       // Object.entries(this.state.data).map(([cardNum,content]) => {
+       //     // console.log(cardNum);
+       //     // console.log(content.title);
+       //     // console.log(content.subtitle);
+       //     // console.log(content.bodyText);
+       //     // console.log(content.imageSource);
+       //     this.state.title = content.title;
+       //     this.state.subtitle = content.subtitle;
+       //     this.state.bodyText = content.bodyText;
+       //     this.state.imageSource = content.imageSource;
+       //
+       //
+       //
+       // });
+       // Object.keys(this.state.data).map(function(keyName, keyIndex) {
+       //     // use keyName to get current key's name
+       //     // and a[keyName] to get its value
+       //     console.log(keyName);
+       //     console.log(keyIndex);
+       // })
+   // }
 
     render() {
+
 
         const {
             size: {
                 width
             }
+
+
         } = this.props;
+
+        let Arr = Object.entries(this.state.data).map(([i,a]) => {
+
+            if(a.component=== "MyCard") {
+                console.log("In grid. Id is: " + a.myJSONid);
+                return <MyCard key={i} info={a}/>
+
+
+            }else if (a.component === "MyJumbo"){
+                return <MyJumbo key={i} myJSONid={a.myJSONid} title={a.title} subtitle={a.subtitle} bodyText={a.bodyText}
+                                imageSource={a.imageSource}/>
+
+            }
+        })
+
+
+
 
         return (
             <div className="Grid-container">
@@ -76,18 +131,21 @@ class Grid extends Component {
                         {/*/>*/}
                     {/*))}*/}
 
-                    < MyCard/>
-                        < MyCard />
-                        < MyCarousel/>
-                        < MyCard />
-                        < MyJumbo />
-                        < MyJumbo />
-                        < MyCarousel/>
-                        < MyCard />
-                        {/*< Collapsible key={1} onClick={() => this.changeItemSize(0)}/>*/}
-                        < MyCard />
-                        < MyCard />
-                        < MyCarousel/>
+
+                    {Arr}
+                    {/*< MyCard title={this.state.title} subtitle={this.state.subtitle} bodyText={this.state.bodyText} imageSource={this.state.imageSource}/>*/}
+
+                        {/*< MyCard />*/}
+                        {/*< MyCarousel/>*/}
+                        {/*< MyCard />*/}
+                        {/*< MyJumbo />*/}
+                        {/*< MyJumbo />*/}
+                        {/*< MyCarousel/>*/}
+                        {/*< MyCard />*/}
+                        {/*/!*< Collapsible key={1} onClick={() => this.changeItemSize(0)}/>*!/*/}
+                        {/*< MyCard />*/}
+                        {/*< MyCard />*/}
+                        {/*< MyCarousel/>*/}
                     {/*<ul>*/}
                         {/*{Object.keys(this.elem).map((v, i) => <li key={i}> {v} {this.elem[v]} </li> )}*/}
                     {/*</ul>*/}

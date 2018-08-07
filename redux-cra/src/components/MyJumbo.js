@@ -20,12 +20,10 @@ class MyJumbo extends Component {
         return (
             <div>
                 <Jumbotron>
-                    <h1 className="display-3">Hello, world!</h1>
-                    <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra
-                        attention to featured content or information.</p>
+                    <h1 className="display-3">{this.props.title}</h1>
+                    <p className="lead">{this.props.subtitle}</p>
                     <hr className="my-2"/>
-                    <p>It uses utility classes for typography and spacing to space content out within the larger
-                        container.</p>
+                    <p>{this.props.bodyText}</p>
                     <p className="lead">
                         <Button color="primary" className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "Open" : "Closed"}</Button>
                     </p>
@@ -37,9 +35,7 @@ class MyJumbo extends Component {
 
 export default connect((state, props) => {
     return {
-        originAmount: state.originAmount,
-        rightIsOpen: state.rightIsOpen,
-        displayRight: state.displayRight
+        ...state
     }
 
 })(MyJumbo);

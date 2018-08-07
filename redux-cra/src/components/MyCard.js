@@ -7,13 +7,20 @@ class MyCard extends Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            info: null
+        };
+
+        this.state.info = this.props.info;
+        console.log(this.state.info);
+
         var {rightIsOpen} = this.props;
         this.toggleRight = this.toggleRight.bind(this);
     }
 
     toggleRight = () => {
-        let newAmount = 5;
-        this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{newAmount: newAmount} });
+        console.log("looking for: " + this.props.info.myJSONid);
+        this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{myJSONid: this.props.info.myJSONid} });
     }
 
     render() {
@@ -21,14 +28,14 @@ class MyCard extends Component {
             <div>
                 <Card>
                     <CardImg top width="100%"
-                             src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+                             src={this.props.info.imageSource}
                              alt="Card image cap"/>
                     <CardBody>
-                        <CardTitle>Card title</CardTitle>
-                        <CardSubtitle>Card subtitle</CardSubtitle>
-                        <CardText>Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</CardText>
-                        <Button className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "Open" : "Closed"}</Button>                    </CardBody>
+                        <CardTitle>{this.props.info.title}</CardTitle>
+                        <CardSubtitle>{this.props.info.subtitle}</CardSubtitle>
+                        <CardText>{this.props.info.bodyText}</CardText>
+                        <Button className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "Open" : "Closed"}</Button>
+                    </CardBody>
                 </Card>
             </div>
         );
@@ -37,9 +44,7 @@ class MyCard extends Component {
 
 export default connect((state, props) => {
     return {
-        originAmount: state.originAmount,
-        rightIsOpen: state.rightIsOpen,
-        displayRight: state.displayRight
+        ...state
     }
 
 })(MyCard);
