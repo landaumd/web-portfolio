@@ -19,30 +19,35 @@ var defaultState = {
     originAmount: '0.00',
     rightIsOpen: false,
     displayRight: "none",
+    myJSONid: null,
 };
 
 //reducer
 function amount(state = defaultState, action) {
-    console.log('state', state)
+
     if (action.type === 'CHANGE_ORIGIN_AMOUNT') {
         return {
             ...state,
             originAmount: action.data.newAmount
         }
     }
-
-    if (action.type === 'TOGGLE_RIGHT_IS_OPEN') {
+    else if (action.type === 'TOGGLE_RIGHT_IS_OPEN') {
         var rightOpen = !state.rightIsOpen;
         var displayRightString = (rightOpen) ? "table-column" : "none";
+        var myJSONid = action.data.myJSONid;
+
+        console.log("my json id: " + myJSONid);
 
         return {
             ...state,
             rightIsOpen: rightOpen,
-            displayRight: displayRightString
+            displayRight: displayRightString,
+            myJSONid: myJSONid
         }
     }
-
-    return state;
+    else {
+        return state;
+    }
 }
 
 var store = createStore(amount);

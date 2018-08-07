@@ -1,0 +1,30 @@
+{
+
+  "cards": {
+        "Card1" :[
+          {"component": "MyCard"},
+          {"title": "This is the title of my Card 1"},
+          {"subtitle": "here is some other small info"},
+          {"body-text": "Here is a whole bunch of test body text"},
+          {"image": "Here is a URL to an image"}
+          ],
+        "Card2" :[
+          {"component": "MyCard"},
+          {"title": "This is the title of my Card 2"},
+          {"subtitle": "here is some other small info"},
+          {"body-text": "Here is a whole bunch of test body text"},
+          {"image": "Here is a URL to an image"}
+        ],
+        "Card3" :[
+          {"component": "MyCard"},
+          {"title": "This is the title of my Card 3"},
+          {"subtitle": "here is some other small info"},
+          {"body-text": "Here is a whole bunch of test body text"},
+          {"image": "Here is a URL to an image"}
+        ]
+
+  }
+
+
+
+}

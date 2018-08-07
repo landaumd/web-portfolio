@@ -3,9 +3,9 @@ import Grid from "./Grid.js";
 import { Rnd, size, position } from 'react-rnd';
 import './MyView.css';
 import RightFocus from "./RightFocus";
+import {connect} from "react-redux";
 // import './RightFocus.css';
 import ReactDOM from 'react-dom';
-import {connect} from "react-redux";
 import {
     Button,
 } from 'reactstrap';
@@ -106,9 +106,7 @@ class MyView extends  Component {
 
 export default connect((state, props) => {
     return {
-        originAmount: state.originAmount,
-        rightIsOpen: state.rightIsOpen,
-        displayRight: state.displayRight
+        ...state
     }
 
 })(MyView);
