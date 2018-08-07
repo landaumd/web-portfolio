@@ -19,7 +19,7 @@ class Grid extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data : cardTest.cards,
+            data : cardTest,
             type : "MyCard",
             title: "This is the title of my Card 1",
             subtitle: "here is some other small info",
@@ -29,7 +29,6 @@ class Grid extends Component {
 
 
         }
-        this.parseJson();
     }
 
 
@@ -39,33 +38,33 @@ class Grid extends Component {
     }
 
 
-
-   parseJson(){
-
-       console.log(Object.entries(this.state.data));
-
-
-       Object.entries(this.state.data).map(([cardNum,content]) => {
-           // console.log(cardNum);
-           // console.log(content.title);
-           // console.log(content.subtitle);
-           // console.log(content.bodyText);
-           // console.log(content.imageSource);
-           this.state.title = content.title;
-           this.state.subtitle = content.subtitle;
-           this.state.bodyText = content.bodyText;
-           this.state.imageSource = content.imageSource;
+   //
+   // parseJson(){
+   //
+   //     console.log(Object.entries(this.state.data));
 
 
-
-       });
+       // Object.entries(this.state.data).map(([cardNum,content]) => {
+       //     // console.log(cardNum);
+       //     // console.log(content.title);
+       //     // console.log(content.subtitle);
+       //     // console.log(content.bodyText);
+       //     // console.log(content.imageSource);
+       //     this.state.title = content.title;
+       //     this.state.subtitle = content.subtitle;
+       //     this.state.bodyText = content.bodyText;
+       //     this.state.imageSource = content.imageSource;
+       //
+       //
+       //
+       // });
        // Object.keys(this.state.data).map(function(keyName, keyIndex) {
        //     // use keyName to get current key's name
        //     // and a[keyName] to get its value
        //     console.log(keyName);
        //     console.log(keyIndex);
        // })
-   }
+   // }
 
     render() {
 
@@ -77,6 +76,21 @@ class Grid extends Component {
 
 
         } = this.props;
+
+        let Arr = Object.entries(this.state.data).map(([i,a]) => {
+
+            if(a.component=== "MyCard") {
+                console.log("In grid. Id is: " + a.myJSONid);
+                return <MyCard key={i} info={a}/>
+
+
+            }else if (a.component === "MyJumbo"){
+                return <MyJumbo key={i} myJSONid={a.myJSONid} title={a.title} subtitle={a.subtitle} bodyText={a.bodyText}
+                                imageSource={a.imageSource}/>
+
+            }
+        })
+
 
 
 
@@ -118,8 +132,8 @@ class Grid extends Component {
                     {/*))}*/}
 
 
-
-                    < MyCard title={this.state.title} subtitle={this.state.subtitle} bodyText={this.state.bodyText} imageSource={this.state.imageSource}/>
+                    {Arr}
+                    {/*< MyCard title={this.state.title} subtitle={this.state.subtitle} bodyText={this.state.bodyText} imageSource={this.state.imageSource}/>*/}
 
                         {/*< MyCard />*/}
                         {/*< MyCarousel/>*/}
