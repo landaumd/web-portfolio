@@ -38,14 +38,12 @@ class Navigation extends Component {
         // var { rightIsOpen } = this.props;
 
 
-        let newAmount = 5;
-        this.props.dispatch({type:"CHANGE_ORIGIN_AMOUNT", data:{newAmount: newAmount} });
-        this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{newAmount: newAmount} });
-        // console.log(this.props);
 
-        // this.setState({
-        //     rightIsOpen: rightIsOpen,
-        // })
+
+        this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN"});
+
+
+
     }
 
     render() {
@@ -60,7 +58,7 @@ class Navigation extends Component {
                         navbar>
                         <Nav className="ml-auto" fixed='top' navbar>
                             <NavItem>
-                                <Button className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "Open" : "Closed"}</Button>
+                                <Button className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "See Less" : "See More"}</Button>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>

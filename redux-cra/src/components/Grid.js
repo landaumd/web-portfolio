@@ -87,6 +87,9 @@ class Grid extends Component {
             }else if (a.component === "MyJumbo"){
                 return <MyJumbo key={i} info={a}/>
 
+            }else if (a.component === "MyCarousel"){
+                return < MyCarousel key={i} info={a}/>
+
             }
         })
 

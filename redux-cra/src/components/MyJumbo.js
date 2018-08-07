@@ -14,15 +14,15 @@ class MyJumbo extends Component {
         };
 
         this.state.info = this.props.info;
-        console.log(this.state.info);
 
-        var {rightIsOpen} = this.props;
+
+        // var {rightIsOpen} = this.props;
         this.toggleRight = this.toggleRight.bind(this);
     }
 
     toggleRight = () => {
 
-        this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{myJSONid: this.props.info.myJSONid} });
+        this.props.dispatch({type:'SHOW_CARD', data:{myJSONid: this.props.info.myJSONid} });
     }
 
     render() {
@@ -37,7 +37,7 @@ class MyJumbo extends Component {
                     <hr className="my-2"/>
                     <p>{this.props.info.bodyText}</p>
                     <p className="lead">
-                        <Button color="primary" className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "Open" : "Closed"}</Button>
+                        <Button color="primary" className="btn-toggle" onClick={this.toggleRight}>{(this.state.rightIsOpen) ? "See Less" : "See More"}</Button>
                     </p>
                 </Jumbotron>
             </div>
