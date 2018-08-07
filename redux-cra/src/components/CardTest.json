@@ -28,11 +28,19 @@
     "04": {
       "component": "MyJumbo",
       "myJSONid": "04",
-      "title": "This is the title of my Jumbo 1",
+      "title": "Margo",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
-      "imageSource": "https://i.pinimg.com/originals/a7/60/f8/a760f88d296fa0c89c1cef1c2159cb21.jpg"
-    }
+      "imageSource": "https://scontent-mad1-1.cdninstagram.com/vp/9d8586e4fdee56d465f113d15bf7916c/5BED33CE/t51.2885-15/e35/37986833_240738539884834_7919448054875291648_n.jpg"
+    },
+    "05": {
+      "component": "MyJumbo",
+      "myJSONid": "05",
+      "title": "Margo",
+      "subtitle": "here is some other small info",
+      "bodyText": "Here is a whole bunch of test body text",
+      "imageSource": "https://scontent-mad1-1.cdninstagram.com/vp/dd07da0a2717221d2a39678b829d5454/5C024DF3/t51.2885-15/e35/37701426_1484785684961312_1226933364599029760_n.jpg"
+     }
 
   }
 

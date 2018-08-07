@@ -19,7 +19,7 @@ class MyCard extends Component {
     }
 
     toggleRight = () => {
-        console.log("looking for: " + this.props.info.myJSONid);
+        // console.log("looking for: " + this.props.info.myJSONid);
         this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{myJSONid: this.props.info.myJSONid} });
     }
 
