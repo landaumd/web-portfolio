@@ -1,0 +1,31 @@
+{
+
+  "cards": {
+    "Card1": {
+      "component": "MyCard",
+      "title": "This is the title of my Card 1",
+      "subtitle": "here is some other small info",
+      "bodyText": "Here is a whole bunch of test body text",
+      "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg"
+    },
+    "Card2": {
+      "component": "MyCard",
+      "title": "This is the title of my Card 2",
+      "subtitle": "here is some other small info",
+      "bodyText": "Here is a whole bunch of test body text",
+      "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg"
+    },
+    "Card3": {
+      "component": "MyCard",
+      "title": "This is the title of my Card 3",
+      "subtitle": "here is some other small info",
+      "bodyText": "Here is a whole bunch of test body text",
+      "imageSource": "https://i.pinimg.com/originals/a7/60/f8/a760f88d296fa0c89c1cef1c2159cb21.jpg"
+    }
+
+
+  }
+
+
+
+}
