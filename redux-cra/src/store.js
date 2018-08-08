@@ -19,25 +19,35 @@ var defaultState = {
     originAmount: '0.00',
     rightIsOpen: false,
     displayRight: "none",
-    myJSONid: null,
+    myJSONid: "01",
 };
 
 //reducer
 function amount(state = defaultState, action) {
 
-    if (action.type === 'CHANGE_ORIGIN_AMOUNT') {
-        return {
-            ...state,
-            originAmount: action.data.newAmount
-        }
-    }
-    else if (action.type === 'TOGGLE_RIGHT_IS_OPEN') {
+    if (action.type === 'TOGGLE_RIGHT_IS_OPEN') {
         var rightOpen = !state.rightIsOpen;
         var displayRightString = (rightOpen) ? "table-column" : "none";
-        var myJSONid = action.data.myJSONid;
+        var myJSONid = state.myJSONid;
 
-        console.log("my json id: " + myJSONid);
 
+        return {
+            ...state,
+            rightIsOpen: rightOpen,
+            displayRight: displayRightString,
+            myJSONid: myJSONid
+        }
+    }
+    else if(action.type === 'SHOW_CARD'){
+
+        if(state.rightIsOpen===false){
+            var rightOpen = !state.rightIsOpen;
+            var displayRightString = (rightOpen) ? "table-column" : "none";
+            var myJSONid = action.data.myJSONid;
+        }else{
+            var myJSONid = action.data.myJSONid;
+            var rightOpen = state.rightIsOpen;
+        }
         return {
             ...state,
             rightIsOpen: rightOpen,

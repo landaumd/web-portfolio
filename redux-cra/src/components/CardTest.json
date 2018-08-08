@@ -4,7 +4,7 @@
     "01": {
       "component": "MyCard",
       "myJSONid": "01",
-      "title": "This is the title of my Card 1",
+      "title": "The best of the Sausage",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
       "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg"
@@ -12,7 +12,7 @@
     "02": {
       "component": "MyCard",
       "myJSONid": "02",
-      "title": "This is the title of my Card 2",
+      "title": "Potato in Vogue",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
       "imageSource": "https://cdn.hpm.io/wp-content/uploads/2017/07/18184928/Manny-The-Frenchy.jpg"
@@ -20,7 +20,7 @@
     "03": {
       "component": "MyCard",
       "myJSONid": "03",
-      "title": "This is the title of my Card 3",
+      "title": "Best Squish",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
       "imageSource": "https://i.pinimg.com/originals/a7/60/f8/a760f88d296fa0c89c1cef1c2159cb21.jpg"
@@ -36,12 +36,22 @@
     "05": {
       "component": "MyJumbo",
       "myJSONid": "05",
-      "title": "Margo",
+      "title": "Flowers",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
       "imageSource": "https://scontent-mad1-1.cdninstagram.com/vp/dd07da0a2717221d2a39678b829d5454/5C024DF3/t51.2885-15/e35/37701426_1484785684961312_1226933364599029760_n.jpg"
-     }
-
+     },
+    "06": {
+      "component": "MyCarousel",
+      "myJSONid": "06",
+      "title": "Cray Cray Potatoes",
+      "numOfImages": 3,
+      "imageSource1": "https://scontent-mad1-1.cdninstagram.com/vp/dd07da0a2717221d2a39678b829d5454/5C024DF3/t51.2885-15/e35/37701426_1484785684961312_1226933364599029760_n.jpg",
+      "imageSource2":"https://scontent-mad1-1.cdninstagram.com/vp/19ece40dfab5aee4406dfd2797566b67/5B6C8082/t51.2885-15/e15/p240x240/37863989_300449130501245_4989961388962086912_n.jpg",
+      "imageSource3":"https://scontent-mad1-1.cdninstagram.com/vp/cabe38086781fa88351d2421208fd9ae/5BF440CD/t51.2885-15/e35/s240x240/36924388_515760218882917_7371894270719950848_n.jpg",
+      "altText": "Potatoes Being Crazy",
+      "caption": "Cray Cray Potatoes"
+    }
   }
 
 
