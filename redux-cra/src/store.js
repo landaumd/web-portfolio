@@ -1,18 +1,3 @@
-// /*
-//  * src/store.js
-//  * No initialState
-// */
-// import { createStore, applyMiddleware } from 'redux';
-// import thunk from 'redux-thunk';
-// import rootReducer from './reducers/rootReducer.js';
-//
-// export default function configureStore() {
-//     return createStore(
-//         rootReducer,
-//         applyMiddleware(thunk)
-//     );
-// }
-
 import { createStore } from 'redux'
 
 var defaultState = {
@@ -23,7 +8,7 @@ var defaultState = {
 };
 
 //reducer
-function amount(state = defaultState, action) {
+function reducerStore(state = defaultState, action) {
 
     if (action.type === 'TOGGLE_RIGHT_IS_OPEN') {
         var rightOpen = !state.rightIsOpen;
@@ -60,6 +45,6 @@ function amount(state = defaultState, action) {
     }
 }
 
-var store = createStore(amount);
+var store = createStore(reducerStore);
 
 export default store;
