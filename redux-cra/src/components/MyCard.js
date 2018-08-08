@@ -12,15 +12,15 @@ class MyCard extends Component {
         };
 
         this.state.info = this.props.info;
-        console.log(this.state.info);
 
-        var {rightIsOpen} = this.props;
+
+        // var {rightIsOpen} = this.props;
         this.toggleRight = this.toggleRight.bind(this);
     }
 
     toggleRight = () => {
-        console.log("looking for: " + this.props.info.myJSONid);
-        this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{myJSONid: this.props.info.myJSONid} });
+        // console.log("looking for: " + this.props.info.myJSONid);
+        this.props.dispatch({type:"SHOW_CARD", data:{myJSONid: this.props.info.myJSONid} });
     }
 
     render() {
@@ -34,7 +34,7 @@ class MyCard extends Component {
                         <CardTitle>{this.props.info.title}</CardTitle>
                         <CardSubtitle>{this.props.info.subtitle}</CardSubtitle>
                         <CardText>{this.props.info.bodyText}</CardText>
-                        <Button className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "Open" : "Closed"}</Button>
+                        <Button className="btn-toggle" onClick={this.toggleRight}>{(this.state.rightIsOpen) ? "See Less" : "See More"}</Button>
                     </CardBody>
                 </Card>
             </div>
