@@ -11,16 +11,28 @@ const { scaleDown } = transitions;
 // https://tsuyoshiwada.github.io/react-stack-grid/#/
 // https://github.com/tsuyoshiwada/react-stack-grid#live-demo
 
+function randomize(a, b) {
+    return Math.random() - 0.5;
+}
+
 class Grid extends Component {
     constructor(props) {
         super(props);
         this.state = {
             data : cardTest,
         }
+        this.createListOfComponents = this.createListOfComponents.bind(this);
     }
 
     componentDidUpdate = () => {
         this.grid.updateLayout();
+    }
+
+    createListOfComponents = () => {
+        var sortedComponents = Object.entries(this.state.data);
+        var randomizedComponents = sortedComponents.sort(randomize);
+        // console.log(typeof(randomizedComponents));
+        return randomizedComponents;
     }
 
     render() {
@@ -30,16 +42,15 @@ class Grid extends Component {
             }
         } = this.props;
 
-        let components = Object.entries(this.state.data).map(([i,a]) => {
+        let randomList = this.createListOfComponents();
 
+        let components = randomList.map(([i,a]) => {
             if(a.component=== "MyCard") {
-                return <MyCard key={a.myJSONid} info={a}/>
-
+                return <MyCard key={i} info={a}/>
             }else if (a.component === "MyJumbo"){
-                return <MyJumbo key={a.myJSONid} info={a}/>
-
+                return <MyJumbo key={i} info={a}/>
             }else if (a.component === "MyCarousel"){
-                return <MyCarousel key={a.myJSONid} info={a}/>
+                return < MyCarousel key={i} info={a}/>
             }
         });
 
