@@ -46,9 +46,23 @@
       "myJSONid": "06",
       "title": "Cray Cray Potatoes",
       "numOfImages": 3,
-      "imageSource1": "https://scontent-mad1-1.cdninstagram.com/vp/dd07da0a2717221d2a39678b829d5454/5C024DF3/t51.2885-15/e35/37701426_1484785684961312_1226933364599029760_n.jpg",
-      "imageSource2":"https://scontent-mad1-1.cdninstagram.com/vp/19ece40dfab5aee4406dfd2797566b67/5B6C8082/t51.2885-15/e15/p240x240/37863989_300449130501245_4989961388962086912_n.jpg",
-      "imageSource3":"https://scontent-mad1-1.cdninstagram.com/vp/cabe38086781fa88351d2421208fd9ae/5BF440CD/t51.2885-15/e35/s240x240/36924388_515760218882917_7371894270719950848_n.jpg",
+      "images" : [
+          {
+            "src": "https://static1.squarespace.com/static/55d8a0e9e4b0fded09269b7d/55d8a560e4b09a5150d74149/55d8a5e3e4b09a5150d76008/1440262511402/photo-3.PNG-7.jpeg",
+            "altText": "alt text 1",
+            "caption": "caption 1"
+          },
+          {
+            "src": "https://static1.squarespace.com/static/58dd7f35197aea5a62185360/t/58e088d1e4fcb5ff91baffd0/1494355133700/",
+            "altText": "alt text 2",
+            "caption": "caption 2"
+          },
+          {
+            "src": "https://pbs.twimg.com/profile_images/3662868488/29000a4eae2c2bba444ff5724218cac0_400x400.jpeg",
+            "altText": "alt text 3",
+            "caption": "caption 3"
+          }
+      ],
       "altText": "Potatoes Being Crazy",
       "caption": "Cray Cray Potatoes"
     }

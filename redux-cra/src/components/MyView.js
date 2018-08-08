@@ -4,12 +4,6 @@ import { Rnd, size, position } from 'react-rnd';
 import './MyView.css';
 import RightFocus from "./RightFocus";
 import {connect} from "react-redux";
-// import './RightFocus.css';
-import ReactDOM from 'react-dom';
-import {
-    Button,
-} from 'reactstrap';
-// https://github.com/bokuweb/react-rnd
 
 class MyView extends  Component {
     constructor(props) {
@@ -23,49 +17,7 @@ class MyView extends  Component {
             leftWidth: '100%',
             display: 'none',
         };
-        // console.log(this.state);
-
-        if (props.getCurrentPoint){
-            props.getCurrentPoint(this.getMapPoint.bind(this));
-        }
-
-        // this.rf = React.createRef();
-
-        this.getMapPoint = this.getMapPoint.bind(this);
-        this.simpleAction = this.simpleAction.bind(this);
-
     }
-
-    componentDidMount(){
-        // let styleString = "width: calc(100%-300px); display: " + this.state.display;
-        // ReactDOM.findDOMNode(this.rf.current).style.cssText = styleString;
-    }
-
-    getMapPoint(){
-        // // this.props.rightIsOpen = bool;
-        // console.log("this is happening");
-        //
-        // if (this.props.rightIsOpen){
-        //     this.state.display = "table-column";
-        //
-        // } else {
-        //     this.state.display = "none";
-        // }
-        //
-        // // console.log(this.rf);
-        //
-        // let styleString = "width: calc(100%-300px); display: " + this.state.display;
-        // ReactDOM.findDOMNode(this.rf.current).style.cssText = styleString;
-        //
-        // return this.state.rightIsOpen;
-    }
-
-    simpleAction = (event) => {
-        // console.log(this.props);
-        let newAmount = 5666;
-        this.props.dispatch({type:"CHANGE_ORIGIN_AMOUNT", data:{newAmount: newAmount} });
-    }
-
 
     render() {
         return (
@@ -108,5 +60,4 @@ export default connect((state, props) => {
     return {
         ...state
     }
-
 })(MyView);

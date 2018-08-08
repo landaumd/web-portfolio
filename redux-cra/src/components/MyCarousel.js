@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
-import { Button } from 'reactstrap';
-import cardTest from './CardTest.json';
 import {
     Carousel,
     CarouselItem,
@@ -11,24 +9,7 @@ import {
 } from 'reactstrap';
 import './MyCarousel.css';
 
-
-const items = [
-    {
-        src: null,
-        altText: null,
-        caption: null
-    },
-    {
-        src: null,
-        altText: null,
-        caption: null
-    },
-    {
-        src: null,
-        altText: null,
-        caption: null
-    }
-];
+let items = [];
 
 class MyCarousel extends Component {
     constructor(props) {
@@ -48,32 +29,12 @@ class MyCarousel extends Component {
 
         this.state.info = this.props.info;
 
-
-
-        var {rightIsOpen} = this.props;
+        this.makeItems = this.makeItems.bind(this);
         this.toggleRight = this.toggleRight.bind(this);
-
-
-
-
-    }
-
-    makeItems(){
-
-        items.src= "";
-        items.altText= "";
-        items.caption= "";
-
-
-
-        // for(var i=0;i<this.props.info.numOfImages;i++){
-        //
-        // }
     }
 
 
     toggleRight = () => {
-        // console.log("looking for: " + this.props.info.myJSONid);
         this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{myJSONid: this.props.info.myJSONid} });
     }
 
@@ -102,24 +63,30 @@ class MyCarousel extends Component {
         this.setState({ activeIndex: newIndex });
     }
 
+    makeItems(){
+        items = [];
+        Object.entries(this.state.info).map(([i,a]) => {
+            if (i === "images"){
+                items = a;
+            }
+
+        });
+    }
+
     render() {
         const { activeIndex } = this.state;
 
+        this.makeItems();
 
-        const slides = items.map((item) => {
+        let slides = items.map((item) => {
             return (
-
-
                 <CarouselItem className="MyCarousel-carousel-item"
                     onExiting={this.onExiting}
                     onExited={this.onExited}
-                    items={this.makeItems()}
                     key={item.src}
                 >
-
                     <img  src={item.src} alt={item.altText}  className="MyCarousel-carousel-image"/>
-                    {/*<CarouselCaption captionText={item.caption} onClick={this.toggleRight>(this.props.rightIsOpen) ? "Open" : "Closed"} captionHeader={item.caption} />*/}
-
+                    <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
             );
         });
@@ -147,5 +114,4 @@ export default connect((state, props) => {
     return {
         ...state
     }
-
 })(MyCarousel);
