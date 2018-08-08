@@ -15,13 +15,11 @@ class MyJumbo extends Component {
 
         this.state.info = this.props.info;
 
-
         // var {rightIsOpen} = this.props;
         this.toggleRight = this.toggleRight.bind(this);
     }
 
     toggleRight = () => {
-
         this.props.dispatch({type:'SHOW_CARD', data:{myJSONid: this.props.info.myJSONid} });
     }
 
