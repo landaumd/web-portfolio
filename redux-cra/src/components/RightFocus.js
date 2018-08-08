@@ -32,7 +32,6 @@ class RightFocus extends Component {
             // console.log(content.imageSource);
 
             if(cardNum === this.props.myJSONid){
-                // console.log("FOUND IT")
                 this.state.title = content.title;
                 this.state.subtitle = content.subtitle;
                 this.state.bodyText = content.bodyText;
