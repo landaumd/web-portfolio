@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import sizeMe from 'react-sizeme';
 import './RightFocus.css';
-import MyCarousel from "./MyCarousel";
 import {connect} from "react-redux";
 import cardTest from './CardTest.json';
 
 class RightFocus extends Component {
     constructor(props) {
         super(props);
-
 
         this.state = {
             data : cardTest,
@@ -25,7 +22,7 @@ class RightFocus extends Component {
 
     findFocusTarget() {
 
-        console.log(this.props);
+        // console.log(this.props);
 
         Object.entries(this.state.data).map(([cardNum,content]) => {
             // console.log(cardNum);
@@ -35,7 +32,7 @@ class RightFocus extends Component {
             // console.log(content.imageSource);
 
             if(cardNum === this.props.myJSONid){
-                console.log("FOUND IT")
+                // console.log("FOUND IT")
                 this.state.title = content.title;
                 this.state.subtitle = content.subtitle;
                 this.state.bodyText = content.bodyText;
