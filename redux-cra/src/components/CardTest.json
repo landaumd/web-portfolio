@@ -63,7 +63,31 @@
       ],
       "altText": "Potatoes Being Crazy",
       "caption": "Cray Cray Potatoes"
-    }
+    },
+    "07": {
+      "component": "MyCard",
+      "myJSONid": "07",
+      "title": "Programming Skills",
+      "subtitle": "here is some other small info about my skills",
+      "bodyText": "Here is a whole bunch of test body text about my skills",
+      "imageSource": "https://img.purch.com/rc/300x200/aHR0cHM6Ly93d3cuYnVzaW5lc3NuZXdzZGFpbHkuY29tL2ltYWdlcy9pLzAwMC8wMDUvNzgwL29yaWdpbmFsL3RlY2gtc2tpbGxzLWpvYi1zZWVrZXIuanBn",
+      "numberOfSkills": 3,
+      "skills" : [
+        {
+          "skillName": "Java",
+          "skillLevel": "90"
+        },
+        {
+          "skillName": "Python",
+          "skillLevel": "30"
+        },
+        {
+          "skillName": "Git",
+          "skillLevel": "70"
+        }
+      ]
+
+}
   }
 
 
