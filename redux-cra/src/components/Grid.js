@@ -6,7 +6,11 @@ import MyJumbo from './MyJumbo.js';
 import StackGrid, { transitions } from "react-stack-grid";
 import MyCarousel from './MyCarousel.js';
 import sizeMe from 'react-sizeme';
+import { Line, Circle } from 'rc-progress';
+import MyProgressBar from './MyProgressBar';
 const { scaleDown } = transitions;
+
+
 
 // https://tsuyoshiwada.github.io/react-stack-grid/#/
 // https://github.com/tsuyoshiwada/react-stack-grid#live-demo
@@ -52,6 +56,10 @@ class Grid extends Component {
             }else if (a.component === "MyCarousel"){
                 return < MyCarousel key={i} info={a}/>
             }
+            // else if (a.component === "MyProgressBar"){
+            //     return <MyProgressBar  key={i} info={a}/>
+            //
+            // }
         });
 
         return (
@@ -65,6 +73,8 @@ class Grid extends Component {
                     monitorImagesLoaded={true}
                 >
                     {components}
+
+
                     {/*< MyCard title={this.state.title} subtitle={this.state.subtitle} bodyText={this.state.bodyText} imageSource={this.state.imageSource}/>*/}
                 </StackGrid>
             </div>
