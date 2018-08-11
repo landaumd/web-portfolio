@@ -13,9 +13,6 @@ import MyView from "./components/MyView.js";
 //              npm install --save reactstrap react react-dom
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

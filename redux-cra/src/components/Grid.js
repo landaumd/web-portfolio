@@ -4,10 +4,9 @@ import cardTest from './CardTest.json';
 import MyCard from './MyCard.js';
 import MyJumbo from './MyJumbo.js';
 import StackGrid, { transitions } from "react-stack-grid";
+// import StackGrid from "react-stack-grid";
 import MyCarousel from './MyCarousel.js';
 import sizeMe from 'react-sizeme';
-import { Line, Circle } from 'rc-progress';
-import MyProgressBar from './MyProgressBar';
 const { scaleDown } = transitions;
 
 
@@ -24,12 +23,10 @@ class Grid extends Component {
         super(props);
         this.state = {
             data : cardTest,
+            isMobile : this.props.isMobile
         }
         this.createListOfComponents = this.createListOfComponents.bind(this);
-    }
 
-    componentDidUpdate = () => {
-        this.grid.updateLayout();
     }
 
     createListOfComponents = () => {
@@ -40,34 +37,38 @@ class Grid extends Component {
     }
 
     render() {
+
+        console.log("grid")
         const {
             size: {
                 width
             }
         } = this.props;
+        console.log(this.state.isMobile)
 
-        let randomList = this.createListOfComponents();
+        // let randomList = this.createListOfComponents();
 
-        let components = randomList.map(([i,a]) => {
-            if(a.component=== "MyCard") {
-                return <MyCard key={i} info={a}/>
+        // let components = randomList.map(([i,a]) => {
+        let components = Object.entries(this.state.data).map(([i,a]) => {
+            if(a.component === "MyCard") {
+                return <MyCard style={{width: '100%'}} key={i} info={a}/>
             }else if (a.component === "MyJumbo"){
-                return <MyJumbo key={i} info={a}/>
+                return <MyJumbo style={{width: '100%'}} key={i} info={a}/>
             }else if (a.component === "MyCarousel"){
-                return < MyCarousel key={i} info={a}/>
+                return < MyCarousel style={{width: '100%'}} key={i} info={a}/>
+            } else {
+                return null
             }
-            // else if (a.component === "MyProgressBar"){
-            //     return <MyProgressBar  key={i} info={a}/>
-            //
-            // }
         });
 
         return (
+
+
             <div className="Grid-container">
                 <StackGrid
                     gridRef={grid => this.grid = grid}
                     gutterWidth={15}
-                    columnWidth={width <= 400 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))}
+                    columnWidth={(this.state.isMobile) ? '50%' : width <= 430 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))}
                     gutterHeight={15}
                     enter={scaleDown.enter}
                     monitorImagesLoaded={true}

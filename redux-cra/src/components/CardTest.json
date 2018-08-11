@@ -71,6 +71,7 @@
       "subtitle": "here is some other small info about my skills",
       "bodyText": "Here is a whole bunch of test body text about my skills",
       "imageSource": "https://img.purch.com/rc/300x200/aHR0cHM6Ly93d3cuYnVzaW5lc3NuZXdzZGFpbHkuY29tL2ltYWdlcy9pLzAwMC8wMDUvNzgwL29yaWdpbmFsL3RlY2gtc2tpbGxzLWpvYi1zZWVrZXIuanBn",
+      "altText": "images must have alt text",
       "numberOfSkills": 3,
       "skills" : [
         {
