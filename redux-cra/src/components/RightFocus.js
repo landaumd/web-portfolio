@@ -3,6 +3,9 @@ import './RightFocus.css';
 import {connect} from "react-redux";
 import cardTest from './CardTest.json';
 import { Line } from 'rc-progress';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import { configureAnchors } from 'react-scrollable-anchor'
+
 
 class RightFocus extends Component {
     constructor(props) {
@@ -18,6 +21,9 @@ class RightFocus extends Component {
             skills: [],
             isMobile : this.props.isMobile,
         };
+
+        configureAnchors({offset: -90, scrollDuration: 650})
+
 
         // var { myJSONid } = this.props;
 
@@ -50,8 +56,7 @@ class RightFocus extends Component {
 // })
 
     render() {
-        console.log("right focus")
-        console.log(this.state.isMobile)
+
         this.findFocusTarget();
 
         let progBars = null
@@ -66,7 +71,10 @@ class RightFocus extends Component {
         }
 
         return (
-            <div style={this.state.isMobile ? {paddingLeft : '0px'} : {paddingLeft : '15px'}} className="RightFocus">
+            <div  style={this.state.isMobile ? {paddingLeft : '0px'} : {paddingLeft : '15px'}} className="RightFocus">
+                <ScrollableAnchor id={'section1'}>
+                    <div style={{margin:'0px', padding:'0px'}}></div>
+                </ScrollableAnchor>
                 <img src={this.state.imageSource} alt={this.state.altText} className="w-100" style={{borderRadius : "calc(.25rem - 1px) calc(.25rem - 1px) 0px 0px"}} />
                 <div style={{padding: '15px'}}>
                     <h1>{this.state.title}</h1>

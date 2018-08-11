@@ -6,7 +6,9 @@ import MyJumbo from './MyJumbo.js';
 import StackGrid, { transitions } from "react-stack-grid";
 // import StackGrid from "react-stack-grid";
 import MyCarousel from './MyCarousel.js';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import sizeMe from 'react-sizeme';
+
 const { scaleDown } = transitions;
 
 
@@ -63,9 +65,11 @@ class Grid extends Component {
 
         return (
 
-
             <div className="Grid-container">
-                <StackGrid
+
+
+
+            <StackGrid
                     gridRef={grid => this.grid = grid}
                     gutterWidth={15}
                     columnWidth={(this.state.isMobile) ? '50%' : width <= 430 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))}
@@ -73,12 +77,16 @@ class Grid extends Component {
                     enter={scaleDown.enter}
                     monitorImagesLoaded={true}
                 >
+
+
+
                     {components}
 
 
                     {/*< MyCard title={this.state.title} subtitle={this.state.subtitle} bodyText={this.state.bodyText} imageSource={this.state.imageSource}/>*/}
                 </StackGrid>
             </div>
+
         );
     }
 }
