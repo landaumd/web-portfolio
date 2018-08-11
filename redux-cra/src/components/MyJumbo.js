@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Jumbotron, Button } from 'reactstrap';
 import './MyJumbo.css';
-import { Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle } from 'reactstrap';
+// import { Card, CardImg, CardText, CardBody,
+//     CardTitle, CardSubtitle } from 'reactstrap';
+import { CardImg } from 'reactstrap';
 import {connect} from "react-redux";
 
 class MyJumbo extends Component {

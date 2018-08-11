@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import {connect} from "react-redux";
 import { Card, CardImg, CardBody,
     CardTitle, Button } from 'reactstrap';
-import { Line, Circle } from 'rc-progress';
+// import { Line, Circle } from 'rc-progress';
+import { Circle } from 'rc-progress';
+
 import './Grid.css';
 
 class MyProgressBar extends Component {
@@ -33,7 +35,6 @@ class MyProgressBar extends Component {
             initialAnimate={true}
             percent={this.props.info.skills[0].skillLevel}
             containerClassName={'.progressbar'}
-            initialAnimate={true}
 
 
         />

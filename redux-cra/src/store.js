@@ -26,12 +26,12 @@ function reducerStore(state = defaultState, action) {
     else if(action.type === 'SHOW_CARD'){
 
         if(state.rightIsOpen===false){
-            var rightOpen = !state.rightIsOpen;
-            var displayRightString = (rightOpen) ? "table-column" : "none";
-            var myJSONid = action.data.myJSONid;
+            rightOpen = !state.rightIsOpen;
+            displayRightString = (rightOpen) ? "table-column" : "none";
+            myJSONid = action.data.myJSONid;
         }else{
-            var myJSONid = action.data.myJSONid;
-            var rightOpen = state.rightIsOpen;
+            myJSONid = action.data.myJSONid;
+            rightOpen = state.rightIsOpen;
         }
         return {
             ...state,
