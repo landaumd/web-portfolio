@@ -37,15 +37,17 @@ class RightFocus extends Component {
             } else {
                 return null
             }
-
         })
-    }
+    };
 
-    // title : content.title,
-    // subtitle : content.subtitle,
-    // bodyText : content.bodyText,
-    // imageSource : content.imageSource,
-    // skills : content.skills,
+//     this.setState({
+//                       title : content.title,
+//     subtitle : content.subtitle,
+//     bodyText : content.bodyText,
+//     imageSource : content.imageSource,
+//     skills : content.skills,
+//     altText : content.altText,
+// })
 
     render() {
         console.log("right focus")
@@ -67,7 +69,7 @@ class RightFocus extends Component {
             <div style={this.state.isMobile ? {paddingLeft : '0px'} : {paddingLeft : '15px'}} className="RightFocus">
                 <img src={this.state.imageSource} alt={this.state.altText} className="w-100" style={{borderRadius : "calc(.25rem - 1px) calc(.25rem - 1px) 0px 0px"}} />
                 <div style={{padding: '15px'}}>
-                    <h1 className="display-3">{this.state.title}</h1>
+                    <h1>{this.state.title}</h1>
                     <p>{this.state.subtitle}</p>
 
                     {(progBars === null) ? null : progBars}

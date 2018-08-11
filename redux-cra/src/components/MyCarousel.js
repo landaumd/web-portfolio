@@ -87,7 +87,7 @@ class MyCarousel extends Component {
                     onExited={this.onExited}
                     key={item.src}
                 >
-                    <img height={'200px'} src={item.src} alt={item.altText}  className="MyCarousel-carousel-image"/>
+                    <img height={'150px'} src={item.src} alt={item.altText}  className="MyCarousel-carousel-image"/>
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
             );
