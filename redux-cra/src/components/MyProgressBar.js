@@ -23,7 +23,7 @@ class MyProgressBar extends Component {
     }
 
     makeBars(){
-        console.log(this.props.info.skills)
+
 
         return(
 
