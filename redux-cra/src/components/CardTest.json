@@ -7,14 +7,87 @@
       "bodyText": "Here is a whole bunch of test body text",
       "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg"
     },
+
+
+
     "02": {
       "component": "MyCard",
       "myJSONid": "02",
       "title": "Potato in Vogue",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
-      "imageSource": "https://cdn.hpm.io/wp-content/uploads/2017/07/18184928/Manny-The-Frenchy.jpg"
+      "imageSource": "https://cdn.hpm.io/wp-content/uploads/2017/07/18184928/Manny-The-Frenchy.jpg",
+      "imageRowHeader" : [
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 1",
+          "caption": "caption 1"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 2",
+          "caption": "caption 2"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 3",
+          "caption": "caption 3"
+        }
+      ],
+      "imageRow1" : [
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 1",
+          "caption": "caption 1"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 2",
+          "caption": "caption 2"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 3",
+          "caption": "caption 3"
+        }
+      ],
+      "imageRow2" : [
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 1",
+          "caption": "caption 1"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 2",
+          "caption": "caption 2"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 3",
+          "caption": "caption 3"
+        }
+      ],
+      "imageRowBottom" : [
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 1",
+          "caption": "caption 1"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 2",
+          "caption": "caption 2"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 3",
+          "caption": "caption 3"
+        }
+      ]
     },
+
+
     "03": {
       "component": "MyCard",
       "myJSONid": "03",
@@ -72,7 +145,6 @@
       "bodyText": "Here is a whole bunch of test body text about my skills",
       "imageSource": "https://img.purch.com/rc/300x200/aHR0cHM6Ly93d3cuYnVzaW5lc3NuZXdzZGFpbHkuY29tL2ltYWdlcy9pLzAwMC8wMDUvNzgwL29yaWdpbmFsL3RlY2gtc2tpbGxzLWpvYi1zZWVrZXIuanBn",
       "altText": "images must have alt text",
-      "numberOfSkills": 3,
       "skills" : [
         {
           "skillName": "Java",
