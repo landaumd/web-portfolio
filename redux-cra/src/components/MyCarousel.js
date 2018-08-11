@@ -68,8 +68,10 @@ class MyCarousel extends Component {
         Object.entries(this.state.info).map(([i,a]) => {
             if (i === "images"){
                 items = a;
+                return null
+            } else {
+                return null
             }
-
         });
     }
 
@@ -85,7 +87,7 @@ class MyCarousel extends Component {
                     onExited={this.onExited}
                     key={item.src}
                 >
-                    <img  src={item.src} alt={item.altText}  className="MyCarousel-carousel-image"/>
+                    <img height={'200px'} src={item.src} alt={item.altText}  className="MyCarousel-carousel-image"/>
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
             );
