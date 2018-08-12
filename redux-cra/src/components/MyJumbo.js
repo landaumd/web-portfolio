@@ -35,9 +35,12 @@ class MyJumbo extends Component {
                     <p className="lead">{this.props.info.subtitle}</p>
                     <hr className="my-2"/>
                     <p>{this.props.info.bodyText}</p>
-                    <p className="lead">
-                        <Button href='#section1' color="primary" className="btn-toggle" onClick={this.toggleRight}>{(this.state.rightIsOpen) ? "See Less" : "See More"}</Button>
-                    </p>
+                    <p className="lead"></p>
+                        <Button href='#section1' color="primary" className="btn-toggle" onClick={this.toggleRight}>
+                            <div className="tiny-m-top">
+                                {(this.state.rightIsOpen) ? "See Less" : "See More"}
+                            </div>
+                        </Button>
                 </Jumbotron>
             </div>
         );

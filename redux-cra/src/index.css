@@ -7,3 +7,7 @@ body {
 .btn {
   height: 42px;
 }
+
+.tiny-m-top {
+  margin-top: 1px;
+}

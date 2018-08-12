@@ -30,7 +30,11 @@ class MyCard extends Component {
                         <CardTitle>{this.props.info.title}</CardTitle>
                         <CardSubtitle>{this.props.info.subtitle}</CardSubtitle>
                         <CardText>{this.props.info.bodyText}</CardText>
-                        <Button href='#section1' className="btn-toggle" onClick={this.toggleRight}>{(this.state.rightIsOpen) ? "See Less" : "See More"}</Button>
+                        <Button href='#section1' className="btn-toggle" onClick={this.toggleRight}>
+                            <div className="tiny-m-top">
+                                {(this.state.rightIsOpen) ? "See Less" : "See More"}
+                            </div>
+                        </Button>
                     </CardBody>
                 </Card>
             </div>
