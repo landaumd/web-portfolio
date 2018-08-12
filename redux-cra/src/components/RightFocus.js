@@ -3,6 +3,9 @@ import './RightFocus.css';
 import {connect} from "react-redux";
 import cardTest from './CardTest.json';
 import { Line } from 'rc-progress';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import { configureAnchors } from 'react-scrollable-anchor'
+
 
 class RightFocus extends Component {
     constructor(props) {
@@ -23,6 +26,7 @@ class RightFocus extends Component {
             imageRowBottom : null,
         };
 
+        configureAnchors({offset: -90, scrollDuration: 650})
         this.findFocusTarget = this.findFocusTarget.bind(this);
     }
 
@@ -99,6 +103,7 @@ class RightFocus extends Component {
                 <img src={this.state.imageSource} alt={this.state.altText} className="w-100" />
 
                 <div className="RightFocus-content">
+          
                     <h1>{this.state.title}</h1>
                     <p>{this.state.subtitle}</p>
 

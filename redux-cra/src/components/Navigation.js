@@ -50,6 +50,7 @@ class Navigation extends Component {
         return (
                 <Navbar color="light" light fixed='top' expand="sm">
                     <NavbarBrand href="/">reactstrap</NavbarBrand>
+
                     <NavbarToggler
                         onClick={this.toggle}
                     />

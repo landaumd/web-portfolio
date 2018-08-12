@@ -4,6 +4,8 @@ import { Rnd } from 'react-rnd';
 import './MyView.css';
 import RightFocus from "./RightFocus";
 import {connect} from "react-redux";
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 
 class MyView extends  Component {
     constructor(props) {
@@ -79,6 +81,7 @@ class MyView extends  Component {
         } else {
             return (
                 <div className="row no-gutters MyView-container">
+
                     <div className="col no-gutters">
                         <Rnd
                             default={{
@@ -108,6 +111,7 @@ class MyView extends  Component {
                         <RightFocus isMobile={this.state.isMobile} />
                     </div>
                 </div>
+
             );
         }
     }
