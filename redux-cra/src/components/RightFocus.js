@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './RightFocus.css';
+import '../css/RightFocus.css';
 import {connect} from "react-redux";
-import cardTest from './CardTest.json';
+import cardTest from '../json/CardTest.json';
 import { Line } from 'rc-progress';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
@@ -28,15 +28,12 @@ class RightFocus extends Component {
 
         configureAnchors({offset: -90, scrollDuration: 650})
         this.findFocusTarget = this.findFocusTarget.bind(this);
-
-        console.log("megan")
     }
 
     findFocusTarget = () => {
         Object.entries(this.state.data).map(([cardNum,content]) => {
             if(cardNum === this.props.myJSONid){
 
-                // this.setState(content)
                 this.state.title = content.title
                 this.state.subtitle = content.subtitle
                 this.state.bodyText = content.bodyText
@@ -55,7 +52,7 @@ class RightFocus extends Component {
     };
 
     createProgressBars() {
-        let progBars = null
+        let progBars = null;
         if (this.state.skills != null) {
             progBars = Object.entries(this.state.skills).map(([i, a]) => {
                 return (
@@ -70,7 +67,7 @@ class RightFocus extends Component {
     }
 
     createImageRow(rowName) {
-        let imageRowHeader = null
+        let imageRowHeader = null;
         if (rowName != null){
             imageRowHeader = Object.entries(rowName).map(([i, a]) => {
                 return (
@@ -84,8 +81,6 @@ class RightFocus extends Component {
     }
 
     render() {
-        // right focus is passed isMobile argument
-
         this.findFocusTarget();
 
         var progBars = this.createProgressBars();
@@ -99,6 +94,7 @@ class RightFocus extends Component {
                 <ScrollableAnchor id={'section1'}>
                     <div style={{margin:'0px', padding:'0px'}}></div>
                 </ScrollableAnchor>
+
                 {/*Image Row Header*/}
                 <div className="rounded-top-corners">
                     <div className="row no-gutters">

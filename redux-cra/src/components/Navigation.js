@@ -1,4 +1,4 @@
-import './Navigation.css';
+import '../css/Navigation.css';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {
@@ -14,13 +14,11 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
-import Search from "./Search";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import cardTest from './CardTest.json';
-
+import cardTest from '../json/CardTest.json';
 
 library.add(faGithubSquare);
 library.add(faLinkedin);
@@ -38,7 +36,7 @@ class Navigation extends Component {
             data: cardTest,
             isOpen: false,
             dropdownOpen: false,
-            dropDownMenuText: "Filter By Value",
+            dropDownMenuText: "Filter By Category",
         };
     }
 
@@ -65,7 +63,7 @@ class Navigation extends Component {
 
     findIdsByCategory(category){
         var foundIds = []
-        if (category === "filter by category"){
+        if (category === "filter"){
             Object.entries(this.state.data).map(([i,a]) => {
                 foundIds.push(a.myJSONid)
             });
@@ -81,11 +79,14 @@ class Navigation extends Component {
 
     setMenuText(value){
         switch (value) {
-            case "filter by value":
-                this.state.dropDownMenuText = "Filter By Value";
+            case "filter":
+                this.state.dropDownMenuText = "Filter By Category";
                 break
             case "experience":
                 this.state.dropDownMenuText = "Experience";
+                break;
+            case "programming":
+                this.state.dropDownMenuText = "Programming";
                 break;
             case "school":
                 this.state.dropDownMenuText = "School";
@@ -108,7 +109,6 @@ class Navigation extends Component {
         }
 
         this.setMenuText(newState.dropdownvalue)
-
         this.filterByCategoryName(newState.dropdownvalue)
     }
 
@@ -130,7 +130,7 @@ class Navigation extends Component {
                                 {this.state.dropDownMenuText}
                             </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="filter by category">
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="filter">
                                     Filter By Category
                                 </DropdownItem>
                                 <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="school">

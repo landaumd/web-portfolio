@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Jumbotron, Button } from 'reactstrap';
-import './MyJumbo.css';
+import '../css/MyJumbo.css';
 // import { Card, CardImg, CardText, CardBody,
 //     CardTitle, CardSubtitle } from 'reactstrap';
 import { CardImg } from 'reactstrap';
