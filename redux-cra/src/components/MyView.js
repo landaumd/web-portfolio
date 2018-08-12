@@ -18,6 +18,7 @@ class MyView extends  Component {
             display: 'none',
             width: window.innerWidth,
             isMobile : false,
+            isTINYMobile : false,
         };
 
     }
@@ -44,6 +45,8 @@ class MyView extends  Component {
 
         this.state.isMobile = width <= 500;
 
+        this.state.isTINYMobile = width <= 320;
+
         // (this.state.isMobile) ? '50%' : width <= 430 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))
         var colWidth;
         if (this.state.isMobile){
@@ -64,12 +67,12 @@ class MyView extends  Component {
 
         if (this.state.isMobile) {
             return (
-                <div className="row no-gutters MyView-container">
+                <div className="row MyView-container-mobile">
                     <div style={{width: '100%', paddingBottom : '15px', paddingLeft : '0px', display: `${this.props.displayRight}` }} >
                         <RightFocus isMobile={this.state.isMobile} />
                     </div>
-                    <div className="col no-gutters">
-                        <Grid colWidth={colWidth} idsWithCategory={this.props.idsWithCategory} isMobile={this.state.isMobile}/>
+                    <div className="no-gutters col">
+                        <Grid colWidth={colWidth} idsWithCategory={this.props.idsWithCategory} isTINYMobile={this.state.isTINYMobile} isMobile={this.state.isMobile}/>
                     </div>
                 </div>
             );
@@ -78,10 +81,10 @@ class MyView extends  Component {
                 <div className="row no-gutters MyView-container">
 
                     <div className="col no-gutters">
-                        <Grid colWidth={colWidth} style={{minWidth: '300px'}} idsWithCategory={this.props.idsWithCategory} isMobile={this.state.isMobile}/>
+                        <Grid colWidth={colWidth} style={{minWidth: '300px'}} idsWithCategory={this.props.idsWithCategory} isTINYMobile={this.state.isTINYMobile} isMobile={this.state.isMobile}/>
                     </div>
                     <div style={{width: 'calc(100% - 300px)', paddingBottom : '15px', paddingLeft : '15px', display: `${this.props.displayRight}` }} >
-                        <RightFocus isMobile={this.state.isMobile} />
+                        <RightFocus isMobile={this.state.isMobile}/>
                     </div>
                 </div>
 

@@ -28,6 +28,8 @@ class RightFocus extends Component {
 
         configureAnchors({offset: -90, scrollDuration: 650})
         this.findFocusTarget = this.findFocusTarget.bind(this);
+
+        console.log("megan")
     }
 
     findFocusTarget = () => {

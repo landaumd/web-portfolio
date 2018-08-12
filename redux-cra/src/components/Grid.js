@@ -21,8 +21,12 @@ class Grid extends Component {
         super(props);
 
         const items = this.props.idsWithCategory;
-        // const mobileBool = this.props.isMobile
-        //
+        console.log("items")
+        const mobileBool = this.props.isMobile
+
+        // var w = 300
+        // if w =
+
         // let colWidth;
         // if (mobileBool){
         //     colWidth = "50%"
@@ -54,6 +58,7 @@ class Grid extends Component {
         this.state = {
             data: cardTest,
             isMobile: this.props.isMobile,
+            isTINYMobile: this.props.isTINYMobile,
             idsWithCategory: this.props.idsWithCategory,
             items,
             duration: 480,
@@ -62,7 +67,7 @@ class Grid extends Component {
             easing: easings.quartOut,
             transition: 'fadeDown',
         }
-        console.log("ismobile " + this.state.isMobile);
+        console.log("is tiny mobile? " + this.state.isTINYMobile);
     }
 
     render() {
@@ -82,6 +87,13 @@ class Grid extends Component {
             easing,
             transition: transitionSelect,
         } = this.state;
+
+        var w;
+        if (this.state.isTINYMobile){
+            w = 250
+        } else {
+            w = 300
+        }
 
         const transition = transitions[transitionSelect];
 
@@ -134,7 +146,7 @@ class Grid extends Component {
                     // monitorImagesLoaded={true}
                 // horizontal
                 duration={duration}
-                columnWidth={columnWidth}
+                columnWidth={w}
                 gutterWidth={gutter}
                 gutterHeight={gutter}
                 easing={easing}
