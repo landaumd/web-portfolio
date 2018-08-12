@@ -49,7 +49,7 @@ class MyView extends  Component {
         if (this.state.isMobile) {
             return (
                 <div className="row MyView-container">
-                    <div style={{width: '100%', paddingBottom : '15px', paddingLeft : '0px', display: `${this.props.displayRight}` }} >
+                    <div className="rounded-corners" style={{width: '100%', paddingBottom : '15px', paddingLeft : '0px', display: `${this.props.displayRight}` }} >
                         <RightFocus isMobile={this.state.isMobile} />
                     </div>
                     <div className="col">
@@ -107,7 +107,7 @@ class MyView extends  Component {
                         </Rnd>
                     </div>
 
-                    <div style={{width: 'calc(100% - 300px)', paddingBottom : '15px', paddingLeft : '15px', display: `${this.props.displayRight}` }} >
+                    <div className="rounded-corners" style={{width: 'calc(100% - 300px)', paddingBottom : '15px', paddingLeft : '15px', display: `${this.props.displayRight}` }} >
                         <RightFocus isMobile={this.state.isMobile} />
                     </div>
                 </div>
