@@ -4,14 +4,11 @@ import cardTest from './CardTest.json';
 import MyCard from './MyCard.js';
 import MyJumbo from './MyJumbo.js';
 import StackGrid, { transitions } from "react-stack-grid";
-// import StackGrid from "react-stack-grid";
 import MyCarousel from './MyCarousel.js';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import sizeMe from 'react-sizeme';
+import {connect} from "react-redux";
 
 const { scaleDown } = transitions;
-
-
 
 // https://tsuyoshiwada.github.io/react-stack-grid/#/
 // https://github.com/tsuyoshiwada/react-stack-grid#live-demo
@@ -27,8 +24,10 @@ class Grid extends Component {
             data : cardTest,
             isMobile : this.props.isMobile
         }
-        this.createListOfComponents = this.createListOfComponents.bind(this);
 
+        var {category} = this.props
+
+        this.createListOfComponents = this.createListOfComponents.bind(this);
     }
 
     createListOfComponents = () => {
@@ -38,9 +37,13 @@ class Grid extends Component {
         return randomizedComponents;
     }
 
-    render() {
+    something = () => {
+        this.grid.updateLayout();
+    };
 
-        console.log("grid")
+    render() {
+        console.log("render")
+
         const {
             size: {
                 width
@@ -48,27 +51,48 @@ class Grid extends Component {
         } = this.props;
         console.log(this.state.isMobile)
 
+        console.log(this.props.idsWithCategory)
+        console.log(this.props.category)
+
+
+
         // let randomList = this.createListOfComponents();
 
+        var components
         // let components = randomList.map(([i,a]) => {
-        let components = Object.entries(this.state.data).map(([i,a]) => {
-            if(a.component === "MyCard") {
-                return <MyCard style={{width: '100%'}} key={i} info={a}/>
-            }else if (a.component === "MyJumbo"){
-                return <MyJumbo style={{width: '100%'}} key={i} info={a}/>
-            }else if (a.component === "MyCarousel"){
-                return < MyCarousel style={{width: '100%'}} key={i} info={a}/>
-            } else {
-                return null
-            }
-        });
+        if (this.props.idsWithCategory != null) {
+            components = Object.entries(this.state.data).map(([i, a]) => {
+                console.log("filtering by " + this.props.category)
+                if (this.props.idsWithCategory.includes(a.myJSONid)) {
+                    if (a.component === "MyCard") {
+                        return <MyCard style={{width: '100%'}} key={i} info={a}/>
+                    } else if (a.component === "MyJumbo") {
+                        return <MyJumbo style={{width: '100%'}} key={i} info={a}/>
+                    } else if (a.component === "MyCarousel") {
+                        return < MyCarousel style={{width: '100%'}} key={i} info={a}/>
+                    } else {
+                        return null
+                    }
+                }
+            });
+        } else {
+            components = Object.entries(this.state.data).map(([i, a]) => {
+                console.log("not filtered")
+
+                if (a.component === "MyCard") {
+                    return <MyCard style={{width: '100%'}} key={i} info={a}/>
+                } else if (a.component === "MyJumbo") {
+                    return <MyJumbo style={{width: '100%'}} key={i} info={a}/>
+                } else if (a.component === "MyCarousel") {
+                    return < MyCarousel style={{width: '100%'}} key={i} info={a}/>
+                } else {
+                    return null
+                }
+            });
+        }
 
         return (
-
             <div className="Grid-container">
-
-
-
             <StackGrid
                     gridRef={grid => this.grid = grid}
                     gutterWidth={15}
@@ -77,18 +101,16 @@ class Grid extends Component {
                     enter={scaleDown.enter}
                     monitorImagesLoaded={true}
                 >
-
-
-
                     {components}
-
-
                     {/*< MyCard title={this.state.title} subtitle={this.state.subtitle} bodyText={this.state.bodyText} imageSource={this.state.imageSource}/>*/}
                 </StackGrid>
             </div>
-
         );
     }
 }
 
-export default sizeMe()(Grid);
+export default sizeMe()(connect((state, props) => {
+    return {
+        ...state
+    }
+})(Grid));

@@ -5,6 +5,7 @@ var defaultState = {
     rightIsOpen: false,
     displayRight: "none",
     myJSONid: "01",
+    category: "Filter By Category"
 };
 
 //reducer
@@ -38,6 +39,15 @@ function reducerStore(state = defaultState, action) {
             rightIsOpen: rightOpen,
             displayRight: displayRightString,
             myJSONid: myJSONid
+        }
+    }else if (action.type === 'FILTER_BY_CATEGORY') {
+        var category = action.data.category;
+        var idsWithCategory = action.data.idsWithCategory;
+
+        return {
+            ...state,
+            category: category,
+            idsWithCategory: idsWithCategory,
         }
     }
     else {

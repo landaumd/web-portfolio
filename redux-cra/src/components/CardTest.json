@@ -5,7 +5,8 @@
       "title": "The best of the Sausage",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
-      "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg"
+      "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg",
+      "category": ["school", "experience"]
     },
 
 
@@ -17,6 +18,7 @@
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
       "imageSource": "https://cdn.hpm.io/wp-content/uploads/2017/07/18184928/Manny-The-Frenchy.jpg",
+      "category": ["school", "experience", "programming"],
       "imageRowHeader" : [
         {
           "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
@@ -83,13 +85,16 @@
     },
 
 
+
+
     "03": {
       "component": "MyCard",
       "myJSONid": "03",
       "title": "Best Squish",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
-      "imageSource": "https://i.pinimg.com/originals/a7/60/f8/a760f88d296fa0c89c1cef1c2159cb21.jpg"
+      "imageSource": "https://i.pinimg.com/originals/a7/60/f8/a760f88d296fa0c89c1cef1c2159cb21.jpg",
+      "category": ["school", "experience"]
     },
     "04": {
       "component": "MyJumbo",
@@ -97,6 +102,7 @@
       "title": "Margo",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
+      "category": ["extracurricular", "experience"],
       "imageSource": "https://scontent-mad1-1.cdninstagram.com/vp/9d8586e4fdee56d465f113d15bf7916c/5BED33CE/t51.2885-15/e35/37986833_240738539884834_7919448054875291648_n.jpg"
     },
     "05": {
@@ -105,12 +111,14 @@
       "title": "Flowers",
       "subtitle": "here is some other small info",
       "bodyText": "Here is a whole bunch of test body text",
+      "category": ["school", "programming"],
       "imageSource": "https://scontent-mad1-1.cdninstagram.com/vp/dd07da0a2717221d2a39678b829d5454/5C024DF3/t51.2885-15/e35/37701426_1484785684961312_1226933364599029760_n.jpg"
      },
     "06": {
       "component": "MyCarousel",
       "myJSONid": "06",
       "title": "Cray Cray Potatoes",
+      "category": ["extracurricular", "programming"],
       "numOfImages": 3,
       "images" : [
           {
@@ -136,6 +144,7 @@
       "component": "MyCard",
       "myJSONid": "07",
       "title": "Programming Skills",
+      "category": ["extracurricular"],
       "subtitle": "here is some other small info about my skills",
       "bodyText": "Here is a whole bunch of test body text about my skills",
       "imageSource": "https://img.purch.com/rc/300x200/aHR0cHM6Ly93d3cuYnVzaW5lc3NuZXdzZGFpbHkuY29tL2ltYWdlcy9pLzAwMC8wMDUvNzgwL29yaWdpbmFsL3RlY2gtc2tpbGxzLWpvYi1zZWVrZXIuanBn",

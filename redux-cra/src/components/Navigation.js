@@ -8,13 +8,22 @@ import {
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem,
     NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem } from 'reactstrap';
+    DropdownItem
+} from 'reactstrap';
+import Search from "./Search";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import cardTest from './CardTest.json';
 
+
+library.add(faGithubSquare);
+library.add(faLinkedin);
 
 class Navigation extends Component {
     constructor(props) {
@@ -22,9 +31,14 @@ class Navigation extends Component {
 
         this.toggle = this.toggle.bind(this);
         this.toggleRight = this.toggleRight.bind(this);
+        this.toggleDropdown = this.toggleDropdown.bind(this);
+        this.filterByCategoryName = this.filterByCategoryName.bind(this);
 
         this.state = {
+            data: cardTest,
             isOpen: false,
+            dropdownOpen: false,
+            dropDownMenuText: "Filter By Value",
         };
     }
 
@@ -35,55 +49,114 @@ class Navigation extends Component {
     }
 
     toggleRight = () => {
-        // var { rightIsOpen } = this.props;
-
-
-
-
         this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN"});
+    };
 
+    toggleDropdown() {
+        this.setState({
+            dropdownOpen: !this.state.dropdownOpen
+        });
+    }
 
+    filterByCategoryName(category){
+        var idsWithCategory = this.findIdsByCategory(category)
+        this.props.dispatch({type:"FILTER_BY_CATEGORY", data:{idsWithCategory: idsWithCategory, category: category} });
+    }
 
+    findIdsByCategory(category){
+        var foundIds = []
+        if (category === "filter by category"){
+            Object.entries(this.state.data).map(([i,a]) => {
+                foundIds.push(a.myJSONid)
+            });
+        } else {
+            Object.entries(this.state.data).map(([i, a]) => {
+                if (a.category.includes(category)) {
+                    foundIds.push(a.myJSONid)
+                }
+            });
+        }
+        return foundIds
+    }
+
+    setMenuText(value){
+        switch (value) {
+            case "filter by value":
+                this.state.dropDownMenuText = "Filter By Value";
+                break
+            case "experience":
+                this.state.dropDownMenuText = "Experience";
+                break;
+            case "school":
+                this.state.dropDownMenuText = "School";
+                break;
+            case "extracurricular":
+                this.state.dropDownMenuText = "Extracurricular";
+                break;
+        }
+    }
+
+    onDropdownItem_Click = (sender) => {
+        var newState = {
+            dropdownvalue: sender.currentTarget.getAttribute("dropdownvalue"),
+        };
+
+        this.setState(newState);
+
+        if (!!this.props.onChange) {
+            this.props.onChange(newState.dropdownvalue);
+        }
+
+        this.setMenuText(newState.dropdownvalue)
+
+        this.filterByCategoryName(newState.dropdownvalue)
     }
 
     render() {
-        return (
-                <Navbar color="light" light fixed='top' expand="sm">
-                    <NavbarBrand href="/">reactstrap</NavbarBrand>
+    return (
+            <Navbar color="light" light fixed='top' expand="sm">
+                <NavbarBrand className="navbar-brand-text" href="/">Portfolio Website</NavbarBrand>
 
-                    <NavbarToggler
-                        onClick={this.toggle}
-                    />
-                    <Collapse
-                        isOpen={this.state.isOpen}
-                        navbar>
-                        <Nav className="ml-auto" fixed='top' navbar>
-                            <NavItem>
-                                <Button className="btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "See Less" : "See More"}</Button>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                            </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
-                                    Options
-                                </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>
-                                        Option 1
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Option 2
-                                    </DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>
-                                        Reset
-                                    </DropdownItem>
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
+                <NavbarToggler className="navbar-phone-toggle"
+                    onClick={this.toggle}
+                />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                    <Nav className="ml-auto" fixed='top' >
+
+                        <Button className="btn my-auto btn-outline-light btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "See Less" : "See More"}</Button>
+
+                        <UncontrolledDropdown className="my-auto ml-2" nav inNavbar isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
+                            <DropdownToggle className="btn btn-outline-light btn-toggle" nav caret>
+                                {this.state.dropDownMenuText}
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="filter by category">
+                                    Filter By Category
+                                </DropdownItem>
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="school">
+                                    School
+                                </DropdownItem>
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="experience">
+                                    Experience
+                                </DropdownItem>
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="programming">
+                                    Programming
+                                </DropdownItem>
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="extracurricular">
+                                    Extracurricular
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+
+                        <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
+                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'github-square']} size="3x" color="white"/>
+                        </NavLink>
+                        <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
+                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'linkedin']} size="3x" color="white"/>
+                        </NavLink>
+                    </Nav>
+                </Collapse>
+            </Navbar>
 
         );
     }
@@ -91,9 +164,7 @@ class Navigation extends Component {
 
 export default connect((state, props) => {
     return {
-        originAmount: state.originAmount,
-        rightIsOpen: state.rightIsOpen,
-        displayRight: state.displayRight
+        ...state
     }
 
 })(Navigation);

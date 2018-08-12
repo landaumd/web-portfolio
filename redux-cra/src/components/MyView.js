@@ -4,8 +4,6 @@ import { Rnd } from 'react-rnd';
 import './MyView.css';
 import RightFocus from "./RightFocus";
 import {connect} from "react-redux";
-import ScrollableAnchor from 'react-scrollable-anchor';
-
 
 class MyView extends  Component {
     constructor(props) {
@@ -40,7 +38,7 @@ class MyView extends  Component {
 
     render() {
 
-        console.log("my view")
+        console.log("view")
         const { width } = this.state;
 
         this.state.isMobile = width <= 500;
