@@ -92,7 +92,9 @@ class RightFocus extends Component {
 
         return (
             <div className="RightFocus">
-
+                <ScrollableAnchor id={'section1'}>
+                    <div style={{margin:'0px', padding:'0px'}}></div>
+                </ScrollableAnchor>
                 {/*Image Row Header*/}
                 <div className="rounded-top-corners">
                     <div className="row no-gutters">
