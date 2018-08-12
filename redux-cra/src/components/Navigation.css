@@ -1,35 +1,28 @@
 .navbar{
     background:#F97300 !important;
+    color: white;
+}
+
+.menu-button {
+    width: 200px;
+}
+
+/*.nav-item {*/
+    /*text-align: center;*/
+    /*height: 100%;*/
+/*}*/
+
+.fa-vc{
+    vertical-align: middle
+}
+
+.navbar-phone-toggle {
+    color: white;
+    border-color: #f8f9fa;
 
 }
 
-.btn-toggle {
-    width: 100px;
+.navbar-brand-text {
+    color: white !important;
+
 }
-
-/*.nav-link , .navbar-brand{*/
-    /*color: #f4f4f4;*/
-    /*cursor: pointer;*/
-/*}*/
-/*.nav-link{*/
-    /*margin-right: 1em !important;*/
-/*}*/
-/*.nav-link:hover{*/
-    /*background: #f4f4f4;*/
-    /*color: #f97300;*/
-/*}*/
-/*.navbar-collapse{*/
-    /*justify-content: flex-end;*/
-/*}*/
-/*.navbar-toggler{*/
-    /*background:#fff !important;*/
-/*}*/
-/*.btn, btn-success {*/
-    /*background-color: white;*/
-/*}*/
-
-/*@media (min-width: 767px) {*/
-    /*.navbar-fixed-top {*/
-        /*position: fixed !important;*/
-    /*}*/
-/*}*/

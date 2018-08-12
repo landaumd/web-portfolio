@@ -1,8 +1,13 @@
 .MyView-container {
-    margin-top: 70px;
+    margin-top: 75px;
     margin-left: 15px;
     margin-right: 15px;
 }
+
+.MyView-container-mobile {
+    margin-top: 70px;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
 
 .rounded-corners {
     border-radius : calc(.25rem - 1px);

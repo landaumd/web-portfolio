@@ -28,11 +28,15 @@ class RightFocus extends Component {
 
         configureAnchors({offset: -90, scrollDuration: 650})
         this.findFocusTarget = this.findFocusTarget.bind(this);
+
+        console.log("megan")
     }
 
     findFocusTarget = () => {
         Object.entries(this.state.data).map(([cardNum,content]) => {
             if(cardNum === this.props.myJSONid){
+
+                // this.setState(content)
                 this.state.title = content.title
                 this.state.subtitle = content.subtitle
                 this.state.bodyText = content.bodyText
