@@ -82,12 +82,12 @@ class MyCarousel extends Component {
 
         let slides = items.map((item) => {
             return (
-                <CarouselItem className="MyCarousel-carousel-item"
+                <CarouselItem
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                     key={item.src}
                 >
-                    <img height={'150px'} src={item.src} alt={item.altText}  className="MyCarousel-carousel-image"/>
+                    <img style={{width:'50vw', height: '50vw'}} src={item.src} alt={item.altText}  />
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
             );
@@ -95,7 +95,7 @@ class MyCarousel extends Component {
 
         return (
 
-            <Carousel className="MyCarousel-carousel-card"
+            <Carousel
                 activeIndex={activeIndex}
                 next={this.next}
                 previous={this.previous}

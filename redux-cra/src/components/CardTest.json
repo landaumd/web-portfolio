@@ -61,26 +61,21 @@
           "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
           "altText": "alt text 2",
           "caption": "caption 2"
-        },
-        {
-          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
-          "altText": "alt text 3",
-          "caption": "caption 3"
         }
       ],
       "imageRowBottom" : [
         {
-          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "src": "https://assets.saatchiart.com/saatchi/89456/art/3277311/2347198-MDZECSPC-7.jpg",
           "altText": "alt text 1",
           "caption": "caption 1"
         },
         {
-          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "src": "https://assets.saatchiart.com/saatchi/89456/art/3277311/2347198-MDZECSPC-7.jpg",
           "altText": "alt text 2",
           "caption": "caption 2"
         },
         {
-          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "src": "https://assets.saatchiart.com/saatchi/89456/art/3277311/2347198-MDZECSPC-7.jpg",
           "altText": "alt text 3",
           "caption": "caption 3"
         }
@@ -160,8 +155,9 @@
         }
       ]
 
-}
   }
+}
+
 
 
 
