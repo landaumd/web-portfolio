@@ -3,10 +3,9 @@ import './Grid.css';
 import cardTest from './CardTest.json';
 import MyCard from './MyCard.js';
 import MyJumbo from './MyJumbo.js';
-import StackGrid, { transitions } from "react-stack-grid";
+import StackGrid, { transitions, easings } from "react-stack-grid";
 import MyCarousel from './MyCarousel.js';
 import sizeMe from 'react-sizeme';
-import {connect} from "react-redux";
 
 const { scaleDown } = transitions;
 
@@ -20,47 +19,79 @@ function randomize(a, b) {
 class Grid extends Component {
     constructor(props) {
         super(props);
+
+        const items = this.props.idsWithCategory;
+        // const mobileBool = this.props.isMobile
+        //
+        // let colWidth;
+        // if (mobileBool){
+        //     colWidth = "50%"
+        // } else if (this.props.width <= 430){
+        //     colWidth = '100%'
+        // } else if (this.props.width <= 650){
+        //     colWidth = '50%'
+        // } else if (this.props.width <= 950){
+        //     colWidth = '33%'
+        // } else {
+        //     colWidth = '25%'
+        // }
+
+        // (this.state.isMobile) ? '50%' : width <= 430 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))
+        // var w;
+        // if (this.props.isMobile){
+        //     w = window.innerWidth
+        // } else {
+        //     let winInWidth = window.innerWidth;
+        //     if (winInWidth <= 650){
+        //         w = winInWidth/2
+        //     } else if (winInWidth <= 950){
+        //         w = winInWidth/3
+        //     } else {
+        //         w = winInWidth/4
+        //     }
+        // }
+
         this.state = {
-            data : cardTest,
-            isMobile : this.props.isMobile
+            data: cardTest,
+            isMobile: this.props.isMobile,
+            idsWithCategory: this.props.idsWithCategory,
+            items,
+            duration: 480,
+            columnWidth: 300,
+            gutter: 15,
+            easing: easings.quartOut,
+            transition: 'fadeDown',
         }
-
-        var {category} = this.props
-
-        this.createListOfComponents = this.createListOfComponents.bind(this);
+        console.log("ismobile " + this.state.isMobile);
     }
-
-    createListOfComponents = () => {
-        var sortedComponents = Object.entries(this.state.data);
-        var randomizedComponents = sortedComponents.sort(randomize);
-        // console.log(typeof(randomizedComponents));
-        return randomizedComponents;
-    }
-
-    something = () => {
-        this.grid.updateLayout();
-    };
 
     render() {
         console.log("render")
 
+        // const {
+        //     size: {
+        //         width
+        //     }
+        // } = this.props;
+
         const {
-            size: {
-                width
-            }
-        } = this.props;
-        console.log(this.state.isMobile)
+            // items,
+            duration,
+            columnWidth,
+            gutter,
+            easing,
+            transition: transitionSelect,
+        } = this.state;
 
-        console.log(this.props.idsWithCategory)
-        console.log(this.props.category)
+        const transition = transitions[transitionSelect];
 
+        console.log(this.state.isMobile);
 
+        console.log(this.props.idsWithCategory);
+        console.log(this.props.category);
 
-        // let randomList = this.createListOfComponents();
-
-        var components
-        // let components = randomList.map(([i,a]) => {
-        if (this.props.idsWithCategory != null) {
+        let components;
+        if (this.props.idsWithCategory !== undefined) {
             components = Object.entries(this.state.data).map(([i, a]) => {
                 console.log("filtering by " + this.props.category)
                 if (this.props.idsWithCategory.includes(a.myJSONid)) {
@@ -78,7 +109,6 @@ class Grid extends Component {
         } else {
             components = Object.entries(this.state.data).map(([i, a]) => {
                 console.log("not filtered")
-
                 if (a.component === "MyCard") {
                     return <MyCard style={{width: '100%'}} key={i} info={a}/>
                 } else if (a.component === "MyJumbo") {
@@ -91,26 +121,38 @@ class Grid extends Component {
             });
         }
 
+        // let width = ((this.state.isMobile) ? '50%' : width <= 430 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))
+
         return (
             <div className="Grid-container">
             <StackGrid
-                    gridRef={grid => this.grid = grid}
-                    gutterWidth={15}
-                    columnWidth={(this.state.isMobile) ? '50%' : width <= 430 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))}
-                    gutterHeight={15}
-                    enter={scaleDown.enter}
-                    monitorImagesLoaded={true}
+                    // gridRef={grid => this.grid = grid}
+                    // gutterWidth={15}
+                    // columnWidth={(this.state.isMobile) ? '50%' : width <= 430 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))}
+                    // gutterHeight={15}
+                    // enter={scaleDown.enter}
+                    // monitorImagesLoaded={true}
+                // horizontal
+                duration={duration}
+                columnWidth={columnWidth}
+                gutterWidth={gutter}
+                gutterHeight={gutter}
+                easing={easing}
+                appear={transition.appear}
+                appeared={transition.appeared}
+                enter={transition.enter}
+                entered={transition.entered}
+                leaved={transition.leaved}
+                // onLayout={() => {
+                //     console.log('[DEMO] `onLayout()` has been called.'); // eslint-disable-line
+                // }}
+                monitorImagesLoaded={true}
                 >
                     {components}
-                    {/*< MyCard title={this.state.title} subtitle={this.state.subtitle} bodyText={this.state.bodyText} imageSource={this.state.imageSource}/>*/}
                 </StackGrid>
             </div>
         );
     }
 }
 
-export default sizeMe()(connect((state, props) => {
-    return {
-        ...state
-    }
-})(Grid));
+export default sizeMe()(Grid);

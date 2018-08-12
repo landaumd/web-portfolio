@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import cardTest from './CardTest.json';
 import {connect} from "react-redux";
-import { Button, Form, Input } from 'reactstrap';
 
 class Search extends Component {
     constructor(props) {

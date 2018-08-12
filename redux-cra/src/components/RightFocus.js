@@ -33,6 +33,8 @@ class RightFocus extends Component {
     findFocusTarget = () => {
         Object.entries(this.state.data).map(([cardNum,content]) => {
             if(cardNum === this.props.myJSONid){
+
+                // this.setState(content)
                 this.state.title = content.title
                 this.state.subtitle = content.subtitle
                 this.state.bodyText = content.bodyText

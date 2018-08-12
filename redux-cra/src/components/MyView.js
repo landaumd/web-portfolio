@@ -19,6 +19,7 @@ class MyView extends  Component {
             width: window.innerWidth,
             isMobile : false,
         };
+
     }
 
     componentWillMount() {
@@ -43,36 +44,32 @@ class MyView extends  Component {
 
         this.state.isMobile = width <= 500;
 
+        // (this.state.isMobile) ? '50%' : width <= 430 ? '100%' : (width <= 650 ? '50%' : (width <= 950 ? '33%' : '25%'))
+        var colWidth;
+        if (this.state.isMobile){
+            colWidth = "50%"
+        } else if (width <= 430){
+            colWidth = '100%'
+        } else if (width <= 650){
+            colWidth = '50%'
+        } else if (width <= 950){
+            colWidth = '33%'
+        } else {
+            colWidth = '25%'
+        }
+        console.log("width " + width)
+        console.log("col width " + colWidth)
+
+        console.log(this.props.idsWithCategory)
 
         if (this.state.isMobile) {
             return (
-                <div className="row MyView-container">
+                <div className="row no-gutters MyView-container">
                     <div style={{width: '100%', paddingBottom : '15px', paddingLeft : '0px', display: `${this.props.displayRight}` }} >
                         <RightFocus isMobile={this.state.isMobile} />
                     </div>
-                    <div className="col">
-                        <Rnd
-                            default={{
-                                x: 0,
-                                y: 0,
-                                width: this.state.leftWidth,
-                                height: '100%',
-                            }}
-                            onResize={(e, direction, ref, delta, position) => {
-                                this.setState({
-                                    width: ref.offsetWidth,
-                                    height: ref.offsetHeight,
-                                    ...position,
-                                });
-                            }}
-                            maxWidth={'100%'}
-                            minWidth={300}
-                            bounds="parent"
-                            disableDragging={true}
-                            enableResizing={{ top:false, right:false, bottom:false, left:false, topRight:false, bottomRight:false, bottomLeft:false, topLeft:false }}
-                        >
-                            <Grid isMobile={this.state.isMobile}/>
-                        </Rnd>
+                    <div className="col no-gutters">
+                        <Grid colWidth={colWidth} idsWithCategory={this.props.idsWithCategory} isMobile={this.state.isMobile}/>
                     </div>
                 </div>
             );
@@ -81,30 +78,8 @@ class MyView extends  Component {
                 <div className="row no-gutters MyView-container">
 
                     <div className="col no-gutters">
-                        <Rnd
-                            default={{
-                                x: 0,
-                                y: 0,
-                                width: this.state.leftWidth,
-                                height: '100%',
-                            }}
-                            onResize={(e, direction, ref, delta, position) => {
-                                this.setState({
-                                    width: ref.offsetWidth,
-                                    height: ref.offsetHeight,
-                                    ...position,
-                                });
-                            }}
-                            maxWidth={'calc(100%)'}
-                            minWidth={300}
-                            bounds="parent"
-                            disableDragging={true}
-                            enableResizing={{ top:false, right:false, bottom:false, left:false, topRight:false, bottomRight:false, bottomLeft:false, topLeft:false }}
-                        >
-                            <Grid isMobile={this.state.isMobile}/>
-                        </Rnd>
+                        <Grid colWidth={colWidth} style={{minWidth: '300px'}} idsWithCategory={this.props.idsWithCategory} isMobile={this.state.isMobile}/>
                     </div>
-
                     <div style={{width: 'calc(100% - 300px)', paddingBottom : '15px', paddingLeft : '15px', display: `${this.props.displayRight}` }} >
                         <RightFocus isMobile={this.state.isMobile} />
                     </div>
