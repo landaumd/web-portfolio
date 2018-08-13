@@ -18,11 +18,36 @@
 
 .navbar-phone-toggle {
     color: white;
-    border-color: #f8f9fa;
-
+    border: none;
 }
+
+/*.navbar.toggle-down:after {*/
+    /*background-color: pink;*/
+/*}*/
+
+/*.button.navbar-phone-toggle.navbar-toggler {*/
+    /*background-color: blue;*/
+    /*transform: rotate(180deg);*/
+/*}*/
 
 .navbar-brand-text {
     color: white !important;
+}
 
+.rotate {
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.rotate.down {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+.rotate.up {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
 }

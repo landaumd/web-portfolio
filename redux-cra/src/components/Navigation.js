@@ -17,17 +17,21 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faCaretSquareUp } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import cardTest from '../json/CardTest.json';
+import $ from 'jquery';
 
 library.add(faGithubSquare);
 library.add(faLinkedin);
+library.add(faCaretSquareUp);
+
 
 class Navigation extends Component {
     constructor(props) {
         super(props);
 
-        this.toggle = this.toggle.bind(this);
+        // this.toggle = this.toggle.bind(this);
         this.toggleRight = this.toggleRight.bind(this);
         this.toggleDropdown = this.toggleDropdown.bind(this);
         this.filterByCategoryName = this.filterByCategoryName.bind(this);
@@ -40,11 +44,29 @@ class Navigation extends Component {
         };
     }
 
-    toggle() {
-        this.setState({
-            isOpen: !this.state.isOpen
+    // toggle() {
+    //     this.setState({
+    //         isOpen: !this.state.isOpen
+    //     });
+
+        $(".rotate").click(function () {
+            $(this).toggleClass("down");
+
+            this.setState({
+                isOpen: !this.state.isOpen
+            });
         });
-    }
+        // if (this.state.isOpen){
+        //     $(".rotate").click(function () {
+        //         $(this).toggleClass("down");
+        //     });
+        // } else {
+        //     $(".rotate").click(function () {
+        //         $(this).toggleClass("up");
+        //     });
+        // }
+
+    // }
 
     toggleRight = () => {
         this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN"});
@@ -114,12 +136,13 @@ class Navigation extends Component {
 
     render() {
     return (
-            <Navbar color="light" light fixed='top' expand="sm">
+            <Navbar color="light" fixed='top' expand="sm">
                 <NavbarBrand className="navbar-brand-text" href="/">Portfolio Website</NavbarBrand>
 
-                <NavbarToggler className="navbar-phone-toggle"
-                    onClick={this.toggle}
-                />
+                <NavbarToggler className="navbar-phone-toggle" onClick={this.toggle}>
+                    <FontAwesomeIcon className="fa-vc rotate" icon={['fas', 'caret-square-up']} size="1x" color="white"/>
+                </NavbarToggler>
+
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" fixed='top' >
 

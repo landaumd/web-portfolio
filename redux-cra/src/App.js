@@ -19,6 +19,12 @@ class App extends Component {
 
             <div className="App">
                 <Navigation />
+                <div/>
+                <div></div>
+                <div>{false}</div>
+                <div>{undefined}</div>
+                <div>{true}</div>
+                <div>{null}</div>
                 <div>
                     <MyView />
                 </div>
