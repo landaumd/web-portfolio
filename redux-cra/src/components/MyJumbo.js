@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Jumbotron, Button } from 'reactstrap';
 import '../css/MyJumbo.css';
-// import { Card, CardImg, CardText, CardBody,
-//     CardTitle, CardSubtitle } from 'reactstrap';
+import CategoryColors from '../config/CategoryColors.json';
 import { CardImg } from 'reactstrap';
 import {connect} from "react-redux";
 
@@ -25,6 +24,14 @@ class MyJumbo extends Component {
     }
 
     render() {
+
+        var categories = Object.entries(this.state.info.category).map(([i, a]) => {
+            var color = CategoryColors[a]
+            return (
+                <div style={{backgroundColor: `${color}`}} className="badge mr-1 mt-1 py-1 px-1">{a}</div>
+            )
+        });
+
         return (
             <div>
                 <Jumbotron>
@@ -36,11 +43,14 @@ class MyJumbo extends Component {
                     <hr className="my-2"/>
                     <p>{this.props.info.bodyText}</p>
                     <p className="lead"></p>
+                    <div>
                         <Button href='#section1' color="primary" className="btn-toggle" onClick={this.toggleRight}>
                             <div className="tiny-m-top">
                                 {(this.state.rightIsOpen) ? "See Less" : "See More"}
                             </div>
                         </Button>
+                    </div>
+                    {categories}
                 </Jumbotron>
             </div>
         );

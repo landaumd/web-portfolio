@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
 import {connect} from "react-redux";
+import CategoryColors from '../config/CategoryColors.json';
+
 
 class MyCard extends Component {
     constructor(props) {
@@ -20,6 +22,14 @@ class MyCard extends Component {
     }
 
     render() {
+
+        var categories = Object.entries(this.state.info.category).map(([i, a]) => {
+            var color = CategoryColors[a]
+            return (
+                <div style={{backgroundColor: `${color}`}} className="badge mr-1 mt-1 py-1 px-1">{a}</div>
+            )
+        });
+
         return (
             <div>
                 <Card>
@@ -30,11 +40,14 @@ class MyCard extends Component {
                         <CardTitle>{this.props.info.title}</CardTitle>
                         <CardSubtitle>{this.props.info.subtitle}</CardSubtitle>
                         <CardText>{this.props.info.bodyText}</CardText>
-                        <Button href='#section1' className="btn-toggle" onClick={this.toggleRight}>
-                            <div className="tiny-m-top">
-                                {(this.state.rightIsOpen) ? "See Less" : "See More"}
-                            </div>
-                        </Button>
+                        <div>
+                            <Button href='#section1' className="btn-toggle" onClick={this.toggleRight}>
+                                <div className="tiny-m-top">
+                                    {(this.state.rightIsOpen) ? "See Less" : "See More"}
+                                </div>
+                            </Button>
+                        </div>
+                        {categories}
                     </CardBody>
                 </Card>
             </div>
