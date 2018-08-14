@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import cardTest from '../json/CardTest.json';
 import { Line } from 'rc-progress';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { configureAnchors } from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor';
 
 
 class RightFocus extends Component {
