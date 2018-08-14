@@ -20,7 +20,6 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCaretSquareUp } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import cardTest from '../json/CardTest.json';
-import $ from 'jquery';
 
 library.add(faGithubSquare);
 library.add(faLinkedin);
@@ -31,7 +30,7 @@ class Navigation extends Component {
     constructor(props) {
         super(props);
 
-        // this.toggle = this.toggle.bind(this);
+        this.toggle = this.toggle.bind(this);
         this.toggleRight = this.toggleRight.bind(this);
         this.toggleDropdown = this.toggleDropdown.bind(this);
         this.filterByCategoryName = this.filterByCategoryName.bind(this);
@@ -44,29 +43,11 @@ class Navigation extends Component {
         };
     }
 
-    // toggle() {
-    //     this.setState({
-    //         isOpen: !this.state.isOpen
-    //     });
-
-        $(".rotate").click(function () {
-            $(this).toggleClass("down");
-
-            this.setState({
-                isOpen: !this.state.isOpen
-            });
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
         });
-        // if (this.state.isOpen){
-        //     $(".rotate").click(function () {
-        //         $(this).toggleClass("down");
-        //     });
-        // } else {
-        //     $(".rotate").click(function () {
-        //         $(this).toggleClass("up");
-        //     });
-        // }
-
-    // }
+    }
 
     toggleRight = () => {
         this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN"});
