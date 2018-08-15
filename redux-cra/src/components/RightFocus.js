@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/RightFocus.css';
 import {connect} from "react-redux";
-import cardTest from '../json/CardTest.json';
+import cardTest from '../config/CardTest.json';
 import { Line } from 'rc-progress';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
@@ -71,7 +71,7 @@ class RightFocus extends Component {
         if (rowName != null){
             imageRowHeader = Object.entries(rowName).map(([i, a]) => {
                 return (
-                    <div className="col no-gutters">
+                    <div key={i} className="col no-gutters">
                         <img className="img-fluid" src={a.src} alt={a.altText}/>
                     </div>
                 )

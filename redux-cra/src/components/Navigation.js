@@ -17,14 +17,15 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faCaretSquareUp } from '@fortawesome/free-solid-svg-icons'
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import cardTest from '../json/CardTest.json';
+import cardTest from '../config/CardTest.json';
 
 library.add(faGithubSquare);
 library.add(faLinkedin);
-library.add(faCaretSquareUp);
+library.add(faCaretUp);
 
+var rotated = false;
 
 class Navigation extends Component {
     constructor(props) {
@@ -40,6 +41,7 @@ class Navigation extends Component {
             isOpen: false,
             dropdownOpen: false,
             dropDownMenuText: "Filter By Category",
+            isFiltered: false,
         };
     }
 
@@ -47,6 +49,16 @@ class Navigation extends Component {
         this.setState({
             isOpen: !this.state.isOpen
         });
+        var element = document.getElementById('caret');
+        var angle = rotated ? 0 : 180;
+
+        element.style.webkitTransform = 'rotate(' + angle + 'deg)';
+        element.style.mozTransform = 'rotate(' + angle + 'deg)';
+        element.style.msTransform = 'rotate(' + angle + 'deg)';
+        element.style.oTransform = 'rotate(' + angle + 'deg)';
+        element.style.transform = 'rotate(' + angle + 'deg)';
+
+        rotated = !rotated;
     }
 
     toggleRight = () => {
@@ -62,6 +74,12 @@ class Navigation extends Component {
     filterByCategoryName(category){
         var idsWithCategory = this.findIdsByCategory(category)
         this.props.dispatch({type:"FILTER_BY_CATEGORY", data:{idsWithCategory: idsWithCategory, category: category} });
+
+        if (category === "filter"){
+            this.state.isFiltered = false
+        } else (
+            this.state.isFiltered = true
+        )
     }
 
     findIdsByCategory(category){
@@ -84,7 +102,7 @@ class Navigation extends Component {
         switch (value) {
             case "filter":
                 this.state.dropDownMenuText = "Filter By Category";
-                break
+                break;
             case "experience":
                 this.state.dropDownMenuText = "Experience";
                 break;
@@ -116,12 +134,12 @@ class Navigation extends Component {
     }
 
     render() {
-    return (
+        return (
             <Navbar color="light" fixed='top' expand="sm">
                 <NavbarBrand className="navbar-brand-text" href="/">Portfolio Website</NavbarBrand>
 
                 <NavbarToggler className="navbar-phone-toggle" onClick={this.toggle}>
-                    <FontAwesomeIcon className="fa-vc rotate" icon={['fas', 'caret-square-up']} size="1x" color="white"/>
+                    <FontAwesomeIcon id="caret" className="fa-vc" icon={['fas', 'caret-up']} size="1x" color="white"/>
                 </NavbarToggler>
 
                 <Collapse isOpen={this.state.isOpen} navbar>
@@ -135,8 +153,9 @@ class Navigation extends Component {
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="filter">
-                                    Filter By Category
+                                    {(this.state.isFiltered ? "Clear Filter" : "Filter By Category")}
                                 </DropdownItem>
+                                <DropdownItem divider />
                                 <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="school">
                                     School
                                 </DropdownItem>

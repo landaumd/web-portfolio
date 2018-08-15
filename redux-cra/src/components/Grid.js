@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../css/Grid.css';
-import cardTest from '../json/CardTest.json';
+import cardTest from '../config/CardTest.json';
 import MyCard from './MyCard.js';
 import MyJumbo from './MyJumbo.js';
 import StackGrid, { transitions, easings } from "react-stack-grid";

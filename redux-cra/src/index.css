@@ -9,5 +9,9 @@ body {
 }
 
 .tiny-m-top {
-  margin-top: 1px;
+  margin-top: 2px;
+}
+
+.badge {
+  color: white;
 }
