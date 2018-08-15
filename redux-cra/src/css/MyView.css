@@ -9,7 +9,3 @@
     margin-left: 15px !important;
     margin-right: 15px !important;
 }
-
-.rounded-corners {
-    border-radius : calc(.25rem - 1px);
-}

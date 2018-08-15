@@ -15,3 +15,7 @@ body {
 .badge {
   color: white;
 }
+
+.rounded-corners {
+  border-radius : .25rem;
+}

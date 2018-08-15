@@ -72,7 +72,7 @@ class RightFocus extends Component {
             imageRowHeader = Object.entries(rowName).map(([i, a]) => {
                 return (
                     <div key={i} className="col no-gutters">
-                        <img className="img-fluid" src={a.src} alt={a.altText}/>
+                        <img className="img-fluid rounded-corners" src={a.src} alt={a.altText}/>
                     </div>
                 )
             });
@@ -90,7 +90,7 @@ class RightFocus extends Component {
         var imageRowBottom = this.createImageRow(this.state.imageRowBottom);
 
         return (
-            <div className="RightFocus">
+            <div className="RightFocus rounded-corners">
                 <ScrollableAnchor id={'section1'}>
                     <div style={{margin:'0px', padding:'0px'}}></div>
                 </ScrollableAnchor>
@@ -102,7 +102,7 @@ class RightFocus extends Component {
                     </div>
                 </div>
 
-                <img src={this.state.imageSource} alt={this.state.altText} className="w-100" />
+                <img className="rounded-top-corners w-100" src={this.state.imageSource} alt={this.state.altText} />
 
                 <div className="RightFocus-content">
           

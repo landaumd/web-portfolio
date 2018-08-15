@@ -8,9 +8,13 @@
 }
 
 .rounded-top-corners {
-    border-radius : calc(.25rem - 1px) calc(.25rem - 1px) 0px 0px;
+    border-radius : .20rem .20rem 0px 0px;
 }
 
 .rounded-bottom-corners {
-    border-radius : 0px 0px calc(.25rem - 1px) calc(.25rem - 1px);
+    border-radius : 0px 0px .25rem .25rem;
+}
+
+.rounded-corners {
+    border-radius : .25rem;
 }
