@@ -26,7 +26,7 @@ class MyCard extends Component {
         var categories = Object.entries(this.state.info.category).map(([i, a]) => {
             var color = CategoryColors[a]
             return (
-                <div style={{backgroundColor: `${color}`}} className="badge mr-1 mt-1 py-1 px-1">{a}</div>
+                <div key={i} style={{backgroundColor: `${color}`}} className="badge mr-1 mt-1 py-1 px-1">{a}</div>
             )
         });
 
@@ -34,8 +34,8 @@ class MyCard extends Component {
             <div>
                 <Card>
                     <CardImg top width="100%"
-                             src={this.props.info.imageSource}
-                             alt="Card image cap"/>
+                             src={this.props.info.thumbnail.imageSource}
+                             alt={this.props.info.thumbnail.altText}/>
                     <CardBody>
                         <CardTitle>{this.props.info.title}</CardTitle>
                         <CardSubtitle>{this.props.info.subtitle}</CardSubtitle>

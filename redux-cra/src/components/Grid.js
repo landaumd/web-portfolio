@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../css/Grid.css';
-import cardTest from '../config/CardTest.json';
+import Content from '../config/Content.json';
 import MyCard from './MyCard.js';
 import MyJumbo from './MyJumbo.js';
 import StackGrid, { transitions, easings } from "react-stack-grid";
@@ -17,7 +17,7 @@ class Grid extends Component {
         const items = this.props.idsWithCategory;
 
         this.state = {
-            data: cardTest,
+            data: Content,
             isMobile: this.props.isMobile,
             isTINYMobile: this.props.isTINYMobile,
             idsWithCategory: this.props.idsWithCategory,

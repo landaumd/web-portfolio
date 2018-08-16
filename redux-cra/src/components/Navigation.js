@@ -19,7 +19,7 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import cardTest from '../config/CardTest.json';
+import Content from '../config/Content.json';
 
 library.add(faGithubSquare);
 library.add(faLinkedin);
@@ -37,7 +37,7 @@ class Navigation extends Component {
         this.filterByCategoryName = this.filterByCategoryName.bind(this);
 
         this.state = {
-            data: cardTest,
+            data: Content,
             isOpen: false,
             dropdownOpen: false,
             dropDownMenuText: "Filter By Category",
