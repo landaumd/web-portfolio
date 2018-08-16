@@ -28,7 +28,7 @@ class MyJumbo extends Component {
         var categories = Object.entries(this.state.info.category).map(([i, a]) => {
             var color = CategoryColors[a]
             return (
-                <div style={{backgroundColor: `${color}`}} className="badge mr-1 mt-1 py-1 px-1">{a}</div>
+                <div key={i} style={{backgroundColor: `${color}`}} className="badge mr-1 mt-1 py-1 px-1">{a}</div>
             )
         });
 
@@ -37,8 +37,8 @@ class MyJumbo extends Component {
                 <Jumbotron>
                     <h1 className="display-3">{this.props.info.title}</h1>
                     <CardImg top width="100%"
-                             src={this.props.info.imageSource}
-                             alt="Card image cap"/>
+                             src={this.props.info.thumbnail.imageSource}
+                             alt={this.props.info.thumbnail.altText}/>
                     <p className="lead">{this.props.info.subtitle}</p>
                     <hr className="my-2"/>
                     <p>{this.props.info.bodyText}</p>
