@@ -2,20 +2,199 @@
     "01": {
       "component": "MyCard",
       "myJSONid": "01",
-      "title": "The best of the Sausage",
-      "subtitle": "here is some other small info",
-      "paragraph1": "Here is a whole bunch of test body text",
-      "paragraph2": "Here is a whole bunch adlaskdjalskdjals of test body text about my skills",
-      "category": ["school", "programming"],
+      "title": "Software Engineering Intern",
+      "subtitle": "Blackbaud - Charleston, SC - Summer 2017",
+      "category":
+        [
+          "experience",
+          "programming"
+        ],
       "thumbnail": {
-        "imageSource" : "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg",
-        "altText" : "alt thumbnail text"
+        "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg",
+        "altText": "alt thumbnail text"
       },
       "imageTop": {
-        "imageSource" : "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg",
-        "altText" : "alt thumbnail text"
+        "src": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg",
+        "altText": "alt thumbnail text",
+        "padding" : "0px"
+      },
+      "contentInOrder": {
+        "title": "Software Engineering Intern",
+        "subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+        "paragraph-main-1": "For the summer of 2017, I interned at Blackbaud, a software development company based in Charleston, SC. Blackbaud develops software products for non-profits, higher education, and healthcare - some of their clients include awesome organizations like Habitat for Humanity, the World Wildlife Fund, and Feeding America.",
+        "paragraph-main-2": "The team I worked on is called Monopoly; it is a smaller subset of the Enterprise Team. One of Enterprise's main products is the Constituent Relationship Manager (CRM) product which is used by extremely large organizations such as the University of Michigan and the Children's Hospital Colorado Foundation. These clients use CRM to manage their constituent database and take care of the important things such as fundraising and general ledger tasks.",
+        "paragraph-main-3": "Blackbaud's CRM is a very large product and, at that time, could not yet be a part of Blackbaud's goal of 'One Blackbaud', where all products are integrated cloud-based services that can be somewhat modularized. The product managers, however, wanted a responsive, mobile-friendly web app to give to fundraisers for CRM that would enable them to go out and fundraise without being stuck lugging around their computers.",
+        "paragraph-main-4": "So Fundraiser on the Go was born! It has a very visually appealing, easy-to-use interface and allows an organizations' fundraisers to track steps and communication with a prospect's plan, any monetary gifts given, and to find a prospect's contact information quickly. The goal for my software engineering internship was to develop new features for Fundraiser on the Go. By the end of the summer, I had filed a report and fixed a bug, written, tested, and checked in code for 4 new features for the application! Clients will be seeing these new features when they get the sprint package update in a month or so!",
+        "subtitle-volunteering": "Volunteering and Client Visits",
+        "paragraph-volunteering-1": "One of my favorite things about working for Blackbaud was how great it felt to know you were helping large organizations such as Boy Scouts of America or smaller ones such as One80 Place accomplish their mission every day. All the clients that we work with are so incredible and it was very rewarding receiving client feedback and hearing how happy they were with new features or updates.",
+        "paragraph-volunteering-2": "Blackbaud's internship program not only takes us to local clients to hear about their causes and receive feedback on company products, but also to volunteer and help for a few hours. Here are a few pictures of our intern group touring or volunteering with local organizations.",
+        "subtitle-frog": "Fundraiser on the Go: Summer Project",
+        "left-image-right-text-frog-1": {
+          "image": {
+            "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg",
+            "altText": "alt thumbnail text"
+          },
+          "subtitle": "What did Fundraiser on the Go Look Like When I started?",
+          "paragraph": "Fundraiser on the Go first loads the My Portfolio page, displaying all of a fundraiser's prospects and upcoming dates for steps or interactions to be taken."
+        },
+        "paragraph-frog-1": "If a prospect name is clicked on, the Prospect Page will load. Above you can see that the Prospect Page displayed minimal information on the prospect right at the beginning of my internship.",
+        "small-subtitle-frog-2": "What new features were added to Fundraiser on the Go during my internship?",
+        "paragraph-frog-2": "Above are some features that I added to the app. I worked on a wonderful team with a product manager, program manager, user experience designer, software quality engineer, and many more other roles. While I was the developer for these features, in no way do I feel like I did everything myself. We used Agile software development practices, so our team met daily for our 15 minute stand up in order to keep track of what the team was up to. We used back-logs and task management tools and also had a great many options for communication amongst team members: Slack, Skype, WebEx.",
+        "paragraph-frog-3": "As a team, we called the client to 'discover' what they wanted features to look like and how they wanted them to perform. We discussed how features would work as a group, and I worked closely with the UX designer to make sure everything was functioning as planned. Unit tests were written for any new code added and then I would submit my code for a code review with my team.",
+        "paragraph-frog-4": "Most of the time, the feedback I received was from a Senior Software Engineer who probably taught me more about databases, data lists, code tables, SQL, and C# in one summer than I could have learned in a year of school. It was awesome! I really enjoyed learning full stack development and I had never taken a database class before so it was great seeing the full process all the way through. I also enjoyed having someone keep me on my toes with regards to production quality programming.",
+        "subtitle-tech": "Languages, Tools and Frameworks Used",
+        "image-row-tech-1": [
+          {
+            "src": "data:image/png;base64,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",
+            "altText": "alt text 1",
+            "caption": ".net core",
+            "padding": "20px 30px 30px 30px"
+          },
+          {
+            "src": "https://www.seleniumhq.org/images/big-logo.png",
+            "altText": "alt text 2",
+            "caption": "selenium",
+            "padding": "20px"
+          },
+          {
+            "src": "http://www.stickpng.com/assets/images/58482f67cef1014c0b5e4a81.png",
+            "altText": "alt text 3",
+            "caption": "salesforce",
+            "padding": "30px 20px"
+          }
+        ],
+        "image-row-tech-2": [
+          {
+            "src": "https://bjungbogati.com/wp-content/uploads/2016/11/Microsoft-Azure-Cloud.png",
+            "altText": "alt text 3",
+            "caption": "azure",
+            "padding": "0px"
+          },
+          {
+            "src": "http://www.codestring.co.uk/site/wp-content/uploads/2016/07/VisualStudio.png",
+            "altText": "alt text 2",
+            "caption": "visual studio",
+            "padding": "0px"
+          },
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlYp6kJN5eHcMRznZ87htLnXuYcUaathSAAlDFA5aIMVdc8YkIA",
+            "altText": "alt text 1",
+            "caption": "sonar qube",
+            "padding": "10px"
+          }
+        ],
+        "subtitle-features-video": "Videos of Features Added",
+        "small-subtitle-prospect-addresses": "Prospect Addresses",
+        "paragraph-prospect-addresses": "Being able to display a prospect's addresses was the first feature I worked on. We designed a link that, when clicked on,  opens a modal which displays the constituent's top 5 addresses, complete with icons indicating things like 'Primary', 'Do not mail', or 'Confidential'. Fundraiser on the Go is also used by clients and organizations around the world, so we had to use the user's locale to make sure addresses displayed correctly as well as any dates for seasonal addresses.",
+        "video-prospect-addresses": "rTJLvVlr1js",
+        "small-subtitle-pics-and-managers": "Prospect Pictures and Primary Managers",
+        "paragraph-pics-and-managers-1": "The prospect picture was added to the prospect page quickly after I finished the address modal feature. Clients had been asking for a way to view the pictures of prospects as a way to differentiate them a little easier.",
+        "paragraph-pics-and-managers-2": "We also needed to add the ability to tell who a prospect's primary manager was - just in case you were a fundraiser who wanted to contact a prospect and discovered that they are not in your portfolio. This also leads up to the last feature: the constituent search.",
+        "video-pics-and-managers": "rTJLvVlr1js",
+        "small-subtitle-constituent-search": "Constituent Search",
+        "paragraph-constituent-search": "The search feature was the final feature I added to Fundraiser on the Go. With it came a change to the look of the My Portfolio page by adding a tabset - when the search tab is clicked, the user is able to search for constituents that are outside of their portfolio, giving them the ability to find potential prospects and increase their fundraising capabilities.",
+        "video-constituent-search": "rTJLvVlr1js",
+        "subtitle-documentation": "Documentation for Search Feature Handover",
+        "paragraph-documentation": "Here is some documentation I wrote that covers the functionality of the search feature. Because it was close to the end of my internship, I did not want to leave my team without any way of understanding how and what my code was doing - just in case they needed to change it after I had left.",
+        "carousel-documentation": [
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 1",
+            "caption": "caption 1"
+          },
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 2",
+            "caption": "caption 2"
+          },
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 3",
+            "caption": "caption 3"
+          }
+        ],
+        "subtitle-hackathon": "Off the Grid Hackathon",
+        "paragraph-hackathon": "Blackbaud holds a company-wide 24-hour hackathon twice a year as well. It's called Off the Grid and it was the first hackathon I had ever competed in. We worked in a team of 8 to come up with an app that would benefit our social good community. At 12pm the next day, after staying up a total of 27 hours, we presented our project to a panel of judges. We made it to the top 14! The following Monday, our team presented again in front of the whole company... We did not place, but it was an awesome, memorable experience and I would definitely do it again!",
+        "small-subtitle-hackathon": "Final 14 Presentations for Off the Grid (July 31 2017)",
+        "single-image-hackathon": {
+          "src": "https://bjungbogati.com/wp-content/uploads/2016/11/Microsoft-Azure-Cloud.png",
+          "altText": "alt text 3",
+          "caption": "azure",
+          "padding": "20px"
+        },
+        "paragraph-hackathon-team": "My wonderful teammates were Courtney Mauk, Elaina Cole, Erik Van Scoik, Thomas Ortiz, Sandhya Rajasabeson, Ricky Guerin, and Kayleigh Semeraro.",
+        "subtitle-sprint-reviews": "Bi-Monthly Sprint Reviews with the Enterprise Team",
+        "paragraph-sprint-reviews-1": "Every two weeks, the Enterprise team gets together to do a Sprint Review, where each team gets to talk about what they have been working on and possibly give a short demo of a new feature. Over the course of my internship, I demoed my features 3 times! Below are recordings of my demos.",
+        "paragraph-sprint-reviews-2": "Our team also likes to give presentations on client highlights once a month to educate each other on who our clients are and how they use our products. I worked with the wonderful product management intern on my team, Courtney Mauk, to present a client highlight on the Children's Hospital Colorado Foundation, a client that we worked with closely for feature feedback and for our Off the Grid project. Below are the presentation slides as well as the recording of the presentation we gave.",
+        "subtitle-client-highlight": "Client Highlight",
+        "carousel-client-highlight": [
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 1",
+            "caption": "caption 1"
+          },
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 2",
+            "caption": "caption 2"
+          },
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 3",
+            "caption": "caption 3"
+          }
+        ],
+        "subtitle-client-highlight-recording": "Client Highlight Recording",
+        "video-client-highlight": "rTJLvVlr1js",
+        "subtitle-final-presentation": "Final Intern Presentation",
+        "paragraph-final-presentation": "Courtney, the product management intern on my team, and I worked together almost every day on Fundraiser on the Go. So, by the time Final Presentations for Interns came around, we decided to do a joint presentation on our summers at Blackbaud. Below, you can see our slide deck as well as a recording of our final presentation in front of the company.",
+        "small-subtitle-final-presentation-slides": "Presentation Slides",
+        "carousel-final-presentation": [
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 1",
+            "caption": "caption 1"
+          },
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 2",
+            "caption": "caption 2"
+          },
+          {
+            "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+            "altText": "alt text 3",
+            "caption": "caption 3"
+          }
+        ],
+        "subtitle-last-changes": "Final Changes to the Feature",
+        "left-image-right-text-last": {
+          "image": {
+            "imageSource": "https://barkpost.com/wp-content/uploads/2015/02/thelifeofhank.jpg",
+            "altText": "alt thumbnail text"
+          },
+          "subtitle": "Coding until the last minute...",
+          "paragraph": "On the last day of my internship, I was able to squeeze in a few lines of code to enable internationalization of our search feature as well as conducting a search by phone number. CRM has quite a few fundraisers overseas so we needed to add this functionality!"
+        },
+        "paragraph-last": "We also had one final meeting to discuss any extra work needed to be done before the feature is completed. While it is really hard to say goodbye to a project that I worked so hard on, I am excited that my team will finish it up and let me know any client feedback they receive once the service pack is released in September.",
+        "progress-bars-skills" : [
+          {
+            "skillName": "Java",
+            "skillLevel": "90"
+          },
+          {
+            "skillName": "Python",
+            "skillLevel": "30"
+          },
+          {
+            "skillName": "Git",
+            "skillLevel": "70"
+          }
+        ]
       }
     },
+
+
+
 
 
 

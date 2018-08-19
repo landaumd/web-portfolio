@@ -22,3 +22,7 @@
 /*.img-fluid {*/
     /*!*max-height: 100px;*!*/
 /*}*/
+
+.p {
+    white-space:pre-wrap;
+}
