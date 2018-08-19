@@ -42,6 +42,14 @@ a.navbar-brand-text {
   color: white;
 }
 
+.rounded-top-corners {
+  border-radius : .20rem .20rem 0px 0px;
+}
+
+.rounded-bottom-corners {
+  border-radius : 0px 0px .25rem .25rem;
+}
+
 .rounded-corners {
   border-radius : .25rem;
 }
