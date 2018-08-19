@@ -14,7 +14,6 @@ import Video from "./Video";
 import MyCarousel from "./MyCarousel";
 import SingleImage from "./SingleImage";
 import ProgressBars from "./ProgressBars";
-// import {logo} from './images.js';
 
 class RightFocus extends Component {
     constructor(props) {
@@ -41,59 +40,6 @@ class RightFocus extends Component {
             }
         })
     };
-
-    createProgressBars() {
-        let progBars = null;
-        if (this.state.info.skills != null) {
-            progBars = Object.entries(this.state.info.skills).map(([i, a]) => {
-                return (
-                    <div key={i}>
-                        <p>{a.skillName}</p>
-                        {/*<Line percent={a.skillLevel} strokeColor="#E67E22" strokeWidth="2" trailColor="grey"/>*/}
-                    </div>
-                )
-            });
-        }
-        return progBars
-    }
-
-    createImageRow(rowName) {
-        let imageRowHeader = null;
-        if (rowName != null){
-            imageRowHeader = Object.entries(rowName).map(([i, a]) => {
-                console.log(a.padding)
-                return (
-                    <div key={i} className="col no-gutters">
-                        <img className="img-fluid my-auto" style={{"padding" : a.padding}} src={a.src} alt={a.altText}/>
-                    </div>
-                )
-            });
-        }
-        return imageRowHeader
-    }
-
-    createSingleImage(imageTop) {
-        let image = null;
-        if (imageTop != null){
-            return (
-                <div>
-                    <img className="rounded-top-corners w-100" src={imageTop.imageSource} alt={imageTop.altText} />
-                </div>
-            )
-        }
-        return image
-    }
-
-    createParagraph(text) {
-        if (text != null){
-            return (
-                <div>
-                    <p>{text}</p>
-                </div>
-            )
-        }
-        return text
-    }
 
     createImagesHeader(){
         if (this.state.info.imageTop !== undefined){
@@ -157,15 +103,8 @@ class RightFocus extends Component {
                 <ScrollableAnchor id={'section1'}>
                     <div style={{margin:'0px', padding:'0px'}}></div>
                 </ScrollableAnchor>
-
-                {/*/!*Image Row Header*!/*/}
-                {/*<div className="rounded-top-corners">*/}
-                    {/*<div className="row no-gutters">*/}
-                        {/*{imageRowHeader}*/}
-                    {/*</div>*/}
-                {/*</div>*/}
+          
                 {imagesHeader}
-                {/*{imageTop}*/}
 
                 <div className="RightFocus-content">
                     {content}
