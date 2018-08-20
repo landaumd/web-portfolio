@@ -54,41 +54,6 @@ class RightFocus extends Component {
                 )
             });
         }
-        return progBars
-    }
-
-    createImageRow(rowName) {
-        let imageRowHeader = null;
-        if (rowName != null){
-            imageRowHeader = Object.entries(rowName).map(([i, a]) => {
-                return (
-                    <div key={i} className="col no-gutters">
-                        <img className="img-fluid my-auto" style={{"padding" : a.padding}} src={require('../images-megan/' + a.src)} alt={a.altText}/>
-                    </div>
-                )
-            });
-        }
-        return imageRowHeader
-    }
-
-    createSingleImage(imageTop) {
-        let image = null;
-        if (imageTop != null){
-            return (
-                <div>
-                    <img className="rounded-top-corners w-100" src={require('../images-megan/' + imageTop.src)} alt={imageTop.altText} />
-                </div>
-            )
-        }
-        return image
-    }
-
-    createImagesHeader(){
-        if (this.state.info.imageTop !== undefined){
-            return <SingleImage className={"rounded-top-corners"} info={this.state.info.imageTop}/>
-        } else if (this.state.info.imageRowHeader !== undefined){
-            return <ImageRow info={this.state.info.imageRowHeader}/>
-        }
     }
 
     createContentFromList(){
