@@ -35,10 +35,11 @@ class MyJumbo extends Component {
         return (
             <div>
                 <Jumbotron>
-                    <h1 className="display-3">{this.props.info.title}</h1>
+
                     <CardImg top width="100%"
                              src={this.props.info.thumbnail.imageSource}
                              alt={this.props.info.thumbnail.altText}/>
+                    <h3 className="display-7">{this.props.info.title}</h3>
                     <p className="lead">{this.props.info.subtitle}</p>
                     <hr className="my-2"/>
                     <p>{this.props.info.bodyText}</p>

@@ -5,12 +5,14 @@ import {connect} from "react-redux";
 import CategoryColors from '../config/CategoryColors.json';
 
 
+
 class MyCard extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            info: null
+            info: null,
+
         };
 
         this.state.info = this.props.info;

@@ -24,8 +24,21 @@ class RightFocus extends Component {
     findFocusTarget = () => {
         Object.entries(this.state.data).map(([cardNum,content]) => {
             if(cardNum === this.props.myJSONid){
+
                 this.state.info = content;
-                return null
+
+                this.state.title = content.title;
+                this.state.subtitle = content.subtitle;
+                this.state.bodyText = content.bodyText;
+                this.state.imageSource = content.imageSource;
+                this.state.skills = content.skills;
+                this.state.altText = content.altText;
+                this.state.imageRowHeader = content.imageRowHeader;
+                this.state.imageRow1 = content.imageRow1;
+                this.state.imageRow2 = content.imageRow2;
+                this.state.imageRowBottom = content.imageRowBottom;
+                console.log(content.imageSource);
+
             } else {
                 return null
             }
@@ -37,8 +50,9 @@ class RightFocus extends Component {
         if (this.state.info.skills != null) {
             progBars = Object.entries(this.state.info.skills).map(([i, a]) => {
                 return (
+
                     <div key={i}>
-                        <p>{a.skillName}</p>
+                        <p className={"SkillName"}>{a.skillName}</p>
                         <Line percent={a.skillLevel} strokeColor="#E67E22" strokeWidth="2" trailColor="grey"/>
                     </div>
                 )

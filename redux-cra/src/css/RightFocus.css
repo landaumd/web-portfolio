@@ -19,6 +19,8 @@
     border-radius : .25rem;
 }
 
-/*.img-fluid {*/
-    /*!*max-height: 100px;*!*/
-/*}*/
+.SkillName{
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+}
+

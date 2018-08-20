@@ -1,0 +1,180 @@
+
+{
+  "00": {
+    "component": "MyCard",
+    "myJSONid": "00",
+    "title": "Phillip Byrd",
+    "subtitle": "About ME!",
+    "bodyText": "My",
+    "imageSource": "horseShoe.jpg",
+    "category": []
+  },
+    "01": {
+      "component": "MyCard",
+      "myJSONid": "01",
+      "title": "Jr. Systems Engineer",
+      "subtitle": "I spent my last semester at the College of Charleston working for the wonderful company Blackbaud as a Jr. Systems Engineer on their DevOps Team.",
+      "bodyText": "",
+      "imageSource": "",
+      "category": ["experience", "programming"]
+    },
+
+    "02": {
+      "component": "MyCard",
+      "myJSONid": "02",
+      "title": "Website Administrator",
+      "subtitle": "My senior year, I put my web development and management skills to work for the SSCA",
+      "bodyText": "",
+      "imageSource": "",
+      "category": ["experience", "programming"],
+      "imageRowHeader######" : [
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 1",
+          "caption": "caption 1"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 2",
+          "caption": "caption 2"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 3",
+          "caption": "caption 3"
+        }
+      ],
+      "imageRow1######" : [
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 1",
+          "caption": "caption 1"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 2",
+          "caption": "caption 2"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 3",
+          "caption": "caption 3"
+        }
+      ],
+      "imageRow2######" : [
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 1",
+          "caption": "caption 1"
+        },
+        {
+          "src": "https://image.flaticon.com/sprites/new_packs/112097-dog-breeds-fullbody.png",
+          "altText": "alt text 2",
+          "caption": "caption 2"
+        }
+      ],
+      "imageRowBottom######" : [
+        {
+          "src": "https://assets.saatchiart.com/saatchi/89456/art/3277311/2347198-MDZECSPC-7.jpg",
+          "altText": "alt text 1",
+          "caption": "caption 1"
+        },
+        {
+          "src": "https://assets.saatchiart.com/saatchi/89456/art/3277311/2347198-MDZECSPC-7.jpg",
+          "altText": "alt text 2",
+          "caption": "caption 2"
+        },
+        {
+          "src": "https://assets.saatchiart.com/saatchi/89456/art/3277311/2347198-MDZECSPC-7.jpg",
+          "altText": "alt text 3",
+          "caption": "caption 3"
+        }
+      ]
+    },
+
+
+
+
+    "03": {
+      "component": "MyCard",
+      "myJSONid": "03",
+      "title": "Research Administrator",
+      "subtitle": "While at the College of Charleston, I worked closely with a favorite Facility member on their research team exploring new data mining techniques",
+      "bodyText": "",
+      "imageSource": "",
+      "category": ["school", "experience","programming"]
+    },
+    "04": {
+      "component": "MyJumbo",
+      "myJSONid": "04",
+      "title": "B.S. in Computer Information Systems",
+      "subtitle": "I graduated Summa Cum Laude from the College of Charleston in the summer of 2018 with a degree in Computer Information Systems.",
+      "bodyText": "",
+      "category": ["school","experience"],
+      "imageSource": ""
+    },
+    "05": {
+      "component": "MyJumbo",
+      "myJSONid": "05",
+      "title": "B.A. in Political Science",
+      "subtitle": "I obtained my first degree B.A. in Political Science from Auburn University in 2013",
+      "bodyText": "",
+      "category": ["school", "programming"],
+      "imageSource": ""
+     },
+
+    "07": {
+      "component": "MyCard",
+      "myJSONid": "07",
+      "title": "Programming Skills",
+      "category": ["programming","extracurricular"],
+      "subtitle": "Here is a list of all the Languages and Platforms I have been using throughout my career",
+      "bodyText": "",
+      "imageSource": "",
+      "altText": "images must have alt text",
+      "skills" : [
+        {
+          "skillName": "Java",
+          "skillLevel": "90"
+        },
+        {
+          "skillName": "React",
+          "skillLevel": "60"
+        },
+        {
+          "skillName": "Redux",
+          "skillLevel": "50"
+        },
+        {
+          "skillName": "Python",
+          "skillLevel": "45"
+        },
+        {
+          "skillName": "JavaScript",
+          "skillLevel": "75"
+        },
+        {
+          "skillName": "PHP",
+          "skillLevel": "50"
+        },
+        {
+          "skillName": "C#",
+          "skillLevel": "30"
+        },
+        {
+          "skillName": "HTML",
+          "skillLevel": "90"
+        },
+        {
+          "skillName": "CSS",
+          "skillLevel": "90"
+        }
+
+      ]
+
+  }
+}
+
+
+
+
