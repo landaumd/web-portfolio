@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/RightFocus.css';
 import {connect} from "react-redux";
-import Content from '../config/Content.json';
+import PhillContent from '../config/PhillContent.json';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 import Paragraph from "./Paragraph";
@@ -14,14 +14,14 @@ import Video from "./Video";
 import MyCarousel from "./MyCarousel";
 import SingleImage from "./SingleImage";
 import ProgressBars from "./ProgressBars";
-// import {logo} from './images.js';
+import LargeSubtitle from "./LargeSubtitle";
 
 class RightFocus extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            data : Content,
+            data : PhillContent,
             isMobile : this.props.isMobile,
             info : null,
         };
@@ -61,10 +61,9 @@ class RightFocus extends Component {
         let imageRowHeader = null;
         if (rowName != null){
             imageRowHeader = Object.entries(rowName).map(([i, a]) => {
-                console.log(a.padding)
                 return (
                     <div key={i} className="col no-gutters">
-                        <img className="img-fluid my-auto" style={{"padding" : a.padding}} src={a.src} alt={a.altText}/>
+                        <img className="img-fluid my-auto" style={{"padding" : a.padding}} src={require('../images-megan/' + a.src)} alt={a.altText}/>
                     </div>
                 )
             });
@@ -77,22 +76,11 @@ class RightFocus extends Component {
         if (imageTop != null){
             return (
                 <div>
-                    <img className="rounded-top-corners w-100" src={imageTop.imageSource} alt={imageTop.altText} />
+                    <img className="rounded-top-corners w-100" src={require('../images-megan/' + imageTop.src)} alt={imageTop.altText} />
                 </div>
             )
         }
         return image
-    }
-
-    createParagraph(text) {
-        if (text != null){
-            return (
-                <div>
-                    <p>{text}</p>
-                </div>
-            )
-        }
-        return text
     }
 
     createImagesHeader(){
@@ -111,6 +99,9 @@ class RightFocus extends Component {
             content = Object.entries(contentList).map(([i, a]) => {
                 if (i.startsWith("paragraph")){
                     return <Paragraph key={i} info={a}/>
+
+                }else if (i.startsWith("large-subtitle")) {
+                    return <LargeSubtitle key={i} info={a}/>
 
                 } else if (i.startsWith("subtitle")){
                     return <Subtitle key={i} info={a}/>
@@ -132,6 +123,9 @@ class RightFocus extends Component {
 
                 } else if (i.startsWith("space")){
                     return <br key={i} />
+
+                }else if (i.startsWith("line")){
+                    return <hr key={i} />
 
                 } else if (i.startsWith("carousel")){
                     return <MyCarousel className="w-100" key={i} info={a}/>
@@ -155,20 +149,15 @@ class RightFocus extends Component {
         return (
             <div className="RightFocus rounded-corners">
                 <ScrollableAnchor id={'section1'}>
-                    <div style={{margin:'0px', padding:'0px'}}></div>
+                    <div style={{margin:'0px', padding:'0px'}}/>
                 </ScrollableAnchor>
 
-                {/*/!*Image Row Header*!/*/}
-                {/*<div className="rounded-top-corners">*/}
-                    {/*<div className="row no-gutters">*/}
-                        {/*{imageRowHeader}*/}
-                    {/*</div>*/}
-                {/*</div>*/}
                 {imagesHeader}
-                {/*{imageTop}*/}
 
                 <div className="RightFocus-content">
+
                     {content}
+
                 </div>
             </div>
         );

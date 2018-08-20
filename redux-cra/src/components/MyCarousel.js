@@ -7,13 +7,14 @@ import {
     CarouselCaption
 } from 'reactstrap';
 import '../css/MyCarousel.css';
+import Config from '../config/Config.json';
 
 let items = [];
 
 class MyCarousel extends Component {
     constructor(props) {
         super(props);
-        this.state = { activeIndex: 0 };
+        this.state = { activeIndex: 0, config: Config };
         this.next = this.next.bind(this);
         this.previous = this.previous.bind(this);
         this.goToIndex = this.goToIndex.bind(this);
@@ -64,7 +65,7 @@ class MyCarousel extends Component {
                     onExited={this.onExited}
                     key={x}
                 >
-                    <img className="img-fluid" src={item.src} alt={item.altText} />
+                    <img className="img-fluid" src={require('../' + this.state.config['path-to-images-folder'] + item.src)} alt={item.altText} />
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
             );

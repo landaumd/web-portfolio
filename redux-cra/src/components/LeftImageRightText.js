@@ -16,7 +16,7 @@ class LeftImageRightText extends Component {
         return (
             <div className="row">
                 <div className="col">
-                    <img className="img-fluid my-auto rounded-corners" src={this.state.info.image.imageSource} alt={this.state.info.image.altText}/>
+                    <img className="img-fluid my-auto rounded-corners" src={require('../images/' + this.state.info.image.src)} alt={this.state.info.image.altText}/>
                 </div>
                 <div className="col">
                     <SmallSubtitle info={this.state.info.subtitle} />

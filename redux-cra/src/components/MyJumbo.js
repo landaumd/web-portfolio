@@ -4,12 +4,14 @@ import '../css/MyJumbo.css';
 import CategoryColors from '../config/CategoryColors.json';
 import { CardImg } from 'reactstrap';
 import {connect} from "react-redux";
+import Config from '../config/Config.json';
 
 class MyJumbo extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
+            config: Config,
             info: null
         };
 
@@ -35,11 +37,14 @@ class MyJumbo extends Component {
         return (
             <div>
                 <Jumbotron>
-                    <h1 className="display-3">{this.props.info.title}</h1>
-                    <CardImg top width="100%"
-                             src={this.props.info.thumbnail.imageSource}
-                             alt={this.props.info.thumbnail.altText}/>
-                    <p className="lead">{this.props.info.subtitle}</p>
+                    <h3>{this.props.info.title}</h3>
+                    <CardImg
+                        className="w-100"
+                        top width="100%"
+                        src={require('../' + this.state.config['path-to-images-folder'] + this.props.info.thumbnail.src)}
+                        alt={this.props.info.thumbnail.altText}
+                        style={{"padding" : this.props.info.padding}}/>
+                    <h4>{this.props.info.subtitle}</h4>
                     <hr className="my-2"/>
                     <p>{this.props.info.bodyText}</p>
                     <p className="lead"></p>

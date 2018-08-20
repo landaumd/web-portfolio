@@ -15,7 +15,7 @@ class ImageRow extends Component {
         let imageRow = Object.entries(this.state.info).map(([i, a]) => {
             return (
                 <div key={i} className="col no-gutters">
-                    <img className="img-fluid my-auto" style={{"padding" : a.padding}} src={a.src} alt={a.altText}/>
+                    <img className="img-fluid my-auto" style={{"padding" : a.padding}} src={require('../images/' + a.src)} alt={a.altText}/>
                 </div>
             )
         });

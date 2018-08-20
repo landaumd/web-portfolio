@@ -14,7 +14,7 @@ class Subtitle extends Component {
     render() {
         return (
             <div>
-                <h2>{this.state.info}</h2>
+                <h5>{this.state.info}</h5>
             </div>
         );
     }
