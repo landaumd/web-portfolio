@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {connect} from "react-redux";
 import {
     Carousel,
     CarouselItem,
@@ -8,34 +7,25 @@ import {
     CarouselCaption
 } from 'reactstrap';
 import '../css/MyCarousel.css';
+import Config from '../config/Config.json';
 
 let items = [];
 
 class MyCarousel extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            activeIndex: 0,
-            info: null
-
-        };
+        this.state = { activeIndex: 0, config: Config };
         this.next = this.next.bind(this);
         this.previous = this.previous.bind(this);
         this.goToIndex = this.goToIndex.bind(this);
         this.onExiting = this.onExiting.bind(this);
         this.onExited = this.onExited.bind(this);
 
+        items = [];
+        Object.entries(this.props.info).map(([i, a]) => {
+            items.push(a)
+        });
 
-        this.state.info = this.props.info;
-
-        this.makeItems = this.makeItems.bind(this);
-        this.toggleRight = this.toggleRight.bind(this);
-    }
-
-
-    toggleRight = () => {
-        this.props.dispatch({type:"TOGGLE_RIGHT_IS_OPEN", data:{myJSONid: this.props.info.myJSONid} });
     }
 
     onExiting() {
@@ -63,57 +53,37 @@ class MyCarousel extends Component {
         this.setState({ activeIndex: newIndex });
     }
 
-    makeItems(){
-        items = [];
-        Object.entries(this.state.info).map(([i,a]) => {
-            if (i === "images"){
-                items = a;
-                return null
-            } else {
-                return null
-            }
-        });
-    }
-
     render() {
         const { activeIndex } = this.state;
 
-        this.makeItems();
-
-        let slides = items.map((item) => {
+        let x = 0;
+        const slides = items.map((item) => {
+            x++;
             return (
                 <CarouselItem
                     onExiting={this.onExiting}
                     onExited={this.onExited}
-                    key={item.src}
+                    key={x}
                 >
-                    <img style={{width:'100%', height: '50vw'}} src={item.src} alt={item.altText}  />
+                    <img className="img-fluid" src={require('../' + this.state.config['path-to-images-folder'] + item.src)} alt={item.altText} />
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
             );
         });
 
         return (
-
             <Carousel
                 activeIndex={activeIndex}
                 next={this.next}
                 previous={this.previous}
-
             >
                 <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
                 {slides}
                 <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
                 <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-
             </Carousel>
         );
     }
 }
 
-
-export default connect((state, props) => {
-    return {
-        ...state
-    }
-})(MyCarousel);
+export default MyCarousel;

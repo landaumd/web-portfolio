@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './App.css';
+import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/Navigation.js';
 import MyView from "./components/MyView.js";

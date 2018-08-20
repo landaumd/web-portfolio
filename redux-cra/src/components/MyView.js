@@ -21,6 +21,10 @@ class MyView extends  Component {
 
     }
 
+    // componentDidMount(){
+    //     window.location.href.anchor('#section1');
+    // }
+
     componentWillMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
     }

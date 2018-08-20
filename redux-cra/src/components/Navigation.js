@@ -19,7 +19,8 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import cardTest from '../config/CardTest.json';
+import PhillContent from '../config/PhillContent.json';
+import Config from '../config/Config.json';
 
 library.add(faGithubSquare);
 library.add(faLinkedin);
@@ -37,7 +38,8 @@ class Navigation extends Component {
         this.filterByCategoryName = this.filterByCategoryName.bind(this);
 
         this.state = {
-            data: cardTest,
+            config: Config,
+            data: PhillContent,
             isOpen: false,
             dropdownOpen: false,
             dropDownMenuText: "Filter By Category",
@@ -136,7 +138,13 @@ class Navigation extends Component {
     render() {
         return (
             <Navbar color="light" fixed='top' expand="sm">
-                <NavbarBrand className="navbar-brand-text" href="/">Portfolio Website</NavbarBrand>
+                <NavbarBrand className="navbar-brand-text" href="/" style={{"padding" : "0px"}}>
+                    <img src={require('../' + this.state.config['path-to-images-folder'] + this.state.config['logo'])}
+                         height="70px"
+                         alt="logo"
+                         style={{"padding-top" : "5px"}}
+                    />
+                </NavbarBrand>
 
                 <NavbarToggler className="navbar-phone-toggle" onClick={this.toggle}>
                     <FontAwesomeIcon id="caret" className="fa-vc" icon={['fas', 'caret-up']} size="1x" color="white"/>
