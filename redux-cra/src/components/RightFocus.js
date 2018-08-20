@@ -47,7 +47,8 @@ class RightFocus extends Component {
                 this.state.imageRow1 = content.imageRow1;
                 this.state.imageRow2 = content.imageRow2;
                 this.state.imageRowBottom = content.imageRowBottom;
-                console.log(content.imageSource);
+                this.state.contentInOrder = content.contentInOrder;
+                this.state.imageTop = content.imageTop;
 
             } else {
                 return null
@@ -97,15 +98,15 @@ class RightFocus extends Component {
     }
 
     createImagesHeader(){
-        if (this.state.info.imageTop !== undefined){
+        if (this.state.imageTop !== undefined){
             return <SingleImage className={"rounded-top-corners"} info={this.state.info.imageTop}/>
-        } else if (this.state.info.imageRowHeader !== undefined){
+        } else if (this.state.imageRowHeader !== undefined){
             return <ImageRow info={this.state.info.imageRowHeader}/>
         }
     }
 
     createContentFromList(){
-        let contentList = this.state.info.contentInOrder;
+        let contentList = this.state.contentInOrder;
 
         let content;
         if (contentList != null) {
