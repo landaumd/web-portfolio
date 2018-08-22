@@ -14,7 +14,6 @@ class ProgressBars extends Component {
 
     createProgressBars() {
         let progBars = null
-        console.log(this.state.info)
         progBars = Object.entries(this.state.info).map(([i, a]) => {
             return (
                 <div key={i}>
