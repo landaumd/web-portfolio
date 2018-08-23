@@ -1,8 +1,8 @@
 .MyShadow {
-    /*text-shadow: 0 0 4px #ffffff;*/
-    /*text-outline: 4px #000000;*/
+    text-shadow: 1px 1px 4px #000000;
+    /*text-outline: 4px #4e555b;*/
 }
 
 .MyOpacity {
-    opacity: 0.4;
+    opacity: 0.55;
 }

@@ -15,14 +15,14 @@ import {
     DropdownItem
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import PhillContent from '../config/PhillContent.json';
 import Config from '../config/Config.json';
 
-library.add(faGithub);
+library.add(faGithubSquare);
 library.add(faLinkedin);
 library.add(faCaretUp);
 
@@ -180,7 +180,7 @@ class Navigation extends Component {
                         </UncontrolledDropdown>
 
                         <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
-                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'github']} size="2x" color="white"/>
+                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'github-square']} size="2x" color="white"/>
                         </NavLink>
                         <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
                             <FontAwesomeIcon className="fa-vc" icon={['fab', 'linkedin']} size="2x" color="white"/>

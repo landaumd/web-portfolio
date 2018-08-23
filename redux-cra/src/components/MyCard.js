@@ -43,10 +43,12 @@ class MyCard extends Component {
                         style={{"padding" : this.props.info.thumbnail.padding, borderRadius: '0.25rem'}}
                     />
                     <CardBody className="card-img-overlay">
-                        <h3>{this.props.info.title}</h3>
-                        <h4>{this.props.info.subtitle}</h4>
+
+                        <h3 className="MyShadow">{this.props.info.title}</h3>
+                        <h4 className="MyShadow">{this.props.info.subtitle}</h4>
                         <CardText>{this.props.info.bodyText}</CardText>
-                        <div className="card-footer">
+
+                        <div className="align-bottom-left" style={{display: "block",   position: "absolute", bottom: 20, right: 0, left: 20, margin: 'auto'}}>
                             <div>
                                 <Button href='#section1' className="btn-toggle btn-dark" onClick={this.toggleRight}>
                                     <div className="tiny-m-top">
