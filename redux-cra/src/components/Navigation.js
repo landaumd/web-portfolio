@@ -142,7 +142,7 @@ class Navigation extends Component {
                     <img src={require('../' + this.state.config['path-to-images-folder'] + this.state.config['logo'])}
                          height="70px"
                          alt="logo"
-                         style={{"padding-top" : "5px"}}
+                         style={{"paddingTop" : "5px"}}
                     />
                 </NavbarBrand>
 
@@ -153,10 +153,10 @@ class Navigation extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" fixed='top' >
 
-                        <Button className="btn my-auto btn-outline-light btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "See Less" : "See More"}</Button>
+                        <Button className="btn my-auto btn-dark btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "See Less" : "See More"}</Button>
 
                         <UncontrolledDropdown className="my-auto ml-2" nav inNavbar isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
-                            <DropdownToggle className="btn btn-outline-light btn-toggle" nav caret>
+                            <DropdownToggle className="btn btn-dark btn-toggle" nav caret>
                                 {this.state.dropDownMenuText}
                             </DropdownToggle>
                             <DropdownMenu right>
@@ -180,15 +180,14 @@ class Navigation extends Component {
                         </UncontrolledDropdown>
 
                         <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
-                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'github-square']} size="3x" color="white"/>
+                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'github-square']} size="2x" color="white"/>
                         </NavLink>
                         <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
-                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'linkedin']} size="3x" color="white"/>
+                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'linkedin']} size="2x" color="white"/>
                         </NavLink>
                     </Nav>
                 </Collapse>
             </Navbar>
-
         );
     }
 }

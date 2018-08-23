@@ -1,248 +1,31 @@
 {
-    "01": {
-      "component": "MyCard",
-      "myJSONid": "01",
-      "title": "PHILL'S CONTENT",
-      "subtitle": "Blackbaud - Charleston, SC - Summer 2017",
-      "category":
-        [
-          "experience",
-          "programming"
-        ],
-      "thumbnail": {
-        "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-        "altText": "alt thumbnail text",
-        "padding" : "0px"
-      },
-      "imageTop": {
-        "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-        "altText": "alt thumbnail text",
-        "padding" : "0px"
-      },
-      "contentInOrder": {
-        "title": "Software Engineering Intern",
-        "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
-        "line-1" : "",
-        "paragraph-main-1": "For the summer of 2017, I interned at Blackbaud, a software development company based in Charleston, SC. Blackbaud develops software products for non-profits, higher education, and healthcare - some of their clients include awesome organizations like Habitat for Humanity, the World Wildlife Fund, and Feeding America.",
-        "paragraph-main-2": "The team I worked on is called Monopoly; it is a smaller subset of the Enterprise Team. One of Enterprise's main products is the Constituent Relationship Manager (CRM) product which is used by extremely large organizations such as the University of Michigan and the Children's Hospital Colorado Foundation. These clients use CRM to manage their constituent database and take care of the important things such as fundraising and general ledger tasks.",
-        "paragraph-main-3": "Blackbaud's CRM is a very large product and, at that time, could not yet be a part of Blackbaud's goal of 'One Blackbaud', where all products are integrated cloud-based services that can be somewhat modularized. The product managers, however, wanted a responsive, mobile-friendly web app to give to fundraisers for CRM that would enable them to go out and fundraise without being stuck lugging around their computers.",
-        "paragraph-main-4": "So Fundraiser on the Go was born! It has a very visually appealing, easy-to-use interface and allows an organizations' fundraisers to track steps and communication with a prospect's plan, any monetary gifts given, and to find a prospect's contact information quickly. The goal for my software engineering internship was to develop new features for Fundraiser on the Go. By the end of the summer, I had filed a report and fixed a bug, written, tested, and checked in code for 4 new features for the application! Clients will be seeing these new features when they get the sprint package update in a month or so!",
-        "line-2" : "",
-        "subtitle-volunteering": "Volunteering and Client Visits",
-        "paragraph-volunteering-1": "One of my favorite things about working for Blackbaud was how great it felt to know you were helping large organizations such as Boy Scouts of America or smaller ones such as One80 Place accomplish their mission every day. All the clients that we work with are so incredible and it was very rewarding receiving client feedback and hearing how happy they were with new features or updates.",
-        "paragraph-volunteering-2": "Blackbaud's internship program not only takes us to local clients to hear about their causes and receive feedback on company products, but also to volunteer and help for a few hours. Here are a few pictures of our intern group touring or volunteering with local organizations.",
-        "line-3" : "",
-        "subtitle-frog": "Fundraiser on the Go: Summer Project",
-        "left-image-right-text-frog-1": {
-          "image": {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt thumbnail text"
-          },
-          "subtitle": "What did Fundraiser on the Go Look Like When I started?",
-          "paragraph": "Fundraiser on the Go first loads the My Portfolio page, displaying all of a fundraiser's prospects and upcoming dates for steps or interactions to be taken."
-        },
-        "paragraph-frog-1": "If a prospect name is clicked on, the Prospect Page will load. Above you can see that the Prospect Page displayed minimal information on the prospect right at the beginning of my internship.",
-        "small-subtitle-frog-2": "What new features were added to Fundraiser on the Go during my internship?",
-        "paragraph-frog-2": "Above are some features that I added to the app. I worked on a wonderful team with a product manager, program manager, user experience designer, software quality engineer, and many more other roles. While I was the developer for these features, in no way do I feel like I did everything myself. We used Agile software development practices, so our team met daily for our 15 minute stand up in order to keep track of what the team was up to. We used back-logs and task management tools and also had a great many options for communication amongst team members: Slack, Skype, WebEx.",
-        "paragraph-frog-3": "As a team, we called the client to 'discover' what they wanted features to look like and how they wanted them to perform. We discussed how features would work as a group, and I worked closely with the UX designer to make sure everything was functioning as planned. Unit tests were written for any new code added and then I would submit my code for a code review with my team.",
-        "paragraph-frog-4": "Most of the time, the feedback I received was from a Senior Software Engineer who probably taught me more about databases, data lists, code tables, SQL, and C# in one summer than I could have learned in a year of school. It was awesome! I really enjoyed learning full stack development and I had never taken a database class before so it was great seeing the full process all the way through. I also enjoyed having someone keep me on my toes with regards to production quality programming.",
-        "line-4" : "",
-        "subtitle-tech": "Languages, Tools and Frameworks Used",
-        "image-row-tech-1": [
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 1",
-            "caption": ".net core",
-            "padding": "20px 30px 30px 30px"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 2",
-            "caption": "selenium",
-            "padding": "20px"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 3",
-            "caption": "salesforce",
-            "padding": "30px 20px"
-          }
-        ],
-        "image-row-tech-2": [
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 3",
-            "caption": "azure",
-            "padding": "0px"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 2",
-            "caption": "visual studio",
-            "padding": "0px"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 1",
-            "caption": "sonar qube",
-            "padding": "10px"
-          }
-        ],
-        "line-5" : "",
-        "subtitle-features-video": "Videos of Features Added",
-        "small-subtitle-prospect-addresses": "Prospect Addresses",
-        "paragraph-prospect-addresses": "Being able to display a prospect's addresses was the first feature I worked on. We designed a link that, when clicked on,  opens a modal which displays the constituent's top 5 addresses, complete with icons indicating things like 'Primary', 'Do not mail', or 'Confidential'. Fundraiser on the Go is also used by clients and organizations around the world, so we had to use the user's locale to make sure addresses displayed correctly as well as any dates for seasonal addresses.",
-        "video-prospect-addresses": "rTJLvVlr1js",
-        "space-1" : "",
-        "small-subtitle-pics-and-managers": "Prospect Pictures and Primary Managers",
-        "paragraph-pics-and-managers-1": "The prospect picture was added to the prospect page quickly after I finished the address modal feature. Clients had been asking for a way to view the pictures of prospects as a way to differentiate them a little easier.",
-        "paragraph-pics-and-managers-2": "We also needed to add the ability to tell who a prospect's primary manager was - just in case you were a fundraiser who wanted to contact a prospect and discovered that they are not in your portfolio. This also leads up to the last feature: the constituent search.",
-        "video-pics-and-managers": "rTJLvVlr1js",
-        "space-2" : "",
-        "small-subtitle-constituent-search": "Constituent Search",
-        "paragraph-constituent-search": "The search feature was the final feature I added to Fundraiser on the Go. With it came a change to the look of the My Portfolio page by adding a tabset - when the search tab is clicked, the user is able to search for constituents that are outside of their portfolio, giving them the ability to find potential prospects and increase their fundraising capabilities.",
-        "video-constituent-search": "rTJLvVlr1js",
-        "line-6" : "",
-        "subtitle-documentation": "Documentation for Search Feature Handover",
-        "paragraph-documentation": "Here is some documentation I wrote that covers the functionality of the search feature. Because it was close to the end of my internship, I did not want to leave my team without any way of understanding how and what my code was doing - just in case they needed to change it after I had left.",
-        "carousel-documentation": [
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 1",
-            "caption": "caption 1"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 2",
-            "caption": "caption 2"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 3",
-            "caption": "caption 3"
-          }
-        ],
-        "line-7" : "",
-        "subtitle-hackathon": "Off the Grid Hackathon",
-        "paragraph-hackathon": "Blackbaud holds a company-wide 24-hour hackathon twice a year as well. It's called Off the Grid and it was the first hackathon I had ever competed in. We worked in a team of 8 to come up with an app that would benefit our social good community. At 12pm the next day, after staying up a total of 27 hours, we presented our project to a panel of judges. We made it to the top 14! The following Monday, our team presented again in front of the whole company... We did not place, but it was an awesome, memorable experience and I would definitely do it again!",
-        "small-subtitle-hackathon": "Final 14 Presentation for Off the Grid (July 31 2017)",
-        "single-image-hackathon": {
-          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-          "altText": "alt text 3",
-          "caption": "azure",
-          "padding": "20px"
-        },
-        "paragraph-hackathon-team": "My wonderful teammates were Courtney Mauk, Elaina Cole, Erik Van Scoik, Thomas Ortiz, Sandhya Rajasabeson, Ricky Guerin, and Kayleigh Semeraro.",
-        "line-8" : "",
-        "subtitle-sprint-reviews": "Bi-Monthly Sprint Reviews with the Enterprise Team",
-        "paragraph-sprint-reviews-1": "Every two weeks, the Enterprise team gets together to do a Sprint Review, where each team gets to talk about what they have been working on and possibly give a short demo of a new feature. Over the course of my internship, I demoed my features 3 times to the whole team.",
-        "paragraph-sprint-reviews-2": "Our team also likes to give presentations on client highlights once a month to educate each other on who our clients are and how they use our products. I worked with the wonderful product management intern on my team, Courtney Mauk, to present a client highlight on the Children's Hospital Colorado Foundation, a client that we worked with closely for feature feedback and for our Off the Grid project. Below are the slides for the presentation we gave.",
-        "line-9" : "",
-        "subtitle-client-highlight": "Client Highlight",
-        "carousel-client-highlight": [
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 1",
-            "caption": "caption 1"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 2",
-            "caption": "caption 2"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 3",
-            "caption": "caption 3"
-          }
-        ],
-        "space-9" : "",
-        "subtitle-client-highlight-recording": "Client Highlight Recording",
-        "video-client-highlight": "rTJLvVlr1js",
-        "line-10" : "",
-        "subtitle-final-presentation": "Final Intern Presentation",
-        "paragraph-final-presentation": "Courtney, the product management intern on my team, and I worked together almost every day on Fundraiser on the Go. So, by the time Final Presentations for Interns came around, we decided to do a joint presentation on our summers at Blackbaud. Below, you can see our slide deck for our final presentation in front of the company.",
-        "small-subtitle-final-presentation-slides": "Presentation Slides",
-        "carousel-final-presentation": [
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 1",
-            "caption": "caption 1"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 2",
-            "caption": "caption 2"
-          },
-          {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt text 3",
-            "caption": "caption 3"
-          }
-        ],
-        "subtitle-last-changes": "Final Changes to the Feature",
-        "left-image-right-text-last": {
-          "image": {
-            "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-            "altText": "alt thumbnail text"
-          },
-          "subtitle": "Coding until the last minute...",
-          "paragraph": "On the last day of my internship, I was able to squeeze in a few lines of code to enable internationalization of our search feature as well as conducting a search by phone number. CRM has quite a few fundraisers overseas so we needed to add this functionality!"
-        },
-        "paragraph-last": "We also had one final meeting to discuss any extra work needed to be done before the feature is completed. While it is really hard to say goodbye to a project that I worked so hard on, I am excited that my team will finish it up and let me know any client feedback they receive once the service pack is released in September.",
-        "progress-bars-skills" : [
-          {
-            "skillName": "Java",
-            "skillLevel": "90"
-          },
-          {
-            "skillName": "Python",
-            "skillLevel": "30"
-          },
-          {
-            "skillName": "Git",
-            "skillLevel": "70"
-          }
-        ]
-      }
-    },
-
-
-
-
-  "02": {
+  "01": {
     "component": "MyCard",
     "myJSONid": "01",
-    "title": "PHILL'S CONTENT",
-    "subtitle": "Blackbaud - Charleston, SC - Summer 2017",
-    "category":
-    [
+    "title": "Software Developer for Hire",
+    "subtitle": "About, Contact, Resume",
+    "category": [
       "experience",
       "programming"
     ],
     "thumbnail": {
-      "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+      "src": "illuminati.jpg",
       "altText": "alt thumbnail text",
-      "padding" : "0px"
-    },
-    "imageTop": {
-      "src": "01-blackbaud-internship/blackbaud-logo.jpg",
-      "altText": "alt thumbnail text",
-      "padding" : "0px"
+      "padding": "0px"
     },
     "contentInOrder": {
       "title": "Software Engineering Intern",
       "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
-      "line-1" : "",
+      "line-1": "",
       "paragraph-main-1": "For the summer of 2017, I interned at Blackbaud, a software development company based in Charleston, SC. Blackbaud develops software products for non-profits, higher education, and healthcare - some of their clients include awesome organizations like Habitat for Humanity, the World Wildlife Fund, and Feeding America.",
       "paragraph-main-2": "The team I worked on is called Monopoly; it is a smaller subset of the Enterprise Team. One of Enterprise's main products is the Constituent Relationship Manager (CRM) product which is used by extremely large organizations such as the University of Michigan and the Children's Hospital Colorado Foundation. These clients use CRM to manage their constituent database and take care of the important things such as fundraising and general ledger tasks.",
       "paragraph-main-3": "Blackbaud's CRM is a very large product and, at that time, could not yet be a part of Blackbaud's goal of 'One Blackbaud', where all products are integrated cloud-based services that can be somewhat modularized. The product managers, however, wanted a responsive, mobile-friendly web app to give to fundraisers for CRM that would enable them to go out and fundraise without being stuck lugging around their computers.",
       "paragraph-main-4": "So Fundraiser on the Go was born! It has a very visually appealing, easy-to-use interface and allows an organizations' fundraisers to track steps and communication with a prospect's plan, any monetary gifts given, and to find a prospect's contact information quickly. The goal for my software engineering internship was to develop new features for Fundraiser on the Go. By the end of the summer, I had filed a report and fixed a bug, written, tested, and checked in code for 4 new features for the application! Clients will be seeing these new features when they get the sprint package update in a month or so!",
-      "line-2" : "",
+      "line-2": "",
       "subtitle-volunteering": "Volunteering and Client Visits",
       "paragraph-volunteering-1": "One of my favorite things about working for Blackbaud was how great it felt to know you were helping large organizations such as Boy Scouts of America or smaller ones such as One80 Place accomplish their mission every day. All the clients that we work with are so incredible and it was very rewarding receiving client feedback and hearing how happy they were with new features or updates.",
       "paragraph-volunteering-2": "Blackbaud's internship program not only takes us to local clients to hear about their causes and receive feedback on company products, but also to volunteer and help for a few hours. Here are a few pictures of our intern group touring or volunteering with local organizations.",
-      "line-3" : "",
+      "line-3": "",
       "subtitle-frog": "Fundraiser on the Go: Summer Project",
       "left-image-right-text-frog-1": {
         "image": {
@@ -257,7 +40,7 @@
       "paragraph-frog-2": "Above are some features that I added to the app. I worked on a wonderful team with a product manager, program manager, user experience designer, software quality engineer, and many more other roles. While I was the developer for these features, in no way do I feel like I did everything myself. We used Agile software development practices, so our team met daily for our 15 minute stand up in order to keep track of what the team was up to. We used back-logs and task management tools and also had a great many options for communication amongst team members: Slack, Skype, WebEx.",
       "paragraph-frog-3": "As a team, we called the client to 'discover' what they wanted features to look like and how they wanted them to perform. We discussed how features would work as a group, and I worked closely with the UX designer to make sure everything was functioning as planned. Unit tests were written for any new code added and then I would submit my code for a code review with my team.",
       "paragraph-frog-4": "Most of the time, the feedback I received was from a Senior Software Engineer who probably taught me more about databases, data lists, code tables, SQL, and C# in one summer than I could have learned in a year of school. It was awesome! I really enjoyed learning full stack development and I had never taken a database class before so it was great seeing the full process all the way through. I also enjoyed having someone keep me on my toes with regards to production quality programming.",
-      "line-4" : "",
+      "line-4": "",
       "subtitle-tech": "Languages, Tools and Frameworks Used",
       "image-row-tech-1": [
         {
@@ -299,21 +82,21 @@
           "padding": "10px"
         }
       ],
-      "line-5" : "",
+      "line-5": "",
       "subtitle-features-video": "Videos of Features Added",
       "small-subtitle-prospect-addresses": "Prospect Addresses",
       "paragraph-prospect-addresses": "Being able to display a prospect's addresses was the first feature I worked on. We designed a link that, when clicked on,  opens a modal which displays the constituent's top 5 addresses, complete with icons indicating things like 'Primary', 'Do not mail', or 'Confidential'. Fundraiser on the Go is also used by clients and organizations around the world, so we had to use the user's locale to make sure addresses displayed correctly as well as any dates for seasonal addresses.",
       "video-prospect-addresses": "rTJLvVlr1js",
-      "space-1" : "",
+      "space-1": "",
       "small-subtitle-pics-and-managers": "Prospect Pictures and Primary Managers",
       "paragraph-pics-and-managers-1": "The prospect picture was added to the prospect page quickly after I finished the address modal feature. Clients had been asking for a way to view the pictures of prospects as a way to differentiate them a little easier.",
       "paragraph-pics-and-managers-2": "We also needed to add the ability to tell who a prospect's primary manager was - just in case you were a fundraiser who wanted to contact a prospect and discovered that they are not in your portfolio. This also leads up to the last feature: the constituent search.",
       "video-pics-and-managers": "rTJLvVlr1js",
-      "space-2" : "",
+      "space-2": "",
       "small-subtitle-constituent-search": "Constituent Search",
       "paragraph-constituent-search": "The search feature was the final feature I added to Fundraiser on the Go. With it came a change to the look of the My Portfolio page by adding a tabset - when the search tab is clicked, the user is able to search for constituents that are outside of their portfolio, giving them the ability to find potential prospects and increase their fundraising capabilities.",
       "video-constituent-search": "rTJLvVlr1js",
-      "line-6" : "",
+      "line-6": "",
       "subtitle-documentation": "Documentation for Search Feature Handover",
       "paragraph-documentation": "Here is some documentation I wrote that covers the functionality of the search feature. Because it was close to the end of my internship, I did not want to leave my team without any way of understanding how and what my code was doing - just in case they needed to change it after I had left.",
       "carousel-documentation": [
@@ -333,7 +116,7 @@
           "caption": "caption 3"
         }
       ],
-      "line-7" : "",
+      "line-7": "",
       "subtitle-hackathon": "Off the Grid Hackathon",
       "paragraph-hackathon": "Blackbaud holds a company-wide 24-hour hackathon twice a year as well. It's called Off the Grid and it was the first hackathon I had ever competed in. We worked in a team of 8 to come up with an app that would benefit our social good community. At 12pm the next day, after staying up a total of 27 hours, we presented our project to a panel of judges. We made it to the top 14! The following Monday, our team presented again in front of the whole company... We did not place, but it was an awesome, memorable experience and I would definitely do it again!",
       "small-subtitle-hackathon": "Final 14 Presentation for Off the Grid (July 31 2017)",
@@ -344,11 +127,11 @@
         "padding": "20px"
       },
       "paragraph-hackathon-team": "My wonderful teammates were Courtney Mauk, Elaina Cole, Erik Van Scoik, Thomas Ortiz, Sandhya Rajasabeson, Ricky Guerin, and Kayleigh Semeraro.",
-      "line-8" : "",
+      "line-8": "",
       "subtitle-sprint-reviews": "Bi-Monthly Sprint Reviews with the Enterprise Team",
       "paragraph-sprint-reviews-1": "Every two weeks, the Enterprise team gets together to do a Sprint Review, where each team gets to talk about what they have been working on and possibly give a short demo of a new feature. Over the course of my internship, I demoed my features 3 times to the whole team.",
       "paragraph-sprint-reviews-2": "Our team also likes to give presentations on client highlights once a month to educate each other on who our clients are and how they use our products. I worked with the wonderful product management intern on my team, Courtney Mauk, to present a client highlight on the Children's Hospital Colorado Foundation, a client that we worked with closely for feature feedback and for our Off the Grid project. Below are the slides for the presentation we gave.",
-      "line-9" : "",
+      "line-9": "",
       "subtitle-client-highlight": "Client Highlight",
       "carousel-client-highlight": [
         {
@@ -367,10 +150,10 @@
           "caption": "caption 3"
         }
       ],
-      "space-9" : "",
+      "space-9": "",
       "subtitle-client-highlight-recording": "Client Highlight Recording",
       "video-client-highlight": "rTJLvVlr1js",
-      "line-10" : "",
+      "line-10": "",
       "subtitle-final-presentation": "Final Intern Presentation",
       "paragraph-final-presentation": "Courtney, the product management intern on my team, and I worked together almost every day on Fundraiser on the Go. So, by the time Final Presentations for Interns came around, we decided to do a joint presentation on our summers at Blackbaud. Below, you can see our slide deck for our final presentation in front of the company.",
       "small-subtitle-final-presentation-slides": "Presentation Slides",
@@ -401,7 +184,7 @@
         "paragraph": "On the last day of my internship, I was able to squeeze in a few lines of code to enable internationalization of our search feature as well as conducting a search by phone number. CRM has quite a few fundraisers overseas so we needed to add this functionality!"
       },
       "paragraph-last": "We also had one final meeting to discuss any extra work needed to be done before the feature is completed. While it is really hard to say goodbye to a project that I worked so hard on, I am excited that my team will finish it up and let me know any client feedback they receive once the service pack is released in September.",
-      "progress-bars-skills" : [
+      "progress-bars-skills": [
         {
           "skillName": "Java",
           "skillLevel": "90"
@@ -416,7 +199,292 @@
         }
       ]
     }
+  },
+
+
+
+  "02": {
+    "component": "MyCard",
+    "myJSONid": "02",
+    "title": "Systems Engineer Internship",
+    "subtitle": "Blackbaud - Charleston, SC",
+    "category": [
+      "experience",
+      "programming"
+    ],
+    "thumbnail": {
+      "src": "space.jpg",
+      "altText": "alt thumbnail text",
+      "padding": "0px"
+    },
+    "imageTop": {
+      "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+      "altText": "alt thumbnail text",
+      "padding": "0px"
+    },
+    "contentInOrder": {
+      "title": "Software Engineering Intern",
+      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": "",
+      "paragraph-frog-1": "If a prospect name is clicked on, the Prospect Page will load. Above you can see that the Prospect Page displayed minimal information on the prospect right at the beginning of my internship.",
+      "small-subtitle-frog-2": "What new features were added to Fundraiser on the Go during my internship?",
+      "paragraph-frog-2": "Above are some features that I added to the app. I worked on a wonderful team with a product manager, program manager, user experience designer, software quality engineer, and many more other roles. While I was the developer for these features, in no way do I feel like I did everything myself. We used Agile software development practices, so our team met daily for our 15 minute stand up in order to keep track of what the team was up to. We used back-logs and task management tools and also had a great many options for communication amongst team members: Slack, Skype, WebEx.",
+      "paragraph-frog-3": "As a team, we called the client to 'discover' what they wanted features to look like and how they wanted them to perform. We discussed how features would work as a group, and I worked closely with the UX designer to make sure everything was functioning as planned. Unit tests were written for any new code added and then I would submit my code for a code review with my team.",
+      "paragraph-frog-4": "Most of the time, the feedback I received was from a Senior Software Engineer who probably taught me more about databases, data lists, code tables, SQL, and C# in one summer than I could have learned in a year of school. It was awesome! I really enjoyed learning full stack development and I had never taken a database class before so it was great seeing the full process all the way through. I also enjoyed having someone keep me on my toes with regards to production quality programming.",
+      "line-4": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "image-row-tech-1": [
+        {
+          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "altText": "alt text 1",
+          "caption": ".net core",
+          "padding": "20px 30px 30px 30px"
+        },
+        {
+          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "altText": "alt text 2",
+          "caption": "selenium",
+          "padding": "20px"
+        },
+        {
+          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "altText": "alt text 3",
+          "caption": "salesforce",
+          "padding": "30px 20px"
+        }
+      ],
+      "image-row-tech-2": [
+        {
+          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "altText": "alt text 3",
+          "caption": "azure",
+          "padding": "0px"
+        },
+        {
+          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "altText": "alt text 2",
+          "caption": "visual studio",
+          "padding": "0px"
+        },
+        {
+          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "altText": "alt text 1",
+          "caption": "sonar qube",
+          "padding": "10px"
+        }
+      ],
+      "line-5": "",
+      "subtitle-features-video": "Videos of Features Added",
+      "small-subtitle-prospect-addresses": "Prospect Addresses",
+      "paragraph-prospect-addresses": "Being able to display a prospect's addresses was the first feature I worked on. We designed a link that, when clicked on,  opens a modal which displays the constituent's top 5 addresses, complete with icons indicating things like 'Primary', 'Do not mail', or 'Confidential'. Fundraiser on the Go is also used by clients and organizations around the world, so we had to use the user's locale to make sure addresses displayed correctly as well as any dates for seasonal addresses.",
+      "video-prospect-addresses": "rTJLvVlr1js",
+      "space-1": "",
+      "small-subtitle-pics-and-managers": "Prospect Pictures and Primary Managers",
+      "paragraph-pics-and-managers-1": "The prospect picture was added to the prospect page quickly after I finished the address modal feature. Clients had been asking for a way to view the pictures of prospects as a way to differentiate them a little easier.",
+      "paragraph-pics-and-managers-2": "We also needed to add the ability to tell who a prospect's primary manager was - just in case you were a fundraiser who wanted to contact a prospect and discovered that they are not in your portfolio. This also leads up to the last feature: the constituent search.",
+      "video-pics-and-managers": "rTJLvVlr1js",
+      "space-2": "",
+      "small-subtitle-constituent-search": "Constituent Search",
+      "paragraph-constituent-search": "The search feature was the final feature I added to Fundraiser on the Go. With it came a change to the look of the My Portfolio page by adding a tabset - when the search tab is clicked, the user is able to search for constituents that are outside of their portfolio, giving them the ability to find potential prospects and increase their fundraising capabilities.",
+      "video-constituent-search": "rTJLvVlr1js"
+    }
+  },
+
+
+
+
+
+  "03": {
+    "component": "MyCard",
+    "myJSONid": "03",
+    "title": "Technical Skills",
+    "subtitle": "Programming languages, tools, and frameworks",
+    "category":
+    [
+      "experience",
+      "programming"
+    ],
+    "thumbnail": {
+      "src": "figaro.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "imageTop": {
+      "src": "old-typeface.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Software Engineering Intern",
+      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": ""
+    }
+  },
+
+  "04": {
+    "component": "MyCard",
+    "myJSONid": "04",
+    "title": "PHP Project",
+    "subtitle": "",
+    "category":
+    [
+      "experience",
+      "programming"
+    ],
+    "thumbnail": {
+      "src": "empty-kingdom.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "imageTop": {
+      "src": "old-typeface.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Software Engineering Intern",
+      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": ""
+    }
+  },
+
+  "05": {
+    "component": "MyCard",
+    "myJSONid": "05",
+    "title": "Technical Skills",
+    "subtitle": "",
+    "category":
+    [
+      "experience",
+      "programming"
+    ],
+    "thumbnail": {
+      "src": "zero-ones.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "imageTop": {
+      "src": "old-typeface.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Software Engineering Intern",
+      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": ""
+    }
+  },
+
+  "06": {
+    "component": "MyCard",
+    "myJSONid": "06",
+    "title": "Technical Skills",
+    "subtitle": "",
+    "category":
+    [
+      "experience",
+      "programming"
+    ],
+    "thumbnail": {
+      "src": "steampunk-house.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "imageTop": {
+      "src": "old-typeface.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Software Engineering Intern",
+      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": ""
+    }
+  },
+
+
+  "07": {
+    "component": "MyCard",
+    "myJSONid": "07",
+    "title": "Technical Skills",
+    "subtitle": "",
+    "category":
+    [
+      "experience",
+      "programming"
+    ],
+    "thumbnail": {
+      "src": "factory.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "imageTop": {
+      "src": "old-typeface.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Software Engineering Intern",
+      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": ""
+    }
+  },
+
+  "08": {
+    "component": "MyCard",
+    "myJSONid": "08",
+    "title": "Server Side Programming",
+    "subtitle": "CSCI 321 Semester Project",
+    "category":
+    [
+      "experience",
+      "programming"
+    ],
+    "thumbnail": {
+      "src": "giraud-jean.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "imageTop": {
+      "src": "old-typeface.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Software Engineering Intern",
+      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": ""
+    }
+  },
+
+
+  "09": {
+    "component": "MyCard",
+    "myJSONid": "09",
+    "title": "This Website",
+    "subtitle": "React Project",
+    "category":
+    [
+      "experience",
+      "programming"
+    ],
+    "thumbnail": {
+      "src": "space-cartoon.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "imageTop": {
+      "src": "old-typeface.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Software Engineering Intern",
+      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": ""
+    }
   }
+
 }
 
 
