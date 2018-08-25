@@ -22,21 +22,22 @@
           "src": "Grif.jpg",
           "altText": "alt text 1",
           "caption": "",
-          "padding": "20px 30px 30px 30px"
+          "padding": "0px"
         },
         {
           "src": "HW.jpg",
           "altText": "alt text 2",
           "caption": "",
-          "padding": "20px"
+          "padding": "0px"
         },
         {
           "src": "LACMA.jpg",
           "altText": "alt text 3",
           "caption": "",
-          "padding": "30px 20px"
+          "padding": "0px"
         }
       ],
+      "space-1": "",
       "subtitle-frog": "CHS -> LAX",
       "paragraph-main-1": "I recently moved to the Los Angeles area from Charleston, South Carolina. While there, I worked as a systems engineer and graduated Summa Cum Laude from the College of Charleston.",
       "paragraph-main-2": "My time in Charleston was amazing and one of the best learning experiences of my life. I have come to the LA area to take the next step in my career and find out just how much this city has to offer.",
@@ -56,19 +57,19 @@
           "src": "RedSelfie.jpg",
           "altText": "alt text 1",
           "caption": "",
-          "padding": "20px 30px 30px 30px"
+          "padding": "0px"
         },
         {
           "src": "NashSelfie.jpg",
           "altText": "alt text 2",
           "caption": "",
-          "padding": "20px"
+          "padding": "0px"
         },
         {
           "src": "AntelopeSelfie.jpg",
           "altText": "alt text 3",
           "caption": "",
-          "padding": "30px 20px"
+          "padding": "0px"
         }
       ]
     }
@@ -127,29 +128,27 @@
       "subtitle-tech": "Languages, Tools and Frameworks Used",
       "image-row-tech-2": [
         {
-          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "src": "Microsoft-Azure-Cloud.jpg",
           "altText": "alt text 3",
           "caption": "azure",
           "padding": "0px"
         },
         {
-          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "src": "VisualStudio.png",
           "altText": "alt text 2",
           "caption": "visual studio",
           "padding": "0px"
         },
         {
-          "src": "01-blackbaud-internship/blackbaud-logo.jpg",
+          "src": "Sonar.png",
           "altText": "alt text 1",
           "caption": "sonar qube",
-          "padding": "0px"
+          "padding": "10px"
         }
       ]
     }
 
   },
-
-
 
 
 
@@ -169,16 +168,18 @@
       "padding" : "0px"
     },
     "contentInOrder": {
-      "title": "Software Engineering Intern",
-      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "title": "Technical skills and Languages",
+      "large-subtitle-main": "3+ years experience with the tools listed:",
       "line-1": ""
+
     }
   },
 
   "04": {
     "component": "MyCard",
     "myJSONid": "04",
-    "title": "PHP Project",
+    "title": "SSCA",
+    "subtitle": "web admin",
     "category":
     [
       "experience",
@@ -190,30 +191,66 @@
       "padding" : "0px"
     },
     "contentInOrder": {
-      "title": "The Grave Digger Database",
-      "large-subtitle-main": "College Of Charleston - Fall 2017",
+      "title": "Southern States Communication Association",
+      "large-subtitle-main": "Content and Communication Manager",
+      "small-subtitle": "2017-2018",
       "line-1": "",
-      "small-subtitle":"Database Concepts",
-      "paragraph":"This project was the capstone for the entire course and we made a live demo of our working full stack site at the end of the semester. Check the video below for the demo or my github to find teh source code",
+      "small-subtitle-1": "How did I come to work for the SSCA?",
+      "paragraph-SSCA-1":"Jerry Hale is the director of Social Sciences at the College of Charleston and in the summer of 2017 he was in need a website administrator for the SSCA (https://www.ssca.net/). This group holds yearly conferences around the country to go over new research and publications in their varying and respective fields. I took on the role for the next year and worked closely with his office in coordinating events for the organization through it's only public facing communication tool.",
+      "small-subtitle-2": "What did I do for the SSCA?",
+      "paragraph-SSCA-2":"Describe the tools i used and how often I got to make public facing updates for them",
+      "image-row-SSCA-1": [
+        {
+          "src": "ssca1.gif",
+          "altText": "alt text 1",
+          "caption": "",
+          "padding": "0px"
+        },
+        {
+          "src": "ssca1.gif",
+          "altText": "alt text 2",
+          "caption": "",
+          "padding": "0px"
+        },
+        {
+          "src": "ssca1.gif",
+          "altText": "alt text 3",
+          "caption": "",
+          "padding": "0px"
+        }
+      ],
+      "space-1":"",
       "line-2": "",
-      "small-subtitle-2":"About the Project",
-      "paragraph-2":"This project was the final project for one of the best classes I had during my undergraduate. We studied database management, processing, and concepts. To wrap the course up we made a full stack site from scratch modeled after an existing tool or one of our own invention. The web app had to maintain records and allow for user interaction and manipulation in a variety of different ways. The site used a traditional MVC pattern and I wrote most of it in HTML/CSS, bootstrap, javascript, PHP, and hosted the SQL style database on siteground.",
-      "small-subtitle-3":"Putting it all together",
-      "paragraph-3":"This project taught me so much about using all the technologies I had learned up to that point in new and interesting ways. I got really creative with the project and modeled it after a tool my parents use for their local business back home in Alabama. They own and operate a number of Funeral homes and cemeteries. There is a tool called nexus that tracks client data and services for families that come in and make arrangements for end of life services. I modeled my system of off this idea and was able to create the GraveDigger Database Tool.",
-
-      "video": "_AZLy6-5PeU"
+      "space-2":"",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "space-3":"",
+      "image-row-tech-2": [
+        {
+          "src": "memberclick.png",
+          "altText": "alt text 3",
+          "caption": "azure",
+          "padding": "0px 10px"
+        },
+        {
+          "src": "HTML_CSS_JS.png",
+          "altText": "alt text 2",
+          "caption": "visual studio",
+          "padding": "0px"
+        }
+      ]
     }
   },
 
   "05": {
     "component": "MyCard",
     "myJSONid": "05",
-    "title": "SSCA",
-    "subtitle": "web admin",
+    "title": "Database Concepts",
+    "subtitle": "CSCS 332",
     "category":
     [
       "experience",
-      "programming"
+      "programming",
+      "school"
     ],
     "thumbnail": {
       "src": "zero-ones.jpg",
@@ -221,17 +258,28 @@
       "padding" : "0px"
     },
     "contentInOrder": {
-      "title": "Skills",
-      "large-subtitle-main": "Programming and Development",
-      "line-1": ""
+      "title": "The Grave Digger Database",
+      "large-subtitle-main": "College Of Charleston - Fall 2017",
+      "line-1": "",
+      "small-subtitle":"Database Concepts",
+      "paragraph":"This project was the capstone for the entire course and we made a live demo of our working full stack site at the end of the semester. Check the video below for the demo or my github to find teh source code",
+      "line-2": "",
+      "small-subtitle-2":"About the Project",
+      "paragraph-2":"This project was the final project for one of the best classes I had during my undergraduate career. We studied database management, processing, and concepts. To wrap the course up we made a full stack site from scratch modeled after an existing tool or one of our own invention. The web app had to maintain records and allow for user interaction and manipulation in a variety of different ways. The site used a traditional MVC pattern and I wrote most of it in HTML/CSS, bootstrap, javascript, PHP, and hosted the SQL style database on siteground.",
+      "small-subtitle-3":"Putting it all together",
+      "paragraph-3":"This project taught me so much about using all the technologies I had learned up to that point in new and interesting ways. I got really creative with the project and modeled it after a tool my parents use for their local business back home in Alabama. They own and operate a number of Funeral homes and cemeteries. There is a tool called nexus that tracks client data and services for families that come in and make arrangements for end of life services. I modeled my system of off this idea and was able to create the GraveDigger Database Tool.",
+      "small-subtitle-4":"Here is a quick demo",
+      "video": "_AZLy6-5PeU"
     }
   },
+
+
 
   "06": {
     "component": "MyCard",
     "myJSONid": "06",
     "title": ".NET Core Project",
-    "subtitle": "",
+    "subtitle": "Full Stack Web App",
     "category":
     [
       "experience",
@@ -242,14 +290,9 @@
       "altText": "alt thumbnail text",
       "padding" : "0px"
     },
-    "imageTop": {
-      "src": "figaro.jpg",
-      "altText": "alt thumbnail text",
-      "padding" : "0px"
-    },
     "contentInOrder": {
-      "title": "Software Engineering Intern",
-      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "title": "Learning more .NET Core",
+      "large-subtitle-main": "PluralSight Project Guide - Summer 2018",
       "line-1": ""
     }
   },
@@ -259,7 +302,7 @@
     "component": "MyCard",
     "myJSONid": "07",
     "title": "Teaching In Italy",
-    "subtitle": "",
+    "subtitle": "Pane y Vino",
     "category":
     [
       "experience",
@@ -270,15 +313,34 @@
       "altText": "alt thumbnail text",
       "padding" : "0px"
     },
-    "imageTop": {
-      "src": "figaro.jpg",
-      "altText": "alt thumbnail text",
-      "padding" : "0px"
-    },
     "contentInOrder": {
-      "title": "Software Engineering Intern",
-      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
-      "line-1": ""
+      "title": "Foreign Language Instructor",
+      "large-subtitle-main": "Florence & Bologna, Italy",
+      "small-subtitle-main": "2014-2015",
+      "line-1": "",
+      "image-row-1": [
+        {
+          "src": "cinque.jpg",
+          "altText": "alt text 3",
+          "padding": "0px"
+        },
+        {
+          "src": "Florence.jpg",
+          "altText": "alt text 2",
+          "padding": "0px"
+        },
+        {
+          "src": "Ponte.png",
+          "altText": "alt text 1",
+          "padding": "0px"
+        }
+      ],
+      "space":"",
+      "small-subtitle-2": "My adventure out into it all",
+      "paragraph-1": "This experience was the adventure of my young life. I was fresh out of Auburn University and I was about to make my way to Law school. I had a great mentor and professor that was urging me to postpone schooling and spend time where I had no obligation  to deal with. He told me that I would never have a moment like this again in my life and that I should spend it wisely. So I made my way to Italy, a country I had never been to before.",
+      "small-subtitle-3": "veni vidi vici",
+      "paragraph-2": "I did not speak the language, I did not know a soul in the country, and I did not have a job. I learned so much about myself in my time there. I had no idea what i was capable of or what my limits were. I pushed myself way outside of my comfort zone and was rewarded in memories, friends, and experiences that I will hold dear for the rest of my life. I ended up going to school in Florence to become and english instructor and then moved to Bologna afterwards to teach english for a business school that had clients all throughout the region."
+
     }
   },
 
@@ -286,25 +348,21 @@
     "component": "MyCard",
     "myJSONid": "08",
     "title": "Server Side Programming",
-    "subtitle": "CSCI 321 Semester Project",
+    "subtitle": "CSCI 315",
     "category":
     [
       "experience",
-      "programming"
+      "programming",
+      "school"
     ],
     "thumbnail": {
-      "src": "giraud-jean.jpg",
-      "altText": "alt thumbnail text",
-      "padding" : "0px"
-    },
-    "imageTop": {
-      "src": "figaro.jpg",
+      "src": "rexjones.jpg",
       "altText": "alt thumbnail text",
       "padding" : "0px"
     },
     "contentInOrder": {
-      "title": "Software Engineering Intern",
-      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "title": "Full Stack Point of Sale Web App",
+      "large-subtitle-main": "College of Charleston - Fall 2017",
       "line-1": ""
     }
   },
@@ -333,9 +391,124 @@
     "contentInOrder": {
       "title": "Software Engineering Intern",
       "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "line-1": "",
+      "small-subtitle-1": "Updating the portfolio",
+      "paragraph-1":"This website is the most recent project that I have undertaken since school. I started working on this project directly after graduating from school. Some of the technologies used to teach me programming in school were able to teach me the foundations and functions of programming and development, but there are so many new technologies to learn. React seemed like the best new technology for me to learn and updating my portfolio seemed like a great target to practice on.",
+      "space-1":"",
+      "line-2": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "space-2":"",
+      "image-row-tech-2": [
+        {
+          "src": "react.png",
+          "altText": "alt text 3",
+          "caption": "azure",
+          "padding": "0px"
+        },
+        {
+          "src": "Redux.png",
+          "altText": "alt text 2",
+          "caption": "visual studio",
+          "padding": "0px"
+        },
+        {
+          "src": "HTML_CSS_JS.png",
+          "altText": "alt text 2",
+          "caption": "visual studio",
+          "padding": "0px"
+        }
+      ]
+    }
+
+  },
+
+  "010": {
+    "component": "MyCard",
+    "myJSONid": "010",
+    "title": "CofC Researcher",
+    "subtitle": "Action Rules",
+    "category":
+    [
+      "experience",
+      "programming",
+      "school"
+    ],
+    "thumbnail": {
+      "src": "old-map-2.png",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Research Assistant in SURF program",
+      "large-subtitle-main": "College of Charleston - Summer 2017",
+      "line-1": "",
+      "image-row-tech-1": [
+        {
+          "src": "Data.jpg",
+          "altText": "alt text 3",
+          "padding": "0px"
+        },
+        {
+          "src": "codecode.jpg",
+          "altText": "alt text 2",
+          "padding": "0px"
+        },
+        {
+          "src": "node_map.jpg",
+          "altText": "alt text 2",
+          "padding": "0px"
+        }
+      ],
+      "space-1":"",
+      "small-subtitle":"How I got started",
+      "paragraph":"Dr. Ayman Hajja was the first professor I had in an programming course at the College of Charleston. I can not say enough good things about him and the impact he has made on me. I learned so much from Dr. Hajja. He was the single best mentor I had at the college and if he had not let me bother him day in and day out, my learning experience in the technology field would have been seriously stunted. I was in his office 5 days a week trying to wrap my head around the abstract problem solving of my first programming course at CofC."
+    }
+  },
+  "011": {
+    "component": "MyCard",
+    "myJSONid": "011",
+    "title": "Business Analytics Capstone",
+    "subtitle": "DSCI 400",
+    "category":
+    [
+      "experience",
+      "programming",
+      "school"
+    ],
+    "thumbnail": {
+      "src": "Diver.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Research Assistant in SURF program",
+      "large-subtitle-main": "College of Charleston - Summer 2017",
+      "line-1": ""
+    }
+  },
+  "012": {
+    "component": "MyCard",
+    "myJSONid": "012",
+    "title": "User Interface Final",
+    "subtitle": "CSCI 392",
+    "category":
+    [
+      "experience",
+      "programming",
+      "school"
+    ],
+    "thumbnail": {
+      "src": "giraud-jean.jpg",
+      "altText": "alt thumbnail text",
+      "padding" : "0px"
+    },
+    "contentInOrder": {
+      "title": "Triangle: A new shape to education",
+      "large-subtitle-main": "College of Charleston - Fall 2017",
       "line-1": ""
     }
   }
+
 
 }
 
