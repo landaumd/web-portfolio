@@ -14,6 +14,7 @@ class SingleImage extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         return (
             <div>
                 <img className="img-fluid my-auto rounded-top-corners" style={{"padding" : this.state.info.padding}} src={require('../' + this.state.config['path-to-images-folder'] + this.state.info.src)} alt={this.state.info.altText}/>

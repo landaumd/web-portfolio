@@ -11,7 +11,12 @@ class Subtitle extends Component {
         this.state.info = this.props.info;
     }
 
+    getSubtitle(){
+        this.state.info = this.props.info;
+    }
+
     render() {
+        this.getSubtitle()
         return (
             <div>
                 <h5>{this.state.info}</h5>

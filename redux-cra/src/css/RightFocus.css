@@ -1,6 +1,7 @@
 .RightFocus{
     border: 1px solid rgba(0,0,0,.125);
     border-radius: calc(.25rem - 1px);
+    background-color: white;
 }
 
 .RightFocus-content {
@@ -19,6 +20,7 @@
     border-radius : .25rem;
 }
 
+
 /*.img-fluid {*/
     /*!*max-height: 100px;*!*/
 /*}*/
@@ -26,3 +28,4 @@
 .p {
     white-space:pre-wrap;
 }
+

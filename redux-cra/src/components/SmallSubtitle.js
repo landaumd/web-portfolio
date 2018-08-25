@@ -12,6 +12,7 @@ class SmallSubtitle extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         return (
             <div>
                 <h6>{this.state.info}</h6>

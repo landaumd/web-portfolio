@@ -178,11 +178,10 @@ class Navigation extends Component {
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
-
                         <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
                             <FontAwesomeIcon className="fa-vc" icon={['fab', 'github-square']} size="2x" color="white"/>
                         </NavLink>
-                        <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
+                        <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://www.linkedin.com/in/phillipespybyrd">
                             <FontAwesomeIcon className="fa-vc" icon={['fab', 'linkedin']} size="2x" color="white"/>
                         </NavLink>
                     </Nav>

@@ -12,6 +12,7 @@ class Paragraph extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         return (
             <div>
                 <p>{this.state.info}</p>

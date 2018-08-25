@@ -26,27 +26,31 @@ class RightFocus extends Component {
             info : null,
         };
 
-        configureAnchors({offset: -90, scrollDuration: 650})
-        this.findFocusTarget = this.findFocusTarget.bind(this);
-        this.createContentFromList = this.createContentFromList.bind(this);
+        configureAnchors({offset: -90, scrollDuration: 650});
+        // this.findFocusTarget = this.findFocusTarget.bind(this);
+        // this.createContentFromList = this.createContentFromList.bind(this);
     }
 
     findFocusTarget = () => {
         Object.entries(this.state.data).map(([cardNum,content]) => {
             if(cardNum === this.props.myJSONid){
                 this.state.info = content;
-                return null
             } else {
                 return null
             }
         })
     };
 
+    componentDidUpdate(){
+
+    }
+
     createProgressBars() {
         let progBars = null;
         if (this.state.info.skills != null) {
             progBars = Object.entries(this.state.info.skills).map(([i, a]) => {
                 return (
+
                     <div key={i}>
                         <p>{a.skillName}</p>
                         {/*<Line percent={a.skillLevel} strokeColor="#E67E22" strokeWidth="2" trailColor="grey"/>*/}
@@ -83,16 +87,15 @@ class RightFocus extends Component {
     }
 
     createImagesHeader(){
-        if (this.state.info.imageTop !== undefined){
+        if (this.state.imageTop !== undefined){
             return <SingleImage className={"rounded-top-corners"} info={this.state.info.imageTop}/>
-        } else if (this.state.info.imageRowHeader !== undefined){
+        } else if (this.state.imageRowHeader !== undefined){
             return <ImageRow info={this.state.info.imageRowHeader}/>
         }
     }
 
     createContentFromList(){
         let contentList = this.state.info.contentInOrder;
-
         let content;
         if (contentList != null) {
             content = Object.entries(contentList).map(([i, a]) => {

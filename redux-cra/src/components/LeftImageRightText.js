@@ -15,6 +15,7 @@ class LeftImageRightText extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         return (
             <div className="row">
                 <div className="col">

@@ -18,6 +18,7 @@ class Video extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         const opts = {
             width: '100%',
             playerVars: { // https://developers.google.com/youtube/player_parameters

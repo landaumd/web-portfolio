@@ -7,6 +7,7 @@ import Config from '../config/Config.json';
 import '../css/MyCard.css'
 
 
+
 class MyCard extends Component {
     constructor(props) {
         super(props);
@@ -14,6 +15,7 @@ class MyCard extends Component {
         this.state = {
             config: Config,
             info: null
+
         };
 
         this.state.info = this.props.info;
