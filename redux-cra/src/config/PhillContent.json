@@ -38,17 +38,20 @@
         }
       ],
       "space-1": "",
-      "subtitle-frog": "CHS -> LAX",
+      "subtitle": "CHS -> LAX",
       "paragraph-main-1": "I recently moved to the Los Angeles area from Charleston, South Carolina. While there, I worked as a systems engineer and graduated Summa Cum Laude from the College of Charleston.",
       "paragraph-main-2": "My time in Charleston was amazing and one of the best learning experiences of my life. I have come to the LA area to take the next step in my career and find out just how much this city has to offer.",
       "paragraph-main-3": "",
       "paragraph-main-4": "",
       "line-2": "",
       "subtitle-AboutMe": "About Me:",
+      "paragraph-AboutMe-1": "My experience in the technology and development industry has been amazing so far and I can't wait to become part of a team to accomplish more in the LA area.",
       "small-subtitle-AboutMe": "I have a lifelong passion for learning, problem solving, and new incorporations of technology.",
-      "paragraph-AboutMe-1": "My experience in the technology and development industry...",
-      "paragraph-AboutMe-2": "From Alabama->Italy",
-      "paragraph-AboutMe-3": "Resume Here",
+      "subtitle-AboutMe-2": "Always looking over the horizon:",
+      "paragraph-AboutMe-2": "I would say that traveling and learning are the two most defining characteristics of who I am as a person. Nothing excites me more than traveling to new places and discovering new cultures, customs, languages, or cuisines. I thrive in an environment that allows me to grow and challenge my knowledge daily. I have done a lot of traveling in my life so far and it allows one to have a broader perspective when engaging with new problems.",
+      "paragraph-AboutMe-3": "I think this is one of the reasons that I am drawn so strongly to the technology field. I have a large overlap of skills and characteristics here that can drive passion and success in this industry. ",
+      "small-subtitle-AboutMe-2": "Here is a copy of my resume: ",
+      "paragraph-AboutMe-4": "Resume Here",
       "line-3": "",
       "title-trip": "Our Trip to LA",
       "small-subtitle-Trip": "Here is a few photos of our trip across the US to LA!",
@@ -197,8 +200,6 @@
       "line-1": "",
       "small-subtitle-1": "How did I come to work for the SSCA?",
       "paragraph-SSCA-1":"Jerry Hale is the director of Social Sciences at the College of Charleston and in the summer of 2017 he was in need a website administrator for the SSCA (https://www.ssca.net/). This group holds yearly conferences around the country to go over new research and publications in their varying and respective fields. I took on the role for the next year and worked closely with his office in coordinating events for the organization through it's only public facing communication tool.",
-      "small-subtitle-2": "What did I do for the SSCA?",
-      "paragraph-SSCA-2":"Describe the tools i used and how often I got to make public facing updates for them",
       "image-row-SSCA-1": [
         {
           "src": "ssca1.gif",
@@ -219,7 +220,11 @@
           "padding": "0px"
         }
       ],
-      "space-1":"",
+      "space-0":"",
+      "small-subtitle-2": "What did I do for the SSCA?",
+      "paragraph-SSCA-2":"I received weekly updates from the coordinating team and it was my job to go into the website code or database and execute those changes. I was interacting through the hosting and editing site MemberClicks. From inside their editing web application, I would directly edit HTML/CSS and javascript code to make visual and functional changes.",
+      "small-subtitle-3": "What did I Learn for the SSCA?",
+      "paragraph-SSCA-3":"A typical example would be that a paper was submitted for review and the details needed to be posted on the site. I would changed the name and authoring information on the appropriate page. There was also their yearly conference that needed to be configured for the event, for example: Point of sale for event tickets, form registration for the event, posting daily information to keep the members of the organization up to date.",
       "line-2": "",
       "space-2":"",
       "subtitle-tech": "Languages, Tools and Frameworks Used",
@@ -228,13 +233,11 @@
         {
           "src": "memberclick.png",
           "altText": "alt text 3",
-          "caption": "azure",
           "padding": "0px 10px"
         },
         {
           "src": "HTML_CSS_JS.png",
           "altText": "alt text 2",
-          "caption": "visual studio",
           "padding": "0px"
         }
       ]
@@ -269,7 +272,19 @@
       "small-subtitle-3":"Putting it all together",
       "paragraph-3":"This project taught me so much about using all the technologies I had learned up to that point in new and interesting ways. I got really creative with the project and modeled it after a tool my parents use for their local business back home in Alabama. They own and operate a number of Funeral homes and cemeteries. There is a tool called nexus that tracks client data and services for families that come in and make arrangements for end of life services. I modeled my system of off this idea and was able to create the GraveDigger Database Tool.",
       "small-subtitle-4":"Here is a quick demo",
-      "video": "_AZLy6-5PeU"
+      "video": "_AZLy6-5PeU",
+      "line-3": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "space-2":"",
+      "image-row-tech-2": [
+        {
+          "src": "php-java-html.png",
+          "altText": "alt text 2",
+          "caption": "visual studio",
+          "padding": "10px",
+          "margin" : "10px"
+        }
+      ]
     }
   },
 
