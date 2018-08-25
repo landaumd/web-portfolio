@@ -183,7 +183,6 @@ class Navigation extends Component {
                         </NavLink>
                         <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
                             <FontAwesomeIcon className="fa-vc" icon={['fab', 'linkedin']} size="2x" color="white"/>
->>>>>>> 88f223aca2b7596044d7df1be5d81a05eb4a04fe
                         </NavLink>
                     </Nav>
                 </Collapse>

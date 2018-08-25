@@ -34,21 +34,9 @@ class RightFocus extends Component {
     findFocusTarget = () => {
         Object.entries(this.state.data).map(([cardNum,content]) => {
             if(cardNum === this.props.myJSONid){
-
+                console.log("find focus target")
+                console.log(content)
                 this.state.info = content;
-
-                this.state.title = content.title;
-                this.state.subtitle = content.subtitle;
-                this.state.bodyText = content.bodyText;
-                this.state.imageSource = content.imageSource;
-                this.state.skills = content.skills;
-                this.state.altText = content.altText;
-                this.state.imageRowHeader = content.imageRowHeader;
-                this.state.imageRow1 = content.imageRow1;
-                this.state.imageRow2 = content.imageRow2;
-                this.state.imageRowBottom = content.imageRowBottom;
-                this.state.contentInOrder = content.contentInOrder;
-                this.state.imageTop = content.imageTop;
 
             } else {
                 return null
@@ -106,8 +94,9 @@ class RightFocus extends Component {
     }
 
     createContentFromList(){
-        let contentList = this.state.contentInOrder;
-
+        console.log(this.state.info)
+        // let contentList = this.state.contentInOrder;
+        let contentList
         let content;
         if (contentList != null) {
             content = Object.entries(contentList).map(([i, a]) => {
@@ -158,6 +147,8 @@ class RightFocus extends Component {
 
     render() {
         this.findFocusTarget();
+        console.log("this state info =")
+        console.log(this.state.info)
         let content = this.createContentFromList();
         let imagesHeader = this.createImagesHeader();
         return (
