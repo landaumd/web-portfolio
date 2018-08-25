@@ -31,19 +31,18 @@ h2 {
 
 h3 {
   font-family: 'Kadwa', serif !important;
-  font-size: 30px !important;
+  font-size: 28px !important;
 }
 
 h4 {
   font-family: 'danielregular', Arial, sans-serif !important;
-  font-size: 25px !important;
+  font-size: 24px !important;
 }
 
 h5 {
   font-family: 'Kadwa', serif !important;
-  font-size: 26px !important;
+  font-size: 25px !important;
 }
-
 
 h6 {
   font-family: 'danielregular', Arial, sans-serif !important;
@@ -107,4 +106,23 @@ a.navbar-brand-text {
 .MyShadow-text {
   text-shadow: 1px 1px 4px #000;
   /*text-outline: 4px #4e555b;*/
+}
+
+/*.card-img-overlay:hover {*/
+  /*opacity: 1 !important;*/
+  /*color: #93a0ed !important;*/
+  /*!*color: red !important;*!*/
+  /*!*background-color: #0c5460 !important;*!*/
+/*}*/
+
+.card-img-overlay:hover {
+  opacity: 0.5 !important;
+  color: white !important;
+  /*color: red !important;*/
+  background-color: #93a0ed !important;
+}
+
+.full-opacity{
+  opacity: 1 !important;
+  color: white !important;
 }
