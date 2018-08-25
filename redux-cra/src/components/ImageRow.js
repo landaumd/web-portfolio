@@ -26,6 +26,7 @@ class ImageRow extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         let imageRow = this.createImageRow();
 
         return (

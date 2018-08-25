@@ -11,7 +11,13 @@ class Title extends Component {
         this.state.info = this.props.info;
     }
 
+    setTitle(){
+        this.state.info = this.props.info;
+    }
+
     render() {
+        this.setTitle();
+
         return (
             <div>
                 <h1>{this.state.info}</h1>

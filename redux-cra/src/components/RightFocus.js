@@ -26,23 +26,24 @@ class RightFocus extends Component {
             info : null,
         };
 
-        configureAnchors({offset: -90, scrollDuration: 650})
-        this.findFocusTarget = this.findFocusTarget.bind(this);
-        this.createContentFromList = this.createContentFromList.bind(this);
+        configureAnchors({offset: -90, scrollDuration: 650});
+        // this.findFocusTarget = this.findFocusTarget.bind(this);
+        // this.createContentFromList = this.createContentFromList.bind(this);
     }
 
     findFocusTarget = () => {
         Object.entries(this.state.data).map(([cardNum,content]) => {
             if(cardNum === this.props.myJSONid){
-                console.log("find focus target")
-                console.log(content)
                 this.state.info = content;
-
             } else {
                 return null
             }
         })
     };
+
+    componentDidUpdate(){
+
+    }
 
     createProgressBars() {
         let progBars = null;
@@ -94,9 +95,7 @@ class RightFocus extends Component {
     }
 
     createContentFromList(){
-        console.log(this.state.info)
-        // let contentList = this.state.contentInOrder;
-        let contentList
+        let contentList = this.state.info.contentInOrder;
         let content;
         if (contentList != null) {
             content = Object.entries(contentList).map(([i, a]) => {
@@ -147,8 +146,6 @@ class RightFocus extends Component {
 
     render() {
         this.findFocusTarget();
-        console.log("this state info =")
-        console.log(this.state.info)
         let content = this.createContentFromList();
         let imagesHeader = this.createImagesHeader();
         return (

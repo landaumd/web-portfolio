@@ -12,6 +12,7 @@ class LargeSubtitle extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         return (
             <div>
                 <h4>{this.state.info}</h4>

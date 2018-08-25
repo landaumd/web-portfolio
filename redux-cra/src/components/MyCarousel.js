@@ -54,6 +54,7 @@ class MyCarousel extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         const { activeIndex } = this.state;
 
         let x = 0;

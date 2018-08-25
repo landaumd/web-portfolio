@@ -4,7 +4,7 @@ var defaultState = {
     originAmount: '0.00',
     rightIsOpen: false,
     displayRight: "none",
-    myJSONid: "00",
+    myJSONid: "01",
     category: "Filter By Category"
 };
 

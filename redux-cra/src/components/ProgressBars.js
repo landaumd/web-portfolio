@@ -27,6 +27,7 @@ class ProgressBars extends Component {
     }
 
     render() {
+        this.state.info = this.props.info;
         let progBars = this.createProgressBars();
 
         return (
