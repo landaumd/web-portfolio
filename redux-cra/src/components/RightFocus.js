@@ -15,6 +15,16 @@ import MyCarousel from "./MyCarousel";
 import SingleImage from "./SingleImage";
 import ProgressBars from "./ProgressBars";
 import LargeSubtitle from "./LargeSubtitle";
+import { css } from 'react-emotion';
+import { BarLoader } from 'react-spinners';
+
+
+//from http://www.davidhu.io/react-spinners/
+const override = css`
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+`;
 
 class RightFocus extends Component {
     constructor(props) {
@@ -24,6 +34,7 @@ class RightFocus extends Component {
             data : PhillContent,
             isMobile : this.props.isMobile,
             info : null,
+            loading: true
         };
 
         configureAnchors({offset: -90, scrollDuration: 650});
@@ -40,51 +51,6 @@ class RightFocus extends Component {
             }
         })
     };
-
-    componentDidUpdate(){
-
-    }
-
-    createProgressBars() {
-        let progBars = null;
-        if (this.state.info.skills != null) {
-            progBars = Object.entries(this.state.info.skills).map(([i, a]) => {
-                return (
-
-                    <div key={i}>
-                        <p>{a.skillName}</p>
-                        {/*<Line percent={a.skillLevel} strokeColor="#E67E22" strokeWidth="2" trailColor="grey"/>*/}
-                    </div>
-                )
-            });
-        }
-    }
-
-    createImageRow(rowName) {
-        let imageRowHeader = null;
-        if (rowName != null){
-            imageRowHeader = Object.entries(rowName).map(([i, a]) => {
-                return (
-                    <div key={i} className="col no-gutters">
-                        <img className="img-fluid my-auto" style={{"padding" : a.padding}} src={require('../images-megan/' + a.src)} alt={a.altText}/>
-                    </div>
-                )
-            });
-        }
-        return imageRowHeader
-    }
-
-    createSingleImage(imageTop) {
-        let image = null;
-        if (imageTop != null){
-            return (
-                <div>
-                    <img className="rounded-top-corners w-100" src={require('../images-megan/' + imageTop.src)} alt={imageTop.altText} />
-                </div>
-            )
-        }
-        return image
-    }
 
     createImagesHeader(){
         if (this.state.imageTop !== undefined){
@@ -149,9 +115,9 @@ class RightFocus extends Component {
         let content = this.createContentFromList();
         let imagesHeader = this.createImagesHeader();
         return (
-            <div className="RightFocus rounded-corners">
+            <div className="RightFocus rounded-corners MyShadow-SVG">
                 <ScrollableAnchor id={'section1'}>
-                    <div style={{margin:'0px', padding:'0px'}}/>
+                    <div style={{margin:'-15px', padding:'0px'}}/>
                 </ScrollableAnchor>
 
                 {imagesHeader}
@@ -164,7 +130,6 @@ class RightFocus extends Component {
             </div>
         );
     }
-
 }
 
 export default connect((state, props) => {
