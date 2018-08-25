@@ -37,7 +37,7 @@ class MyCard extends Component {
 
         return (
             <div>
-                <Card className="bg-dark text-white" >
+                <Card className="bg-dark text-white MyShadow-SVG" >
                     <CardImg className="w-100 MyOpacity"
                         top width="100%"
                         src={require('../' + this.state.config['path-to-images-folder'] + this.props.info.thumbnail.src)}
@@ -46,8 +46,8 @@ class MyCard extends Component {
                     />
                     <CardBody className="card-img-overlay">
 
-                        <h3 className="MyShadow">{this.props.info.title}</h3>
-                        <h4 className="MyShadow">{this.props.info.subtitle}</h4>
+                        <h3 className="MyShadow-text">{this.props.info.title}</h3>
+                        <h4 className="MyShadow-text">{this.props.info.subtitle}</h4>
                         <CardText>{this.props.info.bodyText}</CardText>
 
                         <div className="align-bottom-left" style={{display: "block",   position: "absolute", bottom: 20, right: 0, left: 20, margin: 'auto'}}>

@@ -20,6 +20,9 @@
     border-radius : .25rem;
 }
 
+.loader-alignment {
+    text-align : center !important;
+}
 
 /*.img-fluid {*/
     /*!*max-height: 100px;*!*/

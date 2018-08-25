@@ -5,10 +5,10 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: typoslab;
-  src: url(./fonts/typoslab_irregular/typoslab/TypoSlabIrregularDemo.woff);
-}
+/*@font-face {*/
+  /*font-family: typoslab;*/
+  /*src: url(./fonts/typoslab_irregular/typoslab/TypoSlabIrregularDemo.woff);*/
+/*}*/
 
 body, p {
   margin: 0;
@@ -18,7 +18,7 @@ body, p {
 }
 
 h1 {
-  font-family: typoslab, sans-serif !important;
+  font-family: 'Kadwa', serif !important;
   font-size: 38px !important;
   font-style: normal;
 }
@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-family: typoslab, sans-serif !important;
+  font-family: 'Kadwa', serif !important;
   font-size: 30px !important;
 }
 
@@ -40,7 +40,7 @@ h4 {
 }
 
 h5 {
-  font-family: typoslab, sans-serif !important;
+  font-family: 'Kadwa', serif !important;
   font-size: 26px !important;
 }
 
@@ -52,11 +52,31 @@ h6 {
 
 .btn {
   height: 42px;
+  text-shadow: 1px 1px 4px #000;
 }
 
 a.navbar-brand-text {
-  font-family: typoslab, sans-serif !important;
+  font-family: 'Kadwa', serif !important;
   font-size: 2rem;
+}
+
+.btn:hover{
+  border-width: 0px !important;
+  margin-right: 2px !important;
+}
+
+.fa-linkedin:hover {
+  color: #424ef4 !important;
+  margin-right: 1px !important;
+}
+
+.fa-github-square:hover {
+  color: #84a3e8 !important;
+  margin-right: 1px !important;
+}
+
+.my-logo {
+  margin: -10px;
 }
 
 .tiny-m-top {
@@ -77,4 +97,14 @@ a.navbar-brand-text {
 
 .rounded-corners {
   border-radius : .25rem;
+}
+
+.MyShadow-SVG {
+  -webkit-filter: drop-shadow( 1px 1px 1px #000 );
+  filter: drop-shadow( 1px 1px 4px #000 );
+}
+
+.MyShadow-text {
+  text-shadow: 1px 1px 4px #000;
+  /*text-outline: 4px #4e555b;*/
 }

@@ -137,12 +137,11 @@ class Navigation extends Component {
 
     render() {
         return (
-            <Navbar color="light" fixed='top' expand="sm">
+            <Navbar className="MyShadow-SVG" fixed='top' expand="sm">
                 <NavbarBrand className="navbar-brand-text" href="/" style={{"padding" : "0px"}}>
-                    <img src={require('../' + this.state.config['path-to-images-folder'] + this.state.config['logo'])}
-                         height="70px"
+                    <img className="my-logo MyShadow-SVG" src={require('../' + this.state.config['path-to-images-folder'] + this.state.config['logo'])}
+                         height="90px"
                          alt="logo"
-                         style={{"paddingTop" : "5px"}}
                     />
                 </NavbarBrand>
 
@@ -178,11 +177,11 @@ class Navigation extends Component {
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
-                        <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
-                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'github-square']} size="2x" color="white"/>
+                        <NavLink className="my-auto ml-2 fa" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
+                            <FontAwesomeIcon className="fa-vc MyShadow-SVG" icon={['fab', 'github-square']} size="2x" color="white"/>
                         </NavLink>
-                        <NavLink className="my-auto ml-2" style={{display: 'table-cell', padding : '0px'}} href="https://www.linkedin.com/in/phillipespybyrd">
-                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'linkedin']} size="2x" color="white"/>
+                        <NavLink className="my-auto ml-2 fa" style={{display: 'table-cell', padding : '0px'}} href="https://github.com/reactstrap/reactstrap">
+                            <FontAwesomeIcon className="fa-vc MyShadow-SVG" icon={['fab', 'linkedin']} size="2x" color="white"/>
                         </NavLink>
                     </Nav>
                 </Collapse>
