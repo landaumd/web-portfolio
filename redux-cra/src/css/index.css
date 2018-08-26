@@ -1,8 +1,16 @@
+/*light orange: fe8f2d*/
+/*dark orange: dc6a02*/
+/*grey: 4e555b;*/
+
 @font-face {
   font-family: 'danielregular';
   src: url('./fonts/daniel-fontfacekit/web fonts/daniel_regular_macroman/Daniel-Regular-webfont.woff');
   font-weight: normal;
   font-style: normal;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(254, 143, 45, .5) !important;
 }
 
 /*@font-face {*/
@@ -65,12 +73,12 @@ a.navbar-brand-text {
 }
 
 .fa-linkedin:hover {
-  color: #424ef4 !important;
+  color: #fe8f2d !important;
   margin-right: 1px !important;
 }
 
 .fa-github-square:hover {
-  color: #84a3e8 !important;
+  color: #fe8f2d !important;
   margin-right: 1px !important;
 }
 
@@ -116,10 +124,11 @@ a.navbar-brand-text {
 /*}*/
 
 .card-img-overlay:hover {
-  opacity: 0.5 !important;
-  color: white !important;
+  /*opacity: 0.5 !important;*/
+  /*color: white !important;*/
   /*color: red !important;*/
-  background-color: #93a0ed !important;
+  /*background-color: #dc6a02 !important;*/
+  background-color: rgba(254, 143, 45, .3) !important;
 }
 
 .full-opacity{

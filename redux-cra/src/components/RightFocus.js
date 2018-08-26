@@ -19,16 +19,10 @@ import { css } from 'react-emotion';
 import { BarLoader } from 'react-spinners';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco, github, dark, googlecode } from 'react-syntax-highlighter/styles/hljs';
+import CodeBlock from "./CodeBlock";
 // import { dark } from 'react-syntax-highlighter/styles/prism';
 
 //https://www.npmjs.com/package/react-syntax-highlighter
-
-
-
-const CodeComponent = () => {
-    const codeString = '(num) => num + 1';
-    return <SyntaxHighlighter language='javascript' style={docco}>{codeString}</SyntaxHighlighter>;
-}
 
 //from http://www.davidhu.io/react-spinners/
 const override = css`
@@ -115,6 +109,9 @@ class RightFocus extends Component {
                 } else if (i.startsWith("progress-bars")){
                     return <ProgressBars key={i} info={a}/>
 
+                }else if (i.startsWith("code-block")){
+                    return <CodeBlock key={i} info={a}/>
+
                 }
             });
         }
@@ -126,14 +123,6 @@ class RightFocus extends Component {
         let content = this.createContentFromList();
         let imagesHeader = this.createImagesHeader();
 
-        let code = 'var x, y, z;  // Declare 3 variables\n' +
-            'x = 5;        // Assign the value 5 to x\n' +
-            'y = 6;        // Assign the value 6 to y\n' +
-            'z = x + y;    // Assign the sum of x and y to z\n' +
-            '\n' +
-            'document.getElementById("demo").innerHTML =\n' +
-            '"The value of z is " + z + ".";'
-
         return (
             <div className="RightFocus rounded-corners MyShadow-SVG">
                 <ScrollableAnchor id={'section1'}>
@@ -143,10 +132,7 @@ class RightFocus extends Component {
                 {imagesHeader}
 
                 <div className="RightFocus-content">
-                    <SyntaxHighlighter className="rounded-corners" language='javascript' style={github}>{code}</SyntaxHighlighter>
-                    <SyntaxHighlighter className="rounded-corners" language='javascript' style={dark}>{code}</SyntaxHighlighter>
-                    <SyntaxHighlighter className="rounded-corners" language='javascript' style={googlecode}>{code}</SyntaxHighlighter>
-                    <SyntaxHighlighter className="rounded-corners" language='javascript'>{code}</SyntaxHighlighter>
+
                     {content}
 
                 </div>

@@ -269,7 +269,15 @@
       "small-subtitle-3":"Putting it all together",
       "paragraph-3":"This project taught me so much about using all the technologies I had learned up to that point in new and interesting ways. I got really creative with the project and modeled it after a tool my parents use for their local business back home in Alabama. They own and operate a number of Funeral homes and cemeteries. There is a tool called nexus that tracks client data and services for families that come in and make arrangements for end of life services. I modeled my system of off this idea and was able to create the GraveDigger Database Tool.",
       "small-subtitle-4":"Here is a quick demo",
-      "video": "_AZLy6-5PeU"
+      "video": "_AZLy6-5PeU",
+      "code-block-javascript": {
+        "language" : "javascript",
+        "code" : "var x, y, z;  // Declare 3 variables\nx = 5;        // Assign the value 5 to x\ny = 6;        // Assign the value 6 to y\nz = x + y;    // Assign the sum of x and y to z\n\ndocument.getElementById('demo').innerHTML =\n'The value of z is ' + z + '.';"
+      },
+      "code-block-php": {
+        "language" : "php",
+        "code" : "<?php $cars = array('Volvo','BMW','Toyota'); var_dump($cars); ?>"
+      }
     }
   },
 
