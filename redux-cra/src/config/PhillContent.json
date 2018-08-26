@@ -52,12 +52,14 @@
       "paragraph-AboutMe-2": "I would say that traveling and learning are the two most defining characteristics of who I am as a person. Nothing excites me more than traveling to new places and discovering new cultures, customs, languages, or cuisines. I thrive in an environment that allows me to grow and challenge my knowledge daily. I have done a lot of traveling in my life so far and it allows one to have a broader perspective when engaging with new problems.",
       "paragraph-AboutMe-3": "I think this is one of the reasons that I am drawn so strongly to the technology field. I have a large overlap of skills and characteristics here that can drive passion and success in this industry. ",
       "line-3": "",
-      "small-subtitle-AboutMe-2": "Here is a copy of my resume: ",
-      "paragraph-AboutMe-4": "Click for more details or to download",
-      "Resume": "",
+      "small-subtitle-AboutMe-2": "Resume",
+      "resume": {
+        "resume" : "phill_resume_aug_php_proj.pdf",
+        "link": "https://drive.google.com/file/d/1Dxy2kxfxS4vZEO1yN6tgxz8cFUv2bwXR/view?usp=sharing"
+      },
       "line-4": "",
       "title-trip": "Our Trip to LA",
-      "small-subtitle-Trip": "Here is a few photos of our trip across the US to LA!",
+      "small-subtitle-Trip": "Here are a few photos of our trip across the US to LA!",
       "image-row-Trip-1": [
         {
           "src": "RedSelfie.jpg",

@@ -18,7 +18,12 @@ import LargeSubtitle from "./LargeSubtitle";
 import Resume from "./Resume";
 import { css } from 'react-emotion';
 import { BarLoader } from 'react-spinners';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco, github, dark, googlecode } from 'react-syntax-highlighter/styles/hljs';
+import CodeBlock from "./CodeBlock";
+// import { dark } from 'react-syntax-highlighter/styles/prism';
 
+//https://www.npmjs.com/package/react-syntax-highlighter
 
 //from http://www.davidhu.io/react-spinners/
 const override = css`
@@ -62,6 +67,7 @@ class RightFocus extends Component {
     }
 
     createContentFromList(){
+        console.log("mobile? " + this.state.isMobile)
         let contentList = this.state.info.contentInOrder;
         let content;
         if (contentList != null) {
@@ -72,8 +78,8 @@ class RightFocus extends Component {
                 }else if (i.startsWith("large-subtitle")) {
                     return <LargeSubtitle key={i} info={a}/>
 
-                }else if (i.startsWith("Resume")) {
-                    return <Resume key={i} info={a}/>
+                }else if (i.startsWith("resume")) {
+                    return <Resume key={i} info={a} isMobile={this.state.isMobile}/>
 
                 } else if (i.startsWith("subtitle")){
                     return <Subtitle key={i} info={a}/>
@@ -108,6 +114,9 @@ class RightFocus extends Component {
                 } else if (i.startsWith("progress-bars")){
                     return <ProgressBars key={i} info={a}/>
 
+                }else if (i.startsWith("code-block")){
+                    return <CodeBlock key={i} info={a}/>
+
                 }
             });
         }
@@ -118,6 +127,7 @@ class RightFocus extends Component {
         this.findFocusTarget();
         let content = this.createContentFromList();
         let imagesHeader = this.createImagesHeader();
+
         return (
             <div className="RightFocus rounded-corners MyShadow-SVG">
                 <ScrollableAnchor id={'section1'}>

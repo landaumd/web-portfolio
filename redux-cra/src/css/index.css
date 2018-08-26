@@ -1,8 +1,16 @@
+/*light orange: fe8f2d*/
+/*dark orange: dc6a02*/
+/*grey: 4e555b;*/
+
 @font-face {
   font-family: 'danielregular';
   src: url('./fonts/daniel-fontfacekit/web fonts/daniel_regular_macroman/Daniel-Regular-webfont.woff');
   font-weight: normal;
   font-style: normal;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(254, 143, 45, .5) !important;
 }
 
 /*@font-face {*/
@@ -31,23 +39,24 @@ h2 {
 
 h3 {
   font-family: 'Kadwa', serif !important;
-  font-size: 30px !important;
+  font-size: 28px !important;
 }
 
 h4 {
   font-family: 'danielregular', Arial, sans-serif !important;
-  font-size: 25px !important;
+  font-size: 24px !important;
+  /*color: #fe8f2d !important;*/
 }
 
 h5 {
   font-family: 'Kadwa', serif !important;
-  font-size: 26px !important;
+  font-size: 25px !important;
 }
-
 
 h6 {
   font-family: 'danielregular', Arial, sans-serif !important;
-  font-size: 18px !important;
+  font-size: 22px !important;
+  /*color: #fe8f2d !important;*/
 }
 
 .btn {
@@ -66,12 +75,12 @@ a.navbar-brand-text {
 }
 
 .fa-linkedin:hover {
-  color: #424ef4 !important;
+  color: #fe8f2d !important;
   margin-right: 1px !important;
 }
 
 .fa-github-square:hover {
-  color: #84a3e8 !important;
+  color: #fe8f2d !important;
   margin-right: 1px !important;
 }
 
@@ -107,4 +116,54 @@ a.navbar-brand-text {
 .MyShadow-text {
   text-shadow: 1px 1px 4px #000;
   /*text-outline: 4px #4e555b;*/
+}
+
+/*.card-img-overlay:hover {*/
+  /*opacity: 1 !important;*/
+  /*color: #93a0ed !important;*/
+  /*!*color: red !important;*!*/
+  /*!*background-color: #0c5460 !important;*!*/
+/*}*/
+
+.card-img-overlay:hover {
+  /*opacity: 0.5 !important;*/
+  /*color: white !important;*/
+  /*color: red !important;*/
+  /*background-color: #dc6a02 !important;*/
+  background-color: rgba(254, 143, 45, .3) !important;
+  border-radius: 0.25rem !important;
+}
+
+.full-opacity{
+  opacity: 1 !important;
+  color: white !important;
+}
+
+.react-pdf__Page__textContent {
+  position: center !important;
+  top: 0% !important;
+  left: 0% !important;
+  width: 100% !important;
+  height: auto !important;
+  color: transparent;
+  transform: translate(0%, 0%) rotate(0deg) !important;
+  pointer-events: none;
+}
+
+/*.react-pdf__Page__canvas {*/
+  /*display: block;*/
+  /*user-select: none;*/
+  /*width: 100% !important;*/
+  /*height: auto !important;*/
+  /*!*height: 792px;*!*/
+/*}*/
+
+.react-pdf__Page {
+  width: 100% !important;
+  height: auto !important;
+  /*height: 792px;*/
+}
+
+.react-pdf__Document {
+  width: 100% !important;
 }
