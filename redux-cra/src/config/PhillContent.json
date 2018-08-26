@@ -82,7 +82,7 @@
 
   "02": {
     "component": "MyCard",
-    "myJSONid": "03",
+    "myJSONid": "02",
     "title": "Technical Skills",
     "subtitle": "Programming languages, tools, and frameworks",
     "category":
@@ -230,7 +230,7 @@
 
   "03": {
     "component": "MyCard",
-    "myJSONid": "02",
+    "myJSONid": "03",
     "title": "Systems Engineering Intern",
     "subtitle": "Blackbaud - Charleston, SC - Spring 2018",
     "category": [
