@@ -129,6 +129,7 @@ a.navbar-brand-text {
   /*color: red !important;*/
   /*background-color: #dc6a02 !important;*/
   background-color: rgba(254, 143, 45, .3) !important;
+  border-radius: 0.25rem !important;
 }
 
 .full-opacity{
