@@ -3,7 +3,7 @@
     "component": "MyCard",
     "myJSONid": "01",
     "title": "Software Developer for Hire",
-    "subtitle": "About, Contact, Resume",
+    "subtitle": "About & Resume",
     "category": [
       "experience",
       "programming"
@@ -14,6 +14,7 @@
       "padding": "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "Software Engineering In LA",
       "large-subtitle-main": "Currently looking for new roles",
       "line-1": "",
@@ -38,18 +39,23 @@
         }
       ],
       "space-1": "",
-      "subtitle-frog": "CHS -> LAX",
+      "subtitle": "CHS -> LAX",
       "paragraph-main-1": "I recently moved to the Los Angeles area from Charleston, South Carolina. While there, I worked as a systems engineer and graduated Summa Cum Laude from the College of Charleston.",
       "paragraph-main-2": "My time in Charleston was amazing and one of the best learning experiences of my life. I have come to the LA area to take the next step in my career and find out just how much this city has to offer.",
       "paragraph-main-3": "",
       "paragraph-main-4": "",
       "line-2": "",
       "subtitle-AboutMe": "About Me:",
+      "paragraph-AboutMe-1": "My experience in the technology and development industry has been amazing so far and I can't wait to become part of a team to accomplish more in the LA area.",
       "small-subtitle-AboutMe": "I have a lifelong passion for learning, problem solving, and new incorporations of technology.",
-      "paragraph-AboutMe-1": "My experience in the technology and development industry...",
-      "paragraph-AboutMe-2": "From Alabama->Italy",
-      "paragraph-AboutMe-3": "Resume Here",
+      "subtitle-AboutMe-2": "Always looking over the horizon:",
+      "paragraph-AboutMe-2": "I would say that traveling and learning are the two most defining characteristics of who I am as a person. Nothing excites me more than traveling to new places and discovering new cultures, customs, languages, or cuisines. I thrive in an environment that allows me to grow and challenge my knowledge daily. I have done a lot of traveling in my life so far and it allows one to have a broader perspective when engaging with new problems.",
+      "paragraph-AboutMe-3": "I think this is one of the reasons that I am drawn so strongly to the technology field. I have a large overlap of skills and characteristics here that can drive passion and success in this industry. ",
       "line-3": "",
+      "small-subtitle-AboutMe-2": "Here is a copy of my resume: ",
+      "paragraph-AboutMe-4": "Click for more details or to download",
+      "Resume": "",
+      "line-4": "",
       "title-trip": "Our Trip to LA",
       "small-subtitle-Trip": "Here is a few photos of our trip across the US to LA!",
       "image-row-Trip-1": [
@@ -93,6 +99,7 @@
       "padding": "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "Systems Engineering Intern",
       "large-subtitle-main": "Blackbaud - Charleston, SC - Spring 2018",
       "line-1": "",
@@ -100,19 +107,16 @@
         {
           "src": "01-blackbaud-internship/blackbaud-logo.jpg",
           "altText": "alt text 3",
-          "caption": "azure",
           "padding": "0px"
         },
         {
           "src": "01-blackbaud-internship/blackbaud-logo.jpg",
           "altText": "alt text 2",
-          "caption": "visual studio",
           "padding": "0px"
         },
         {
           "src": "01-blackbaud-internship/blackbaud-logo.jpg",
           "altText": "alt text 1",
-          "caption": "sonar qube",
           "padding": "0px"
         }
       ],
@@ -128,22 +132,29 @@
       "subtitle-tech": "Languages, Tools and Frameworks Used",
       "image-row-tech-2": [
         {
-          "src": "Microsoft-Azure-Cloud.jpg",
+          "src": "Azure.jpg",
           "altText": "alt text 3",
-          "caption": "azure",
-          "padding": "0px"
+          "padding": "20px 0px 20px 20px"
+        },
+        {
+          "src": "Azure2.jpg",
+          "altText": "alt text 3",
+          "padding": "20px 20px 20px 0px"
         },
         {
           "src": "VisualStudio.png",
           "altText": "alt text 2",
-          "caption": "visual studio",
-          "padding": "0px"
+          "padding": "20px 0px 20px 20px"
+        },
+        {
+          "src": "VisualStudio2.png",
+          "altText": "alt text 2",
+          "padding": "20px 20px 20px 0px"
         },
         {
           "src": "Sonar.png",
           "altText": "alt text 1",
-          "caption": "sonar qube",
-          "padding": "10px"
+          "padding": "30px 0px 0px 0px"
         }
       ]
     }
@@ -168,6 +179,7 @@
       "padding" : "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "Technical skills and Languages",
       "large-subtitle-main": "3+ years experience with the tools listed:",
       "line-1": ""
@@ -191,35 +203,36 @@
       "padding" : "0px"
     },
     "contentInOrder": {
+      "space":"",
       "title": "Southern States Communication Association",
       "large-subtitle-main": "Content and Communication Manager",
       "small-subtitle": "2017-2018",
       "line-1": "",
       "small-subtitle-1": "How did I come to work for the SSCA?",
       "paragraph-SSCA-1":"Jerry Hale is the director of Social Sciences at the College of Charleston and in the summer of 2017 he was in need a website administrator for the SSCA (https://www.ssca.net/). This group holds yearly conferences around the country to go over new research and publications in their varying and respective fields. I took on the role for the next year and worked closely with his office in coordinating events for the organization through it's only public facing communication tool.",
-      "small-subtitle-2": "What did I do for the SSCA?",
-      "paragraph-SSCA-2":"Describe the tools i used and how often I got to make public facing updates for them",
+      "space-5":"",
       "image-row-SSCA-1": [
         {
           "src": "ssca1.gif",
           "altText": "alt text 1",
-          "caption": "",
           "padding": "0px"
         },
         {
           "src": "ssca1.gif",
           "altText": "alt text 2",
-          "caption": "",
           "padding": "0px"
         },
         {
           "src": "ssca1.gif",
           "altText": "alt text 3",
-          "caption": "",
           "padding": "0px"
         }
       ],
-      "space-1":"",
+      "space-0":"",
+      "small-subtitle-2": "What did I do for the SSCA?",
+      "paragraph-SSCA-2":"I received weekly updates from the coordinating team and it was my job to go into the website code or database and execute those changes. I was interacting through the hosting and editing site MemberClicks. From inside their editing web application, I would directly edit HTML/CSS and javascript code to make visual and functional changes.",
+      "small-subtitle-3": "What did I Learn for the SSCA?",
+      "paragraph-SSCA-3":"A typical example would be that a paper was submitted for review and the details needed to be posted on the site. I would changed the name and authoring information on the appropriate page. There was also their yearly conference that needed to be configured for the event, for example: Point of sale for event tickets, form registration for the event, posting daily information to keep the members of the organization up to date.",
       "line-2": "",
       "space-2":"",
       "subtitle-tech": "Languages, Tools and Frameworks Used",
@@ -228,14 +241,12 @@
         {
           "src": "memberclick.png",
           "altText": "alt text 3",
-          "caption": "azure",
-          "padding": "0px 10px"
+          "padding": "30px"
         },
         {
           "src": "HTML_CSS_JS.png",
           "altText": "alt text 2",
-          "caption": "visual studio",
-          "padding": "0px"
+          "padding": "30px"
         }
       ]
     }
@@ -258,6 +269,7 @@
       "padding" : "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "The Grave Digger Database",
       "large-subtitle-main": "College Of Charleston - Fall 2017",
       "line-1": "",
@@ -270,14 +282,16 @@
       "paragraph-3":"This project taught me so much about using all the technologies I had learned up to that point in new and interesting ways. I got really creative with the project and modeled it after a tool my parents use for their local business back home in Alabama. They own and operate a number of Funeral homes and cemeteries. There is a tool called nexus that tracks client data and services for families that come in and make arrangements for end of life services. I modeled my system of off this idea and was able to create the GraveDigger Database Tool.",
       "small-subtitle-4":"Here is a quick demo",
       "video": "_AZLy6-5PeU",
-      "code-block-javascript": {
-        "language" : "javascript",
-        "code" : "var x, y, z;  // Declare 3 variables\nx = 5;        // Assign the value 5 to x\ny = 6;        // Assign the value 6 to y\nz = x + y;    // Assign the sum of x and y to z\n\ndocument.getElementById('demo').innerHTML =\n'The value of z is ' + z + '.';"
-      },
-      "code-block-php": {
-        "language" : "php",
-        "code" : "<?php $cars = array('Volvo','BMW','Toyota'); var_dump($cars); ?>"
-      }
+      "line-3": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "space-2":"",
+      "image-row-tech-2": [
+        {
+          "src": "php-java-html.png",
+          "altText": "alt text 2",
+          "padding": "0px"
+        }
+      ]
     }
   },
 
@@ -299,9 +313,50 @@
       "padding" : "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "Learning more .NET Core",
       "large-subtitle-main": "PluralSight Project Guide - Summer 2018",
-      "line-1": ""
+      "line-1": "",
+      "small-subtitle-main": "Diving into more Frameworks",
+      "paragraph-1": "This is the second project I have started this summer. I am spending a lot of my time picking up and practicing with the tools that I think can have the most impact in the the technology industry. Microsoft .Net Core is a very popular framework with a lot of interesting and useful features. Working on this project has helped me to gain a much deeper understanding of what I can expect as a standard for the business interest I can hope to work with in the future.",
+      "small-subtitle-1": "What is the project about?",
+      "paragraph-2": "The program is done through pluralsight and has 10 modules that take us step by step through how to build and scale a complex web application in the .NET framework. So far I have build a simple point of sale system that can maintain data locally, but I am currently taking the project to the next level by adding a MS database schema to the stack to persist the data and use other great Microsoft features.",
+      "small-subtitle-2": "Looking to the future I hope to gain more skills with this framework and platform to become a productive member of a development team.",
+      "line-2": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "space-2":"",
+      "image-row-tech-2": [
+        {
+          "src": "Azure.jpg",
+          "altText": "alt text 2",
+          "padding": "0px"
+        },
+        {
+          "src": "Azure2.jpg",
+          "altText": "alt text 2",
+          "padding": "0px"
+        },
+        {
+          "src": "NETCORE.png",
+          "altText": "alt text 2",
+          "padding": "0px"
+        },
+        {
+          "src": "NETCORE2.png",
+          "altText": "alt text 2",
+          "padding": "0px"
+        },
+        {
+          "src": "VisualStudio.png",
+          "altText": "alt text 2",
+          "padding": "0px"
+        },
+        {
+          "src": "VisualStudio2.png",
+          "altText": "alt text 2",
+          "padding": "0px"
+        }
+        ]
     }
   },
 
@@ -322,6 +377,7 @@
       "padding" : "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "Foreign Language Instructor",
       "large-subtitle-main": "Florence & Bologna, Italy",
       "small-subtitle-main": "2014-2015",
@@ -347,7 +403,7 @@
       "small-subtitle-2": "My adventure out into it all",
       "paragraph-1": "This experience was the adventure of my young life. I was fresh out of Auburn University and I was about to make my way to Law school. I had a great mentor and professor that was urging me to postpone schooling and spend time where I had no obligation  to deal with. He told me that I would never have a moment like this again in my life and that I should spend it wisely. So I made my way to Italy, a country I had never been to before.",
       "small-subtitle-3": "veni vidi vici",
-      "paragraph-2": "I did not speak the language, I did not know a soul in the country, and I did not have a job. I learned so much about myself in my time there. I had no idea what i was capable of or what my limits were. I pushed myself way outside of my comfort zone and was rewarded in memories, friends, and experiences that I will hold dear for the rest of my life. I ended up going to school in Florence to become and english instructor and then moved to Bologna afterwards to teach english for a business school that had clients all throughout the region."
+      "paragraph-2": "I did not speak the language, I did not know a soul in the country, and I did not have a job. I learned so much about myself in my time there. I had no idea what I was capable of or what my limits were. I pushed myself way outside of my comfort zone and was rewarded in memories, friends, and experiences that I will hold dear for the rest of my life. I ended up going to school in Florence to become and english instructor and then moved to Bologna afterwards to teach english for a business school that had clients all throughout the region."
 
     }
   },
@@ -369,9 +425,34 @@
       "padding" : "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "Full Stack Point of Sale Web App",
       "large-subtitle-main": "College of Charleston - Fall 2017",
-      "line-1": ""
+      "line-1": "",
+      "small-subtitle-3": "Piece by Piece",
+      "paragraph-2": "This project was a semester long event that was a step by step piecing together of a fully functioning full stack JAVA Point of sale web application. Every week in class we were working to understand a new feature of the MVC framework to implement. We started with the models of our fake store and their items and we moved to creating the data tier to hold and store all the information on our products we would need. We then went on to the business layer and worked on how to field the user requests and what kind of responses we wanted to return. The last step was creating views to return with our responses and provide all the content from the database that the user is requesting.",
+      "small-subtitle-4": "Stacking it up",
+      "paragraph-3": "I had been exposed to full stack development before but this was the first course that focused entirely on how to create a full stack app that fulfills a real life function. The work was very fulfilling because it was using all the skills I had learned in the other programming courses and stitching them together in a useful way for the first time",
+      "line-2": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "space-2":"",
+      "image-row-tech-1": [
+        {
+          "src": "Java.jpg",
+          "altText": "alt text 2",
+          "padding": "25px"
+        },
+        {
+          "src": "Netbeans.jpg",
+          "altText": "alt text 2",
+          "padding": "25px"
+        },
+        {
+          "src": "HTML_CSS_JS.png",
+          "altText": "alt text 2",
+          "padding": "25px"
+        }
+      ]
     }
   },
 
@@ -397,8 +478,9 @@
       "padding" : "0px"
     },
     "contentInOrder": {
-      "title": "Software Engineering Intern",
-      "large-subtitle-main": "Blackbaud - Charleston, SC - Summer 2017",
+      "space-0":"",
+      "title": "New React Project",
+      "large-subtitle-main": "LA - Summer 2018",
       "line-1": "",
       "small-subtitle-1": "Updating the portfolio",
       "paragraph-1":"This website is the most recent project that I have undertaken since school. I started working on this project directly after graduating from school. Some of the technologies used to teach me programming in school were able to teach me the foundations and functions of programming and development, but there are so many new technologies to learn. React seemed like the best new technology for me to learn and updating my portfolio seemed like a great target to practice on.",
@@ -447,12 +529,13 @@
       "padding" : "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "Research Assistant in SURF program",
       "large-subtitle-main": "College of Charleston - Summer 2017",
       "line-1": "",
       "image-row-tech-1": [
         {
-          "src": "Data.jpg",
+          "src": "Hardware.jpg",
           "altText": "alt text 3",
           "padding": "0px"
         },
@@ -469,9 +552,31 @@
       ],
       "space-1":"",
       "small-subtitle":"How I got started",
-      "paragraph":"Dr. Ayman Hajja was the first professor I had in an programming course at the College of Charleston. I can not say enough good things about him and the impact he has made on me. I learned so much from Dr. Hajja. He was the single best mentor I had at the college and if he had not let me bother him day in and day out, my learning experience in the technology field would have been seriously stunted. I was in his office 5 days a week trying to wrap my head around the abstract problem solving of my first programming course at CofC."
+      "paragraph":"Dr. Ayman Hajja was the first professor I had in an programming course at the College of Charleston. I can not say enough good things about him and the impact he has made on me. I learned so much from Dr. Hajja. He was the single best mentor I had at the college and if he had not let me bother him day in and day out, my learning experience in the technology field would have been seriously stunted. I was in his office 5 days a week trying to wrap my head around the abstract problem solving of my first programming course at CofC.",
+      "small-subtitle-2":"What we worked on",
+      "paragraph-2":"Dr. Hajja and I authored a paper on a new type of data mining called action rules. Action rules are a subset of associative data mining. If we ask the question, “given all the combinations of choices one can make in a given domain, what is the best path to reach a certain goal?” In other words, what actions can I take to make it more likely that I accomplish a goal or reach a certain outcome? We build a model in python and use django framework to build a web application to host and test using a custom built set of data. In our internal testing we imagined a set of patient records from a hospital and we wanted a certain outcome with respect to an illness. Action rules could be used to tell us what medicine, in what dosage, with other factors could get us to a better health level. The paper was written and we are waiting on an appropriate set of test data to continue forward with the publishing of the paper.",
+      "line-3": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "image-row-tech-2": [
+        {
+          "src": "python.png",
+          "altText": "alt text 3",
+          "padding": "30px"
+        },
+        {
+          "src": "django-icon.png",
+          "altText": "alt text 3",
+          "padding": "30px"
+        },
+        {
+          "src": "Hadoop.png",
+          "altText": "alt text 3",
+          "padding": "35px"
+        }
+      ]
     }
   },
+
   "011": {
     "component": "MyCard",
     "myJSONid": "011",
@@ -489,11 +594,37 @@
       "padding" : "0px"
     },
     "contentInOrder": {
-      "title": "Research Assistant in SURF program",
-      "large-subtitle-main": "College of Charleston - Summer 2017",
-      "line-1": ""
+      "space-0":"",
+      "title": "Data Mining to make a difference",
+      "large-subtitle-main": "College of Charleston - Spring 2017",
+      "line-1": "",
+      "small-subtitle-1": "The big picture",
+      "paragraph-1":"This project was a culmination of all the data analytics techniques we had learned over the course of the semester. We had experimented with so many different tools in data analytics that were meant to tell different kinds of stories with the data. The purpose of the project was to put all the pieces together and tell a story from front to end.",
+      "small-subtitle-2": "What did we see?",
+      "paragraph-2":"My team and I chose to take on the topic of gun violence in the united states and see what the story looks like in that domain. We combed over the data and found that so many have hyper reactive points on the topic, but maybe lacked a full picture of the situation. So we set out to use data visualization, clustering, and historical tracking to paint a picture that can show the whole picture.",
+      "line-3": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "image-row-tech-2": [
+        {
+          "src": "AWS.png",
+          "altText": "alt text 3",
+          "padding": "25px"
+        },
+        {
+          "src": "tableau.png",
+          "altText": "alt text 3",
+          "padding": "25px"
+        },
+        {
+          "src": "WEKA.jpg",
+          "altText": "alt text 2",
+          "padding": "35px"
+        }
+      ]
     }
   },
+
+
   "012": {
     "component": "MyCard",
     "myJSONid": "012",
@@ -511,9 +642,35 @@
       "padding" : "0px"
     },
     "contentInOrder": {
+      "space-0":"",
       "title": "Triangle: A new shape to education",
       "large-subtitle-main": "College of Charleston - Fall 2017",
-      "line-1": ""
+      "line-1": "",
+      "small-subtitle-1": "Wokring to build a better UI",
+      "paragraph-1":"This project came in my senior year and was designed to help us move beyond zeroes and ones to understand that the ultimate purpose of all this technology was to make it usable for as many humans as possible. This class was a great combination of programming, design, and psychology. We have to have a deep understanding of what the machines are capable of doing to create a great experience for all our users. This mean that we must delve into the psychology and drivers for how and why humans need or use technology and software.",
+      "small-subtitle-2": "Human Computer Interaction",
+      "paragraph-2":"This was not a class that I thought about when I decided to study software engineering, but after taking it and working in the field for a while, I can see how monumentally important this course was in helping me to understand how to create and program effectively What would be the point in creating amazing software or making huge technological advancements if no one can or would want to interact with it? As I continue to grow as a developer, this is the skill that I think will have the most impact on how well I do in the field over the course of my career.",
+      "small-subtitle-3": "Triangle",
+      "paragraph-3":"Our project was to come up with a fresh new look and work flow for an existing technology we were currently using in our lives. My group selected the education platform we were currently using at the College and remade it in a new layout and feature flow that allowed for a more concise and easy to understand user experience.",
+      "line-2": "",
+      "small-subtitle-4": "Here is the video we made for the Demo",
+      "space-1":"",
+      "video": "D2A4YzZtZkk",
+      "line-3": "",
+      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "space-2":"",
+      "image-row-tech-2": [
+        {
+          "src": "proto-io.jpg",
+          "altText": "alt text 3",
+          "padding": "35px"
+        },
+        {
+          "src": "HTML_CSS_JS.png",
+          "altText": "alt text 2",
+          "padding": "35px"
+        }
+      ]
     }
   }
 

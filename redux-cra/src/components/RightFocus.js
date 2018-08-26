@@ -15,6 +15,7 @@ import MyCarousel from "./MyCarousel";
 import SingleImage from "./SingleImage";
 import ProgressBars from "./ProgressBars";
 import LargeSubtitle from "./LargeSubtitle";
+import Resume from "./Resume";
 import { css } from 'react-emotion';
 import { BarLoader } from 'react-spinners';
 import SyntaxHighlighter from 'react-syntax-highlighter';
@@ -75,6 +76,9 @@ class RightFocus extends Component {
 
                 }else if (i.startsWith("large-subtitle")) {
                     return <LargeSubtitle key={i} info={a}/>
+
+                }else if (i.startsWith("Resume")) {
+                    return <Resume key={i} info={a}/>
 
                 } else if (i.startsWith("subtitle")){
                     return <Subtitle key={i} info={a}/>
