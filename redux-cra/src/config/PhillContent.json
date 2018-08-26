@@ -184,8 +184,21 @@
       "space-0":"",
       "title": "Technical skills and Languages",
       "large-subtitle-main": "3+ years experience with the tools listed:",
-      "line-1": ""
-
+      "line-1": "",
+      "progress-bars-skills" : [
+        {
+          "skillName": "Java",
+          "skillLevel": 70
+        },
+        {
+          "skillName": "Python",
+          "skillLevel": 30
+        },
+        {
+          "skillName": "Git",
+          "skillLevel": 70
+        }
+      ]
     }
   },
 

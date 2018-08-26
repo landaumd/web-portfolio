@@ -167,3 +167,7 @@ a.navbar-brand-text {
 .react-pdf__Document {
   width: 100% !important;
 }
+
+.progress-bar {
+  background-color: #fe8f2d !important;
+}

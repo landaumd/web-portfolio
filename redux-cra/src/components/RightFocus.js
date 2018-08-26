@@ -111,7 +111,7 @@ class RightFocus extends Component {
                 } else if (i.startsWith("single-image")){
                     return <SingleImage key={i} info={a}/>
 
-                } else if (i.startsWith("progress-bars")){
+                } else if (i.startsWith("progress-bar")){
                     return <ProgressBars key={i} info={a}/>
 
                 }else if (i.startsWith("code-block")){
