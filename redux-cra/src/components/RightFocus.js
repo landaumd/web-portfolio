@@ -67,6 +67,7 @@ class RightFocus extends Component {
     }
 
     createContentFromList(){
+        console.log("mobile? " + this.state.isMobile)
         let contentList = this.state.info.contentInOrder;
         let content;
         if (contentList != null) {
@@ -77,8 +78,8 @@ class RightFocus extends Component {
                 }else if (i.startsWith("large-subtitle")) {
                     return <LargeSubtitle key={i} info={a}/>
 
-                }else if (i.startsWith("Resume")) {
-                    return <Resume key={i} info={a}/>
+                }else if (i.startsWith("resume")) {
+                    return <Resume key={i} info={a} isMobile={this.state.isMobile}/>
 
                 } else if (i.startsWith("subtitle")){
                     return <Subtitle key={i} info={a}/>
