@@ -192,7 +192,11 @@
         },
         {
           "skillName": "Python",
-          "skillLevel": 30
+          "skillLevel": 45
+        },
+        {
+          "skillName": "Git",
+          "skillLevel": 70
         },
         {
           "skillName": "Git",

@@ -53,7 +53,7 @@ class MyCard extends Component {
                         <div className="align-bottom-left full-opacity" style={{display: "block",   position: "absolute", bottom: 20, right: 0, left: 20, margin: 'auto'}}>
                             <div>
                                 <Button href='#section1' className="btn-toggle btn-dark" onClick={this.toggleRight}>
-                                    <div className="tiny-m-top">
+                                    <div>
                                         {(this.state.rightIsOpen) ? "See Less" : "See More"}
                                     </div>
                                 </Button>
