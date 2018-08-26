@@ -136,27 +136,27 @@
         {
           "src": "Azure.jpg",
           "altText": "alt text 3",
-          "padding": "20px 0px 20px 20px"
+          "padding": "5% 0px 5% 5%"
         },
         {
           "src": "Azure2.jpg",
           "altText": "alt text 3",
-          "padding": "20px 20px 20px 0px"
+          "padding": "5% 5% 5% 0px"
         },
         {
           "src": "VisualStudio.png",
           "altText": "alt text 2",
-          "padding": "20px 0px 20px 20px"
+          "padding": "5% 0px 5% 5%"
         },
         {
           "src": "VisualStudio2.png",
           "altText": "alt text 2",
-          "padding": "20px 20px 20px 0px"
+          "padding": "5% 5% 5% 0px"
         },
         {
           "src": "Sonar.png",
           "altText": "alt text 1",
-          "padding": "30px 0px 0px 0px"
+          "padding": "30% 0px 0px 0px"
         }
       ]
     }
@@ -243,12 +243,12 @@
         {
           "src": "memberclick.png",
           "altText": "alt text 3",
-          "padding": "30px"
+          "padding": "10%"
         },
         {
           "src": "HTML_CSS_JS.png",
           "altText": "alt text 2",
-          "padding": "30px"
+          "padding": "10%"
         }
       ]
     }
@@ -442,17 +442,17 @@
         {
           "src": "Java.jpg",
           "altText": "alt text 2",
-          "padding": "25px"
+          "padding": "-5%"
         },
         {
           "src": "Netbeans.jpg",
           "altText": "alt text 2",
-          "padding": "25px"
+          "padding": "-5%"
         },
         {
           "src": "HTML_CSS_JS.png",
           "altText": "alt text 2",
-          "padding": "25px"
+          "padding": "5%"
         }
       ]
     }
@@ -563,17 +563,17 @@
         {
           "src": "python.png",
           "altText": "alt text 3",
-          "padding": "30px"
+          "padding": "10%"
         },
         {
           "src": "django-icon.png",
           "altText": "alt text 3",
-          "padding": "30px"
+          "padding": "10%"
         },
         {
           "src": "Hadoop.png",
           "altText": "alt text 3",
-          "padding": "35px"
+          "padding": "10%"
         }
       ]
     }
@@ -610,17 +610,17 @@
         {
           "src": "AWS.png",
           "altText": "alt text 3",
-          "padding": "25px"
+          "padding": "10%"
         },
         {
           "src": "tableau.png",
           "altText": "alt text 3",
-          "padding": "25px"
+          "padding": "10%"
         },
         {
           "src": "WEKA.jpg",
           "altText": "alt text 2",
-          "padding": "35px"
+          "padding": "10%"
         }
       ]
     }
@@ -665,12 +665,12 @@
         {
           "src": "proto-io.jpg",
           "altText": "alt text 3",
-          "padding": "35px"
+          "padding": "10%"
         },
         {
           "src": "HTML_CSS_JS.png",
           "altText": "alt text 2",
-          "padding": "35px"
+          "padding": "10%"
         }
       ]
     }
