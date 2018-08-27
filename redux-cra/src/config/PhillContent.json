@@ -98,8 +98,8 @@
     "contentInOrder": {
       "space-0":"",
       "title": "Technical skills and Languages",
-      "large-subtitle-main": "3+ years experience with the tools listed:",
-      "paragraph":"The bars below denote my comfort with each language or tool and stand as a summary of all of the skills and languages I have used in my career so far. I am constantly using these tools and adding to my skill level or pursuing new tools to add to my ever growing tool kit. ",
+      "large-subtitle-main": "3+ Years Experience",
+      "paragraph":"The bars below denote my skill level with each language or tool and stand as a summary of all of the skills and languages I have used in my career so far. I am constantly using these tools and adding to my skill level or pursuing new tools to add to my ever-growing toolkit. Some of the skills listed I learned during college courses or projects and some are self-taught.",
       "line-1": "",
       "large-subtitle-1":"Programming Languages:",
       "progress-bars-skills" : [
@@ -269,11 +269,12 @@
       "large-subtitle-2": "Development & Operations",
       "paragraph--2": "As an intern at Blackbaud, I was a member of a great DevOps team that focuses on deploying new web app features and content for the next release of the Blackbaud Platform. While I was there, I spent a great deal of my time creating unit tests using the .NET Core framework and debugging any errors I found in the platform’s code. My role involved both Quality Assurance and development. I used technologies such as Selenium, SonarQube, Visual Studio and a host of other debugging tools and also learned how to program in C#. I really loved being a part of the DevOps team at Blackbaud and learned so much! I  was able to use my passion for problem solving and exploring new technologies to make a useful and rewarding impact on Blackbaud’s software performance.",
       "large-subtitle-3": "Project Management",
-      "paragraph-3": "",
+      "paragraph-3": "As part of my internship, I completed tasks designed to teach me more about project management. There were some major changes to some of the web services that were about to come in. This meant that we would need to make many changes to our local systems and the configurations we had made. I spent a lot of time understanding the new challenges our team would be facing and relaying them effectively to the client through documentation and collaboration with the team. ",
+      "paragraph-4": "For example, one client needed a new database schema designed and had concerns about coverage and disaster recovery for various regions around the world. I spent a great deal of time researching and diagramming detailed information about these particular concerns and created a document of solutions we could implement to handle any forecasted problems that might occur.",
       "large-subtitle-4": "Team Development",
-      "paragraph-4": "I also spent time working on onboarding material for new employees. Starting at a new technology company can be hard. Setting up new environments and getting up to speed quickly is always a challenge. I spent time making a video series that went in detail over the tools for development, communication, task management that new developers were likely to need for the onboarding process. There were 20+ videos that covered many different procedures and tricks needed to decrease knowledge gaps one might encounter in the early stages of starting their new position.",
+      "paragraph-5": "I also spent time working on onboarding material for new employees. Starting at a new technology company can be challenging in ways like setting up new environments and getting up to speed quickly on how all the tools and frameworks work together. One of my tasks was to create a video series that detailed the tools used by the DevOps team for development, communication, and task management. I created 20+ videos that covered many different procedures and tricks needed to decrease knowledge gaps one might encounter in the early stages of starting their new position on the team. The team was very grateful for this quick, easy on-boarding procedure and I hear it’s working well for them so far!",
       "line-4": "",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "image-row-tech-2": [
         {
           "src": "Azure.jpg",
@@ -357,7 +358,7 @@
       "paragraph-SSCA-3":"A typical example would be that a paper was submitted for review and the details needed to be posted on the site. I would changed the name and authoring information on the appropriate page. There was also their yearly conference that needed to be configured for the event, for example: Point of sale for event tickets, form registration for the event, posting daily information to keep the members of the organization up to date.",
       "line-2": "",
       "space-2":"",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "space-3":"",
       "image-row-tech-2": [
         {
@@ -377,8 +378,8 @@
   "05": {
     "component": "MyCard",
     "myJSONid": "05",
-    "title": "Database Concepts",
-    "subtitle": "CSCI 332",
+    "title": "PHP/MySQL Grave Digger Database",
+    "subtitle": "Semester Project - CSCI 332: Database Concepts - Fall 2017",
     "category":
     [
       "experience",
@@ -392,20 +393,19 @@
     },
     "contentInOrder": {
       "space-0":"",
-      "title": "The Grave Digger Database",
-      "large-subtitle-main": "College Of Charleston - Fall 2017",
+      "title": "PHP/MySQL Grave Digger Database",
+      "large-subtitle-main": "Semester Project - Database Concepts - Fall 2017",
       "line-1": "",
-      "large-subtitle":"Database Concepts",
-      "paragraph":"This project was the capstone for the entire course and we made a live demo of our working full stack site at the end of the semester. Check the video below for the demo or my github to find teh source code",
+      "large-subtitle":"About the Project",
+      "paragraph":"This project was the capstone for the Database Concepts course at the College of Charleston. Using SiteGround hosting, we developed a full stack application connected to a MySQL database and added create, read, update, and delete (CRUD) functionality. Each student was allowed the freedom to create any application of their choosing and design the database schema according to the subject they chose.",
+      "paragraph-1":"This was definitely one of the best classes I took during my undergraduate career and I’m really proud of how much I learned and accomplished for this project. We studied database theory and got to put it to practice by creating a full stack site from scratch modeled after an existing tool or one of our own invention. I built my web app to maintain records and allow for user interaction and manipulation in a variety of different ways. The site uses a traditional model view controller (MVC) pattern. The front end was written using HTML, CSS, JavaScript and incorporated the Bootstrap framework. I used PHP on the backend and queried the MySQL database with SQL, which we learned alongside database concepts.",
       "line-2": "",
-      "large-subtitle-2":"About the Project",
-      "paragraph-2":"This project was the final project for one of the best classes I had during my undergraduate career. We studied database management, processing, and concepts. To wrap the course up we made a full stack site from scratch modeled after an existing tool or one of our own invention. The web app had to maintain records and allow for user interaction and manipulation in a variety of different ways. The site used a traditional MVC pattern and I wrote most of it in HTML/CSS, bootstrap, javascript, PHP, and hosted the SQL style database on siteground.",
-      "large-subtitle-3":"Putting it all together",
-      "paragraph-3":"This project taught me so much about using all the technologies I had learned up to that point in new and interesting ways. I got really creative with the project and modeled it after a tool my parents use for their local business back home in Alabama. They own and operate a number of Funeral homes and cemeteries. There is a tool called nexus that tracks client data and services for families that come in and make arrangements for end of life services. I modeled my system of off this idea and was able to create the GraveDigger Database Tool.",
-      "large-subtitle-4":"Here is a quick demo",
+      "large-subtitle-2":"Why Grave Digger Database?",
+      "paragraph-2":"This project taught me so much about using all the technologies I had learned up to that point in new and interesting ways. I got really creative with the project and modeled it after a tool my parents use for their funeral home business back home in Alabama. They own and operate a number of funeral homes and cemeteries and growing up I used to help them run the business. They use a tool called Nexus that tracks client data and services for families that come in and make arrangements for end of life services. I modeled my system of off this idea and was able to create the Grave Digger Database tool.",
+      "large-subtitle-4":"Demo Video",
       "video": "_AZLy6-5PeU",
       "line-3": "",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "space-2":"",
       "image-row-tech-2": [
         {
@@ -444,7 +444,7 @@
       "paragraph-2": "The program is done through pluralsight and has 10 modules that take us step by step through how to build and scale a complex web application in the .NET framework. So far I have build a simple point of sale system that can maintain data locally, but I am currently taking the project to the next level by adding a MS database schema to the stack to persist the data and use other great Microsoft features.",
       "small-subtitle-2": "Looking to the future I hope to gain more skills with this framework and platform to become a productive member of a development team.",
       "line-2": "",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "space-2":"",
       "image-row-tech-2": [
         {
@@ -554,7 +554,7 @@
       "small-subtitle-4": "Stacking it up",
       "paragraph-3": "I had been exposed to full stack development before but this was the first course that focused entirely on how to create a full stack app that fulfills a real life function. The work was very fulfilling because it was using all the skills I had learned in the other programming courses and stitching them together in a useful way for the first time",
       "line-2": "",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "space-2":"",
       "image-row-tech-1": [
         {
@@ -565,7 +565,7 @@
         {
           "src": "Netbeans.jpg",
           "altText": "alt text 2",
-          "padding": "-5%"
+          "padding": "-15%"
         },
         {
           "src": "HTML_CSS_JS.png",
@@ -605,7 +605,7 @@
       "paragraph-1":"This website is the most recent project that I have undertaken since school. I started working on this project directly after graduating from school. Some of the technologies used to teach me programming in school were able to teach me the foundations and functions of programming and development, but there are so many new technologies to learn. React seemed like the best new technology for me to learn and updating my portfolio seemed like a great target to practice on.",
       "space-1":"",
       "line-2": "",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "space-2":"",
       "image-row-tech-2": [
         {
@@ -675,7 +675,7 @@
       "small-subtitle-2":"What we worked on",
       "paragraph-2":"Dr. Hajja and I authored a paper on a new type of data mining called action rules. Action rules are a subset of associative data mining. If we ask the question, “given all the combinations of choices one can make in a given domain, what is the best path to reach a certain goal?” In other words, what actions can I take to make it more likely that I accomplish a goal or reach a certain outcome? We build a model in python and use django framework to build a web application to host and test using a custom built set of data. In our internal testing we imagined a set of patient records from a hospital and we wanted a certain outcome with respect to an illness. Action rules could be used to tell us what medicine, in what dosage, with other factors could get us to a better health level. The paper was written and we are waiting on an appropriate set of test data to continue forward with the publishing of the paper.",
       "line-3": "",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "image-row-tech-2": [
         {
           "src": "python.png",
@@ -722,7 +722,7 @@
       "small-subtitle-2": "What did we see?",
       "paragraph-2":"My team and I chose to take on the topic of gun violence in the united states and see what the story looks like in that domain. We combed over the data and found that so many have hyper reactive points on the topic, but maybe lacked a full picture of the situation. So we set out to use data visualization, clustering, and historical tracking to paint a picture that can show the whole picture.",
       "line-3": "",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "image-row-tech-2": [
         {
           "src": "AWS.png",
@@ -776,7 +776,7 @@
       "space-1":"",
       "video": "D2A4YzZtZkk",
       "line-3": "",
-      "subtitle-tech": "Languages, Tools and Frameworks Used",
+      "subtitle-tech": "Technologies Used",
       "space-2":"",
       "image-row-tech-2": [
         {
