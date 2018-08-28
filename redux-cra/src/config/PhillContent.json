@@ -355,6 +355,7 @@
       "large-subtitle-3": "What did I Learn?",
       "paragraph-SSCA-3":"When research papers were submitted for review, I would add the content to the SSCA website and provide the associated authoring information. For the yearly SSCA conference, I would develop configurations for certain tasks such as a Point of Sale (POS) System for event tickets, create form registration for the event, and post daily information to keep the members of the organization informed.",
       "line-2": "",
+
       "subtitle-tech": "Technologies Used",
       "space-1":"",
       "image-row-tech-2": [
@@ -603,10 +604,12 @@
       "space-1":"",
       "paragraph-2":"This application is built in collaboration with one other team member to give us both practice with the popular version control platform, Github. By creating feature branches and resolving merge conflicts, we have both improved our use of the tool. Git and Github are extremely relevant in today’s industry so we did our best to follow along with industry standards.",
       "line-2": "",
+
       "small-subtitle-2": "Automated Component Creation",
       "paragraph-3":"In collaboration with my partner, we designed and created this website to pull in information from a content file and dynamically create web pages based on the needed components for that story. If you look at this website, you will see that each story is first displayed, thumbnail-like, on a card component with minimal detail. Once clicked on, a component is populated using that card’s content information. By creating a system that dynamically creates components for a page, we have simplified the construction of the application and allowed a user (or just the two of us) to input a variety of content types in and have them render in a standardized way to the screen.",
       "paragraph-4":"This website also incorporates a few node modules, which was a great learning experience and has made me excited about possible contributions I can make to the Node Package Manager (npm) in the future. We are also planning on adding a database to the back end to better store our data, but that will be in version 2.0.",
       "line-3": "",
+
       "subtitle-tech": "Technologies Used",
       "space-2":"",
       "image-row-tech-2": [
@@ -722,6 +725,7 @@
       "large-subtitle-main": "Capstone Project - DSCI 400: Business Analytics - Spring 2018",
       "line-1": "",
       "small-subtitle-1": "The big picture",
+
       "paragraph-1":"This project was the culmination of all the data analytics techniques we had learned over the course of the semester. We had experimented with so many different tools in data analytics that were meant to tell different kinds of stories with the data. The purpose of this project was to put all the pieces together and tell a story with analytics tools and a public dataset. Our team used Amazon Web Services (AWS), Tableau, and Weka to study geographical and political data relating to gun violence. ",
       "small-subtitle-2": "Our Findings",
       "paragraph-2":"We chose a dataset from the FBI database of public records which tracks information about mass shootings and weapons purchases. Using data visualization tools, clustering techniques, and historical tracking strategies, we were able to come up with three main points that, in a hypothetical scenario, we could suggest to a government official and back our suggestions with data.",
@@ -729,6 +733,7 @@
       "paragraph-4":"Secondly, we would suggest that, after a high profile shooting event occurs, there should be a freeze on the sale and purchasing of firearms. The data proved that there is almost always a spike in the sale of firearms right after a mass shooting event and this commonly leads to other shooting events around the same time period.",
       "paragraph-5":"Finally, the federal government would benefit from a weapons buyback program because the data shows that the number of weapons in the country far outnumbers the amount of people living in the United States.",
       "line-2": "",
+
       "subtitle-tech": "Technologies Used",
       "image-row-tech-2": [
         {
@@ -782,10 +787,12 @@
       "space-1":"",
       "video": "D2A4YzZtZkk",
       "line-3": "",
+
       "small-subtitle-5": "Take Away",
       "paragraph-4":"This was not a class that I thought about when I decided to study software engineering, but after taking it and working in the field for a while, I can see how monumentally important this course was in helping me to understand how to create and program effectively. What would be the point in creating amazing software or making huge technological advancements if no one can or would want to interact with it? As I continue to grow as a developer, this is the skill that I think will have the most impact on how well I do in the field over the course of my career.",
       "line-4": "",
       "subtitle-tech": "Technologies Used",
+
       "image-row-tech-2": [
         {
           "src": "proto-io.jpg",
