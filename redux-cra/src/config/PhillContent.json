@@ -87,8 +87,8 @@
     "subtitle": "Programming languages, tools, and frameworks",
     "category":
     [
-      "experience",
-      "programming"
+      "Projects",
+      "Industry"
     ],
     "thumbnail": {
       "src": "rexjones.jpg",
@@ -234,8 +234,7 @@
     "title": "Systems Engineering Intern",
     "subtitle": "Blackbaud - Charleston, SC - Spring 2018",
     "category": [
-      "experience",
-      "programming"
+      "Industry"
     ],
     "thumbnail": {
       "src": "space.jpg",
@@ -317,8 +316,7 @@
     "subtitle": "SSCA - Charleston, SC - 2017 - 2018",
     "category":
     [
-      "experience",
-      "programming"
+      "Industry"
     ],
     "thumbnail": {
       "src": "empty-kingdom.jpg",
@@ -380,9 +378,8 @@
     "subtitle": "Semester Project - CSCI 332: Database Concepts - Fall 2017",
     "category":
     [
-      "experience",
-      "programming",
-      "school"
+      "Projects",
+      "School"
     ],
     "thumbnail": {
       "src": "zero-ones.jpg",
@@ -424,7 +421,9 @@
     "subtitle": ".NET Core Full Stack Web Application - Summer 2018",
     "category":
     [
-      "programming"
+      "Independent",
+      "Projects",
+      "Industry"
     ],
     "thumbnail": {
       "src": "steampunk-house.jpg",
@@ -487,7 +486,7 @@
     "subtitle": "The Dawson Group - Florence & Bologna, Italy - 2014 - 2015",
     "category":
     [
-      "experience"
+      "Independent"
     ],
     "thumbnail": {
       "src": "factory.jpg",
@@ -533,9 +532,8 @@
     "subtitle": "Semester Project - CSCI 315: Server-side Programming - Fall 2017",
     "category":
     [
-      "experience",
-      "programming",
-      "school"
+      "Projects",
+      "School"
     ],
     "thumbnail": {
       "src": "figaro.jpg",
@@ -582,7 +580,9 @@
     "subtitle": " ReactJS Project - Los Angeles, CA - Summer 2018",
     "category":
     [
-      "programming"
+      "Independent",
+      "Projects",
+      "Industry"
     ],
     "thumbnail": {
       "src": "space-cartoon.jpg",
@@ -643,9 +643,9 @@
     "subtitle": "College of Charleston - Charleston, SC - Summer 2017",
     "category":
     [
-      "experience",
-      "programming",
-      "school"
+      "Independent",
+      "School",
+      "Industry"
     ],
     "thumbnail": {
       "src": "old-map-2.png",
@@ -710,9 +710,8 @@
     "subtitle": "Capstone Project - DSCI 400: Business Analytics - Spring 2018",
     "category":
     [
-      "experience",
-      "programming",
-      "school"
+      "Projects",
+      "School"
     ],
     "thumbnail": {
       "src": "Diver.jpg",
@@ -763,9 +762,8 @@
     "subtitle": "Capstone Project - CSCI 392: User Interface - Spring 2018",
     "category":
     [
-      "experience",
-      "programming",
-      "school"
+      "Projects",
+      "School"
     ],
     "thumbnail": {
       "src": "giraud-jean.jpg",

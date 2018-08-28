@@ -105,17 +105,17 @@ class Navigation extends Component {
             case "filter":
                 this.state.dropDownMenuText = "Filter By Category";
                 break;
-            case "experience":
-                this.state.dropDownMenuText = "Experience";
+            case "Industry":
+                this.state.dropDownMenuText = "Industry";
                 break;
-            case "programming":
-                this.state.dropDownMenuText = "Programming";
-                break;
-            case "school":
+            case "School":
                 this.state.dropDownMenuText = "School";
                 break;
-            case "extracurricular":
-                this.state.dropDownMenuText = "Extracurricular";
+            case "Independent":
+                this.state.dropDownMenuText = "Independent";
+                break;
+            case "Projects":
+                this.state.dropDownMenuText = "Projects";
                 break;
         }
     }
@@ -163,17 +163,17 @@ class Navigation extends Component {
                                     {(this.state.isFiltered ? "Clear Filter" : "Filter By Category")}
                                 </DropdownItem>
                                 <DropdownItem divider />
-                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="school">
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="Industry">
+                                    Industry
+                                </DropdownItem>
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="School">
                                     School
                                 </DropdownItem>
-                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="experience">
-                                    Experience
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="Independent">
+                                    Independent
                                 </DropdownItem>
-                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="programming">
-                                    Programming
-                                </DropdownItem>
-                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="extracurricular">
-                                    Extracurricular
+                                <DropdownItem onClick={this.onDropdownItem_Click} dropdownvalue="Projects">
+                                    Projects
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
