@@ -49,9 +49,10 @@
       "paragraph-AboutMe-3": "I think this is one of the reasons that I am drawn so strongly to the technology field. I have a large overlap of skills and characteristics here that can drive passion and success in this industry.",
       "line-4": "",
       "small-subtitle-AboutMe-2": "Resume",
-      "resume": {
-        "resume" : "phill_resume_aug_php_proj.pdf",
-        "link": "https://drive.google.com/file/d/1Dxy2kxfxS4vZEO1yN6tgxz8cFUv2bwXR/view?usp=sharing"
+      "pdf-resume": {
+        "pdf" : "phill_resume_aug_php_proj.pdf",
+        "link": "https://drive.google.com/file/d/1Dxy2kxfxS4vZEO1yN6tgxz8cFUv2bwXR/view?usp=sharing",
+        "linkText" : "Click here to download my resume as a PDF from Google Drive."
       },
       "line-5": "",
       "title-trip": "Our Trip to LA",

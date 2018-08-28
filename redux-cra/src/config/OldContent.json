@@ -190,7 +190,10 @@
           "skillName": "Git",
           "skillLevel": "70"
         }
-      ]
+      ],
+      "pdf-testing": {
+        "pdf" : "APPLICATION_TO_RENT.pdf"
+      }
     }
   },
 
