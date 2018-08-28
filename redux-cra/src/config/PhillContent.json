@@ -563,8 +563,25 @@
       "small-subtitle-2": "My Adventure",
       "paragraph-1": "This experience was the adventure of my young life. I was fresh out of getting my Political Science degree from Auburn University in Alabama, and was about to make my way to law school. I had a great mentor and professor who was urging me to postpone this decision and spend time where I had no obligations to take care of and really enjoy a different kind of experience. He told me that I would never have a moment like this again in my life and that I should spend it wisely. So I made my way to Italy, a country I had never been to before.",
       "small-subtitle-3": "veni vidi vici",
-      "paragraph-2": "I did not speak the language and I did not know a soul in the country. I learned so much about myself in my time there and had no idea of what I was capable of or what my limits were. I pushed myself way outside of my comfort zone and was rewarded in memories, friends, and experiences that I will hold dear for the rest of my life. I ended up going to school in Florence to become an English instructor and then moved to Bologna afterwards to teach English for The Dawson Group’s business school which had clients all throughout the region. As an instructor, I took on both private pupils and also held seminars for larger groups. I designed coursework and materials that would prepare my students for English examinations. Many students were hopeful of attending a British university upon completion of these exams and I am hopeful that I played a role in helping them achieve their dreams."
-
+      "paragraph-2": "I did not speak the language and I did not know a soul in the country. I learned so much about myself in my time there and had no idea of what I was capable of or what my limits were. I pushed myself way outside of my comfort zone and was rewarded in memories, friends, and experiences that I will hold dear for the rest of my life. I ended up going to school in Florence to become an English instructor and then moved to Bologna afterwards to teach English for The Dawson Group’s business school which had clients all throughout the region. As an instructor, I took on both private pupils and also held seminars for larger groups. I designed coursework and materials that would prepare my students for English examinations. Many students were hopeful of attending a British university upon completion of these exams and I am hopeful that I played a role in helping them achieve their dreams.",
+      "line-2": "",
+      "image-row-2": [
+        {
+          "src": "IT1.jpg",
+          "altText": "alt text 3",
+          "padding": "0px"
+        },
+        {
+          "src": "IT2.jpg",
+          "altText": "alt text 2",
+          "padding": "0px"
+        },
+        {
+          "src": "IT3.jpeg",
+          "altText": "alt text 1",
+          "padding": "0px"
+        }
+      ]
     }
   },
 
@@ -706,6 +723,21 @@
           "src": "HTML_CSS_JS.png",
           "altText": "alt text 2",
           "padding": "0px"
+        },
+        {
+          "src": "NPM.png",
+          "altText": "alt text 2",
+          "padding": "0px 20px 20px 20px"
+        },
+        {
+          "src": "Git.jpg",
+          "altText": "alt text 2",
+          "padding": "0px 20px 20px 20px"
+        },
+        {
+          "src": "bootstrap-logo.png",
+          "altText": "alt text 2",
+          "padding": "0px 20px 20px 20px"
         }
       ]
     }
