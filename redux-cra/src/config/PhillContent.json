@@ -392,6 +392,29 @@
       "title": "PHP/MySQL Grave Digger Database",
       "large-subtitle-main": "Semester Project - Database Concepts - Fall 2017",
       "line-1": "",
+      "image-row-BD-1": [
+        {
+          "src": "ER.png",
+          "altText": "alt text 3"
+
+        },
+        {
+          "src": "DBShows 1.PNG",
+          "altText": "alt text 2"
+
+        },
+        {
+          "src": "DBShows 2.PNG",
+          "altText": "alt text 2"
+
+        },
+        {
+          "src": "DBCalc.PNG",
+          "altText": "alt text 2"
+
+        }
+      ],
+      "space-1":"",
       "large-subtitle":"About the Project",
       "paragraph":"This project was the capstone for the Database Concepts course at the College of Charleston. Using SiteGround hosting, we developed a full stack application connected to a MySQL database and added create, read, update, and delete (CRUD) functionality. Each student was allowed the freedom to create any application of their choosing and design the database schema according to the subject they chose.",
       "paragraph-1":"This was definitely one of the best classes I took during my undergraduate career and I’m really proud of how much I learned and accomplished for this project. We studied database theory and got to put it to practice by creating a full stack site from scratch modeled after an existing tool or one of our own invention. I built my web app to maintain records and allow for user interaction and manipulation in a variety of different ways. The site uses a traditional model view controller (MVC) pattern. The front end was written using HTML, CSS, JavaScript and incorporated the Bootstrap framework. I used PHP on the backend and queried the MySQL database with SQL, which we learned alongside database concepts.",
@@ -436,6 +459,25 @@
       "title": "Restaurant POS System",
       "large-subtitle-main": ".NET Core Full Stack Web Application - Summer 2018",
       "line-1": "",
+      "image-row-BA-1": [
+        {
+          "src": "VSRes.PNG",
+          "altText": "alt text 2"
+
+        },
+        {
+          "src": "VSODE.PNG",
+          "altText": "alt text 3"
+
+        },
+        {
+          "src": "VSwel.PNG",
+          "altText": "alt text 2"
+
+
+        }
+      ],
+      "space-2":"",
       "small-subtitle-main": "Diving into more Frameworks",
       "paragraph-1": "This is the second project I have started this summer. I am spending a lot of my time picking up and practicing the tools that I think can have the most impact in the current technology industry. Microsoft .Net Core is a very popular framework with a lot of interesting and useful features that are really relevant in industry practices. Working on this project has helped me to gain a much deeper understanding of what I can expect as a standard for any business interests I can hope to work with in the future.",
       "small-subtitle-1": "What is the project about?",
@@ -443,7 +485,7 @@
       "small-subtitle-2": "I have some experience with .NET Core development, but I am hoping to enhance my skills and be able to use what I have learned to create relevant, industry-standard full stack applications.",
       "line-2": "",
       "subtitle-tech": "Technologies Used",
-      "space-2":"",
+      "space-3":"",
       "image-row-tech-2": [
         {
           "src": "Azure.jpg",
@@ -546,6 +588,24 @@
       "title": "Full Stack JSP Music Store POS System Application",
       "large-subtitle-main": "Semester Project - CSCI 315: Server-side Programming - Fall 2017",
       "line-1": "",
+      "image-row-SS-1": [
+        {
+          "src": "SSCDs (2).PNG",
+          "altText": "alt text 3"
+
+        },
+        {
+          "src": "SSDB.PNG",
+          "altText": "alt text 2"
+
+        },
+        {
+          "src": "SSProd.PNG",
+          "altText": "alt text 2"
+
+        }
+      ],
+      "space-1":"",
       "small-subtitle-3": "Piece by Piece",
       "paragraph-2": "This was a semester-long project that was a step-by-step piecing together of a fully-functioning full stack Java Servlet Point of Sale (POS) web application. Every week in class, we worked to understand a new feature of the model view controller (MVC) framework and then we implemented it in our individual projects. We started with creating models for our imaginary store (mine was a music store in need of POS system for their cds and merchandise) and their items and we progressed to creating the data tier to hold and store all of the information on our products that we would need. We then progressed to implementing the business layer and worked on how to field the user requests and what kind of responses we wanted to return. The last step was creating views to return with our responses and providing all the content from the database that was needed to complete a user request.",
       "small-subtitle-4": "Stacking it up",
@@ -600,9 +660,27 @@
       "title": "Mobile Responsive SPA and Portfolio Website",
       "large-subtitle-main": "ReactJS Project - Los Angeles, CA - Summer 2018",
       "line-1": "",
+      "image-row-SS-1": [
+        {
+          "src": "RAConfig.PNG",
+          "altText": "alt text 3"
+
+        },
+        {
+          "src": "RACard.PNG",
+          "altText": "alt text 2"
+
+        },
+        {
+          "src": "RAStore.PNG",
+          "altText": "alt text 2"
+
+        }
+      ],
+      "space-1":"",
       "small-subtitle-1": "Creating a Portfolio Website",
       "paragraph-1":"This website is the most recent project that I have undertaken. I wanted a place to showcase my technical skills and figured that I now have the skills to build a website, I should pick a relevant front end framework and create one! I started working on this project directly after graduating from college. React is a widely used framework that is very popular in the industry right now so it seemed like the best new technology for me to learn. At the same time, I was able to build a portfolio website from scratch.",
-      "space-1":"",
+      "space-2":"",
       "paragraph-2":"This application is built in collaboration with one other team member to give us both practice with the popular version control platform, Github. By creating feature branches and resolving merge conflicts, we have both improved our use of the tool. Git and Github are extremely relevant in today’s industry so we did our best to follow along with industry standards.",
       "line-2": "",
 
@@ -612,24 +690,21 @@
       "line-3": "",
 
       "subtitle-tech": "Technologies Used",
-      "space-2":"",
+      "space-3":"",
       "image-row-tech-2": [
         {
           "src": "react.png",
           "altText": "alt text 3",
-          "caption": "azure",
           "padding": "0px"
         },
         {
           "src": "Redux.png",
           "altText": "alt text 2",
-          "caption": "visual studio",
           "padding": "0px"
         },
         {
           "src": "HTML_CSS_JS.png",
           "altText": "alt text 2",
-          "caption": "visual studio",
           "padding": "0px"
         }
       ]
@@ -675,11 +750,33 @@
           "padding": "0px"
         }
       ],
-      "space-1":"",
+      "space-2":"",
       "small-subtitle":"A Thank You to My Mentor",
       "paragraph":"Dr. Ayman Hajja was my first programming course instructor at the College of Charleston. I cannot say enough good things about him and the impact he has had on me. I feel very fortunate to have had him as a mentor during my time at CofC and wanted to say thank you to him for all to see! I completed a summer of research with Dr. Hajja that was funded by the Summer Undergraduate Research Fellowship (SURF).",
       "small-subtitle-2":"Cascading Action Rules Research",
       "paragraph-2":"Dr. Hajja and I co-authored a paper on a new type of data mining strategy called action rules. Action rules are a subset of associative data mining. Here is an example of a type of question one might ask that data mining would be a perfect solution for: “Given all the combinations of choices one can make in a given domain, what is the best path to reach a certain goal?” In other words, what actions can I take to make it more likely that I will accomplish a goal or reach a certain outcome?",
+      "line-2": "",
+      "image-row-Data-1": [
+        {
+          "src": "ActionMerge.PNG",
+          "altText": "alt text 3"
+
+
+        },
+        {
+          "src": "ActionRules.PNG",
+          "altText": "alt text 2"
+
+
+        },
+        {
+          "src": "ActionTrans.PNG",
+          "altText": "alt text 2"
+
+
+        }
+      ],
+      "space-1":"",
       "paragraph-3":"We built a model in Python and used the Django framework to build a web application to host and test using a custom-built set of data. In our internal testing we fabricated a set of patient records from a hospital and we predicted a certain outcome with respect to an illness. Our strategy with action rules could be used to tell us what medicine, in what dosage, and with what other factors could get the test patient to a better health level. The paper was written and we are waiting on an appropriate set of test data to continue forward with the publishing.",
       "paragraph-4":"As part of my role as research assistant, I attended many of Dr. Hajja’s lectures and gave a few presentations during the following semester to show the department the work we had accomplished. Having never worked in a research capacity before, this experience taught me much about collaboration, technical discussion and strategies, and also about what it takes to be a self-motivated student.",
       "line-3": "",
@@ -724,6 +821,25 @@
       "title": "Analyzing Gun Violence Statistics Using Data Mining Techniques",
       "large-subtitle-main": "Capstone Project - DSCI 400: Business Analytics - Spring 2018",
       "line-1": "",
+      "image-row-BA-1": [
+        {
+          "src": "BASales.PNG",
+          "altText": "alt text 2"
+
+        },
+        {
+          "src": "BAStates.PNG",
+          "altText": "alt text 3"
+
+        },
+        {
+          "src": "BAchecks.PNG",
+          "altText": "alt text 2"
+
+
+        }
+      ],
+      "space-1":"",
       "small-subtitle-1": "The big picture",
 
       "paragraph-1":"This project was the culmination of all the data analytics techniques we had learned over the course of the semester. We had experimented with so many different tools in data analytics that were meant to tell different kinds of stories with the data. The purpose of this project was to put all the pieces together and tell a story with analytics tools and a public dataset. Our team used Amazon Web Services (AWS), Tableau, and Weka to study geographical and political data relating to gun violence. ",
@@ -776,6 +892,25 @@
       "title": "Triangle: An Education Management Tool",
       "large-subtitle-main": " Semester Project - CSCI 392: User Interface - Spring 2018",
       "line-1": "",
+      "image-row-BA-1": [
+        {
+          "src": "UIPRO.png",
+          "altText": "alt text 2"
+
+        },
+        {
+          "src": "UIMES.png",
+          "altText": "alt text 3"
+
+        },
+        {
+          "src": "UIAS.png",
+          "altText": "alt text 2"
+
+
+        }
+      ],
+      "space-2":"",
       "small-subtitle-1": "A Better User Interface",
       "paragraph-1":"The requirements for this project were designed to help us move beyond zeroes and ones into understanding that users are what drive technology and great technological advancements. This class was a great combination of programming, design, and psychology. We have to have a deep understanding of what computers are capable of doing in order to create an improved experience for all users. This means that we must delve into the psychology for how and why humans need or use technology and how they interact with software.",
       "small-subtitle-2": "A User-friendly Education Management Tool",
