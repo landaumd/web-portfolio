@@ -67,7 +67,6 @@ class RightFocus extends Component {
     }
 
     createContentFromList(){
-        console.log("mobile? " + this.state.isMobile)
         let contentList = this.state.info.contentInOrder;
         let content;
         if (contentList != null) {
