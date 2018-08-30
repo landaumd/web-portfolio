@@ -33,7 +33,6 @@ class PdfViewer extends Component {
             scale: scale
         };
 
-        console.log(this.state.scale)
         this.state.info = this.props.info;
         this.nextPage = this.nextPage.bind(this);
         this.previousPage = this.previousPage.bind(this);

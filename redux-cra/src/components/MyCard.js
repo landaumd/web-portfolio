@@ -26,7 +26,14 @@ class MyCard extends Component {
         this.props.dispatch({type:"SHOW_CARD", data:{myJSONid: this.props.info.myJSONid} });
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log(nextProps === nextState)
+        return nextProps === nextState
+    }
+
     render() {
+        console.log("my card render")
+
         var categories = Object.entries(this.state.info.category).map(([i, a]) => {
             var color = CategoryColors[a]
             return (

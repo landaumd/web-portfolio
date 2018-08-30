@@ -123,6 +123,7 @@ class RightFocus extends Component {
     }
 
     render() {
+        console.log("right focus render")
         this.findFocusTarget();
         let content = this.createContentFromList();
         let imagesHeader = this.createImagesHeader();

@@ -30,7 +30,15 @@ class Grid extends Component {
         }
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log(nextProps === nextState)
+        return nextProps === nextState
+    }
+
     render() {
+
+        console.log("grid render")
+
         const {
             duration,
             gutter,

@@ -25,6 +25,7 @@ class MyView extends  Component {
     //     window.location.href.anchor('#section1');
     // }
 
+
     componentWillMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
     }
@@ -38,6 +39,8 @@ class MyView extends  Component {
     };
 
     render() {
+        console.log("my view render")
+
         const { width } = this.state;
 
         this.state.isMobile = width <= 500;
