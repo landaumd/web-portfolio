@@ -7,7 +7,6 @@ import Config from '../config/Config.json';
 import '../css/MyCard.css'
 
 
-
 class MyCard extends Component {
     constructor(props) {
         super(props);
@@ -23,11 +22,11 @@ class MyCard extends Component {
     }
 
     toggleRight = () => {
+        window.location = '#section1';
         this.props.dispatch({type:"SHOW_CARD", data:{myJSONid: this.props.info.myJSONid} });
     }
 
     render() {
-
         var categories = Object.entries(this.state.info.category).map(([i, a]) => {
             var color = CategoryColors[a]
             return (
@@ -44,20 +43,13 @@ class MyCard extends Component {
                         alt={this.props.info.thumbnail.altText}
                         style={{"padding" : this.props.info.thumbnail.padding, borderRadius: '0.25rem'}}
                     />
-                    <CardBody className="card-img-overlay">
+                    <CardBody onClick={this.toggleRight} className="w-100 card-img-overlay">
 
                         <h3 className="MyShadow-text full-opacity">{this.props.info.title}</h3>
                         <h4 className="MyShadow-text full-opacity">{this.props.info.subtitle}</h4>
                         <CardText>{this.props.info.bodyText}</CardText>
 
                         <div className="align-bottom-left full-opacity" style={{display: "block",   position: "absolute", bottom: 20, right: 0, left: 20, margin: 'auto'}}>
-                            <div>
-                                <Button href='#section1' className="btn-toggle btn-dark" onClick={this.toggleRight}>
-                                    <div>
-                                        {(this.state.rightIsOpen) ? "See Less" : "See More"}
-                                    </div>
-                                </Button>
-                            </div>
                             {categories}
                         </div>
                     </CardBody>
