@@ -3,6 +3,7 @@ import Grid from "./Grid.js";
 import '../css/MyView.css';
 import RightFocus from "./RightFocus";
 import { connect } from "react-redux";
+import ReactGA from 'react-ga';
 
 class MyView extends  Component {
     constructor(props) {
@@ -42,7 +43,7 @@ class MyView extends  Component {
 
         this.state.isMobile = width <= 500;
         this.state.isTINYMobile = width <= 320;
-
+        ReactGA.initialize('UA-125039397-1');
         if (this.state.isMobile) {
             return (
                 <div className="row MyView-container-mobile">
