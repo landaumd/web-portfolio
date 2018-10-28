@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../css/Grid.css';
-import PhillContent from '../config/PhillContent.json';
+import MeganContent from '../config/MeganContent.json';
 import MyCard from './MyCard.js';
 import MyJumbo from './MyJumbo.js';
 import StackGrid, { transitions, easings } from "react-stack-grid";
@@ -17,13 +17,13 @@ class Grid extends Component {
         const items = this.props.idsWithCategory;
 
         this.state = {
-            data: PhillContent,
+            data: MeganContent,
             isMobile: this.props.isMobile,
             isTINYMobile: this.props.isTINYMobile,
             idsWithCategory: this.props.idsWithCategory,
             items,
             duration: 480,
-            columnWidth: 300,
+            columnWidth: 200,
             gutter: 15,
             easing: easings.quartOut,
             transition: 'fadeDown',
@@ -39,10 +39,12 @@ class Grid extends Component {
         } = this.state;
 
         let w;
-        if (this.state.isTINYMobile){
+        if (this.state.isTINYMobile) {
             w = 250
-        } else {
+        } else if (this.state.isMobile){
             w = 300
+        } else {
+            w = 200
         }
 
         const transition = transitions[transitionSelect];

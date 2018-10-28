@@ -19,7 +19,7 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import PhillContent from '../config/PhillContent.json';
+import MeganContent from '../config/MeganContent.json';
 import Config from '../config/Config.json';
 
 library.add(faGithubSquare);
@@ -39,7 +39,7 @@ class Navigation extends Component {
 
         this.state = {
             config: Config,
-            data: PhillContent,
+            data: MeganContent,
             isOpen: false,
             dropdownOpen: false,
             dropDownMenuText: "Filter By Category",
@@ -137,25 +137,26 @@ class Navigation extends Component {
 
     render() {
         return (
-            <Navbar className="MyShadow-SVG" fixed='top' expand="sm">
+            <Navbar fixed='top' expand="sm">
                 <NavbarBrand className="navbar-brand-text" href="/" style={{"padding" : "0px"}}>
-                    <img className="my-logo MyShadow-SVG" src={require('../' + this.state.config['path-to-images-folder'] + this.state.config['logo'])}
-                         height="90px"
+                    <img className="my-logo" src={require('../' + this.state.config['path-to-images-folder'] + this.state.config['logo'])}
+                         height="80px"
                          alt="logo"
+                         style={{padding: 10}}
                     />
                 </NavbarBrand>
 
                 <NavbarToggler className="navbar-phone-toggle" onClick={this.toggle}>
-                    <FontAwesomeIcon id="caret" className="fa-vc" icon={['fas', 'caret-up']} size="1x" color="white"/>
+                    <FontAwesomeIcon id="caret" className="fa-vc" icon={['fas', 'caret-up']} size="2x" color="black"/>
                 </NavbarToggler>
 
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" fixed='top' >
 
-                        <Button className="btn my-auto btn-dark btn-toggle" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "See Less" : "See More"}</Button>
+                        <Button className="btn my-auto no-bg" onClick={this.toggleRight}>{(this.props.rightIsOpen) ? "See Less" : "See More"}</Button>
 
-                        <UncontrolledDropdown className="my-auto ml-2" nav inNavbar isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
-                            <DropdownToggle className="btn btn-dark btn-toggle" nav caret>
+                        <UncontrolledDropdown className="my-auto ml-2 my-dropdown" nav inNavbar isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
+                            <DropdownToggle className="btn btn-toggle" nav caret>
                                 {this.state.dropDownMenuText}
                             </DropdownToggle>
                             <DropdownMenu right>
@@ -178,10 +179,10 @@ class Navigation extends Component {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <NavLink className="my-auto ml-2 fa" style={{display: 'table-cell', padding : '0px'}} href={this.state.config.github} rel="noopener noreferrer" target="_blank">
-                            <FontAwesomeIcon className="fa-vc MyShadow-SVG" icon={['fab', 'github-square']} size="2x" color="white"/>
+                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'github-square']} size="2x" color="#C0AA37"/>
                         </NavLink>
                         <NavLink className="my-auto ml-2 fa" style={{display: 'table-cell', padding : '0px'}} href={this.state.config.linkedin} rel="noopener noreferrer" target="_blank">
-                            <FontAwesomeIcon className="fa-vc MyShadow-SVG" icon={['fab', 'linkedin']} size="2x" color="white"/>
+                            <FontAwesomeIcon className="fa-vc" icon={['fab', 'linkedin']} size="2x" color="#B7DDD3"/>
                         </NavLink>
                     </Nav>
                 </Collapse>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/RightFocus.css';
 import {connect} from "react-redux";
-import PhillContent from '../config/PhillContent.json';
+import MeganContent from '../config/MeganContent.json';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 import Paragraph from "./Paragraph";
@@ -37,7 +37,7 @@ class RightFocus extends Component {
         super(props);
 
         this.state = {
-            data : PhillContent,
+            data : MeganContent,
             isMobile : this.props.isMobile,
             info : null,
             loading: true
@@ -128,7 +128,7 @@ class RightFocus extends Component {
         let imagesHeader = this.createImagesHeader();
 
         return (
-            <div className="RightFocus rounded-corners MyShadow-SVG">
+            <div className="RightFocus rounded-corners">
                 <ScrollableAnchor id={'section1'}>
                     <div style={{margin:'-15px', padding:'0px'}}/>
                 </ScrollableAnchor>

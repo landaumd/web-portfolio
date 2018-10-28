@@ -1,6 +1,7 @@
 .navbar{
-    background: #343a40 !important;
-    color: #ffffff;
+    background: #f8f9fa !important;
+    color: lightblue;
+    opacity: 0.95 !important;
 }
 
 .menu-button {
@@ -17,7 +18,7 @@
 }
 
 .navbar-phone-toggle {
-    color: white;
+    color: black;
     border: none;
 }
 
@@ -30,9 +31,9 @@
     /*transform: rotate(180deg);*/
 /*}*/
 
-.navbar-brand-text {
-    color: white !important;
-}
+/*.navbar-brand-text {*/
+    /*color: black !important;*/
+/*}*/
 
 #caret {
     -webkit-transition: all 0.3s ease-in-out;

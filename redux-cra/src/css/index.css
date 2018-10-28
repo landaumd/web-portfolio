@@ -10,7 +10,7 @@
 }
 
 .dropdown-item:hover {
-  background-color: rgba(254, 143, 45, .5) !important;
+  background-color: rgba(209, 228, 216, .5) !important;
 }
 
 /*@font-face {*/
@@ -39,12 +39,12 @@ h2 {
 
 h3 {
   font-family: 'Kadwa', serif !important;
-  font-size: 28px !important;
+  font-size: 20px !important;
 }
 
 h4 {
   font-family: 'danielregular', Arial, sans-serif !important;
-  font-size: 24px !important;
+  font-size: 12px !important;
   /*color: #fe8f2d !important;*/
 }
 
@@ -60,28 +60,40 @@ h6 {
 }
 
 .btn {
+  color: black !important;
   height: 42px;
-  text-shadow: 1px 1px 4px #000;
 }
 
 a.navbar-brand-text {
   font-family: 'Kadwa', serif !important;
   font-size: 2rem;
+  color: black !important;
 }
 
 .btn:hover{
   border-width: 0px !important;
-  margin-right: 2px !important;
+  /*margin-right: 2px !important;*/
+  /*background-color: #218838 !important;*/
 }
 
 .fa-linkedin:hover {
-  color: #fe8f2d !important;
-  margin-right: 1px !important;
+  color: #BEC1C4 !important;
+  /*margin-right: 1px !important;*/
 }
 
 .fa-github-square:hover {
-  color: #fe8f2d !important;
-  margin-right: 1px !important;
+  color: #E78F92 !important;
+  /*margin-right: 1px !important;*/
+}
+
+.no-bg {
+  color: black !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.no-bg:hover {
+  margin-top: 1px !important;
 }
 
 .my-logo {
@@ -98,7 +110,7 @@ a.navbar-brand-text {
 }
 
 .rounded-top-corners {
-  border-radius : .20rem .20rem 0 0;
+  border-radius : .20rem .20rem 0 0 !important;
 }
 
 .rounded-bottom-corners {
@@ -110,12 +122,12 @@ a.navbar-brand-text {
 }
 
 .MyShadow-SVG {
-  -webkit-filter: drop-shadow( 1px 1px 1px #000 );
-  filter: drop-shadow( 1px 1px 4px #000 );
+  -webkit-filter: drop-shadow( 1px 1px 1px #ffffff );
+  filter: drop-shadow( 1px 1px 2px #ffffff );
 }
 
 .MyShadow-text {
-  text-shadow: 1px 1px 4px #000;
+  text-shadow: 1px 1px 2px #ffffff;
   /*text-outline: 4px #4e555b;*/
 }
 
@@ -126,18 +138,33 @@ a.navbar-brand-text {
   /*!*background-color: #0c5460 !important;*!*/
 /*}*/
 
-.card-img-overlay:hover {
-  /*opacity: 0.5 !important;*/
-  /*color: white !important;*/
-  /*color: red !important;*/
-  /*background-color: #dc6a02 !important;*/
-  background-color: rgba(254, 143, 45, .3) !important;
-  border-radius: 0.25rem !important;
+/*.card-img-top:hover {*/
+  /*opacity: 0.8 !important;*/
+  /*!*color: white !important;*!*/
+  /*!*color: red !important;*!*/
+  /*!*background-color: #dc6a02 !important;*!*/
+  /*background-color: rgba(254, 143, 45, .3) !important;*/
+  /*!*border-radius: 0.25rem !important;*!*/
+/*}*/
+
+.card {
+  opacity: 0.9 !important;
+  background-color: #f8f9fa !important;
+}
+
+.my-dropdown {
+  opacity: 1.0 !important;
+}
+
+.card:hover {
+  opacity: 1.0 !important;
+  background-color: white !important;
+  /*border-radius: 0.25rem !important;*/
 }
 
 .full-opacity{
   opacity: 1 !important;
-  color: white !important;
+  color: black !important;
 }
 
 .react-pdf__Page__textContent {
@@ -170,5 +197,5 @@ a.navbar-brand-text {
 }
 
 .progress-bar {
-  background-color: #fe8f2d !important;
+  background-color: #C0AA37 !important;
 }
