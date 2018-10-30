@@ -21,19 +21,20 @@
 body, p {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 16px;
 }
 
 h1 {
   font-family: 'Kadwa', serif !important;
-  font-size: 38px !important;
+  font-size: 34px !important;
   font-style: normal;
+  /*color: #BEC1C4 !important;*/
 }
 
 h2 {
   font-family: 'danielregular', Arial, sans-serif !important;
-  font-size: 30px !important;
+  font-size: 22px !important;
   font-style: normal;
 }
 
@@ -44,8 +45,8 @@ h3 {
 
 h4 {
   font-family: 'danielregular', Arial, sans-serif !important;
-  font-size: 12px !important;
-  /*color: #fe8f2d !important;*/
+  font-size: 18px !important;
+  color: #C0AA37 !important;
 }
 
 h5 {
@@ -55,13 +56,18 @@ h5 {
 
 h6 {
   font-family: 'danielregular', Arial, sans-serif !important;
-  font-size: 22px !important;
+  font-size: 14px !important;
   /*color: #fe8f2d !important;*/
 }
 
 .btn {
+  font-family: 'Arial', sans-serif !important;
   color: black !important;
   height: 42px;
+}
+
+.pdf-link {
+  color: #E78F92 !important;
 }
 
 a.navbar-brand-text {

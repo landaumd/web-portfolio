@@ -46,7 +46,7 @@ class MyCard extends Component {
                     <CardBody className="w-100 full-opacity">
 
                         <h3>{this.props.info.title}</h3>
-                        <h4>{this.props.info.subtitle}</h4>
+                        <h6>{this.props.info.subtitle}</h6>
                         {/*<CardText>{this.props.info.bodyText}</CardText>*/}
 
                         <div className="align-bottom-left full-opacity">

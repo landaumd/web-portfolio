@@ -91,7 +91,7 @@ class PdfViewer extends Component {
 
         return (
                 <div>
-                    <a href={this.state.info.link}>{this.state.info.linkText}</a>
+                    <a className="pdf-link" href={this.state.info.link}>{this.state.info.linkText}</a>
                     <Document
                         file={require('../' + this.state.config['path-to-images-folder'] + this.state.info.pdf)}
                         onLoadSuccess={this.onDocumentLoad}
